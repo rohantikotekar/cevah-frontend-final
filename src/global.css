@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pragmatica:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --font-pragmatica: Pragmatica;
+  --font-red-hat-text: "Red Hat Text";
+  --font-ibm-plex-sans: "IBM Plex Sans";
+  --font-red-hat-display: "Red Hat Display";
+  --button-m: Roboto;
+
+  /* font sizes */
+  --button-m-size: 1rem;
+  --font-size-5xl: 1.5rem;
+  --caption-m-size: 1.25rem;
+  --font-size-29xl: 3rem;
+  --font-size-13xl: 2rem;
+  --font-size-17xl: 2.25rem;
+  --font-size-smi: 0.813rem;
+  --font-size-lg: 1.125rem;
+  --font-size-sm: 0.875rem;
+  --font-size-21xl: 2.5rem;
+  --heading-2-size: 3.5rem;
+  --font-size-53xl: 4.5rem;
+  --font-size-xs: 0.75rem;
+
+  /* Colors */
+  --white: #fff;
+  --color-black: #000;
+  --color-gray-100: #2b2b2b;
+  --color-gray-200: #222;
+  --blue-gray-900: #0f172a;
+  --color-gray-300: #151515;
+  --color-gray-400: rgba(26, 26, 26, 0.56);
+  --color-gray-500: rgba(0, 0, 0, 0.5);
+  --blue-gray-600: #475569;
+  --color-darkslategray-100: #313131;
+  --color-darkslategray-200: #004051;
+  --color-mediumturquoise-100: #3cd0ce;
+  --color-gainsboro-100: #e4e4e4;
+  --color-gainsboro-200: #e3e3e3;
+  --color-lightgray: #ccc;
+  --color-darkturquoise: #17c6c4;
+  --color-dimgray-100: #666;
+  --color-dimgray-200: #616161;
+  --color-darkgray-100: #aaa;
+  --color-darkgray-200: #a6a6a6;
+  --blue-600: #2563eb;
+  --color-silver: #bbb;
+
+  /* Gaps */
+  --gap-874xl: 55.812rem;
+  --gap-9xs: 0.25rem;
+  --gap-941xl: 60rem;
+  --gap-13xl: 2rem;
+  --gap-5xs: 0.5rem;
+
+  /* Paddings */
+  --padding-3xs: 0.625rem;
+  --padding-13xl: 2rem;
+  --padding-xs: 0.75rem;
+  --padding-base: 1rem;
+  --padding-xl: 1.25rem;
+  --padding-5xl: 1.5rem;
+
+  /* Border radiuses */
+  --br-xl: 20px;
+  --br-12xs: 1px;
+  --br-5xs: 8px;
+  --br-81xl: 100px;
+  --br-3xs: 10px;
+}
