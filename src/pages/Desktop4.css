@@ -460,4 +460,31 @@
 .doctor-amico-icon {
   top: 19.25rem;
 }
+.share-you-name1,
+.tell-us-about3 {
+  position: absolute;
+  left: 0;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  display: inline-block;
+}
+.tell-us-about3 {
+  width: calc(100% - 23px);
+  top: 0;
+  font-weight: 600;
+  font-size:1.35rem;
+}
+.share-you-name1 {
+  width: 100%;
+  top: 2.55rem;
+  font-size: var(--button-m-size);
+}
+.tell-us-about-yourself-parent {
+  position: absolute;
+  width: 90vw;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 4.063rem;
+}
 }
