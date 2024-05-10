@@ -384,7 +384,7 @@
   
   .header13 {
     position: relative;
-    top:1.5rem;
+    top:0;
     left: -10rem;
     margin-left: 5rem; 
     margin-right: 0rem;
@@ -414,7 +414,7 @@
   }
   .user-icon7 {
     position: relative;
-    top: 0.625rem;
+    top: 0rem;
     left: 50%; /* Position at the center horizontally */
     transform: translateX(470%); /* Adjust position to center horizontally */
     border-radius: 100px;

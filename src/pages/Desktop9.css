@@ -488,7 +488,7 @@
   }
   .rectangle-parent3 {
     position: absolute;
-    top:7.3rem;
+    top:12vw;
     left: 50%; /* Position at the center horizontally */
     transform: translateX(-50%); /* Adjust position to center horizontally */
     width: calc(100% - 0rem); /* Adjust width to fit the screen with some padding */
@@ -602,5 +602,13 @@
   text-decoration: underline;
   letter-spacing: 0.02em;
   line-height: 120%;
+}
+.group-parent9 {
+  position: absolute;
+  width: 100%;
+  top: 200rem;
+  right: 0;
+  left: 0;
+  height: 0.313rem;
 }
 }

@@ -403,7 +403,7 @@
   }
   .hero15 {
     position: absolute;
-    top: 7.188rem;
+    top: 7vh;
     left: 55%; 
     transform: translateX(-60%); 
     width: calc(100% - 0rem); 
@@ -525,4 +525,33 @@
     background-color: #e3e3e3;
     height: 0.306rem;
   } */
+  .group-child35 {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--color-darkslategray-200);
+    height: 0.313rem;
+  }
+  .group-child36,
+  
+  .rectangle-wrapper3 {
+    position: absolute;
+    width: calc(100% - 269px);
+    top: 0;
+  }
+  .rectangle-wrapper3 {
+    right: 16.813rem;
+    left: 0;
+    height: 0.313rem;
+    top:200rem;
+  }
+  .group-child36 {
+    right: 0;
+    left: 16.813rem;
+    background-color: var(--color-gainsboro-200);
+    height: 0.306rem;
+    top:35rem;
+  }
 }
