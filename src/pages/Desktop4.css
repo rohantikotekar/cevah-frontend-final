@@ -350,3 +350,114 @@
   padding: 1rem;
   margin: 0 auto;
 }
+@media only screen and (max-width: 758px) {
+  .desktop-120 {
+    font-size: 1rem; 
+    padding: 0.5rem; 
+    min-height: 100vh; 
+  }
+  .content6 {
+    position: absolute;
+   
+    left: 40%; /* Position at the center horizontally */
+    transform: translateX(-50%); /* Adjust position to center horizontally */
+    width: calc(100% - 0rem); /* Adjust width to fit the screen with some padding */
+    height: auto; /* Allow height to adjust based on content */
+    font-size: 0.875rem;
+    color: #2b2b2b;
+  }
+  
+  
+  /* .hero7 {
+    position: absolute;
+    top: 7.188rem;
+    left: 50%; 
+    transform: translateX(-60%); 
+    width: calc(100% - 0rem); 
+    height: auto; 
+    font-size: 1.25rem;
+    color: #2b2b2b;
+  } */
+  .content-child1 {
+    position: absolute;
+    top: 0;
+    left: 10;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2),
+      -4px -4px 20px rgba(154, 154, 154, 0.2);
+    width: 29rem;
+    height:auto;
+  }
+  
+  
+  .header3 {
+    position: relative;
+    left: -10rem;
+    margin-left: 5rem; 
+    margin-right: 0rem;
+    width: auto;
+    max-width: none;
+    box-shadow: none;
+    height: auto;
+    font-size: 1.25rem;
+  }
+  
+  
+  .footer3 {
+    top: 49.688rem; 
+    background-color: #004051;
+    width: auto; 
+    height:  16.938rem; 
+    font-size: 0.813rem; 
+    color: #fff; 
+    padding: 100rem; 
+  }
+  
+    .button-primary1 {
+      position: absolute;
+      width: 39vw;
+      top: 23.313rem;
+      right: 1.75rem;
+     left:32vw;
+      cursor: pointer;
+    }
+
+
+ 
+
+  .user-icon1 {
+    position: relative;
+     top: 0.625rem;
+     left: 50%; /* Position at the center horizontally */
+     transform: translateX(470%); /* Adjust position to center horizontally */
+     border-radius: 100px;
+     background-color: #17c6c4;
+     border: 1px solid #17c6c4;
+     box-sizing: border-box;
+     width: 3rem;
+     height: 3.125rem;
+     overflow: hidden;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-evenly;
+     padding: 0.625rem;
+     font-size: 1.125rem;
+     color: #fff;
+     font-family: Inter
+ }
+ .doctor-amico-icon1 {
+  position: absolute;
+  top: 15.938rem;
+  left: .563rem;
+  width: 18.75rem;
+  height: 18.75rem;
+  object-fit: cover;
+}
+
+
+.doctor-amico-icon {
+  top: 19.25rem;
+}
+}

@@ -35,6 +35,7 @@ const Desktop14 = () => {
         <img className="hero-child7" alt="" src="/frame-36735.svg" />
         <div className="view-report-wrapper" onClick={onFrameContainerClick}>
           <div className="view-report">View Report</div>
+          
         </div>
         <div className="back8" onClick={onBackTextClick}>
           Back

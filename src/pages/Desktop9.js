@@ -150,8 +150,10 @@ const Desktop9 = () => {
           <div className="navigation9" />
         </div>
         <div className="login8">
-          <div className="jd6">JD</div>
+          <div className="jd6"></div>
         </div>
+        <img className="user-icon6" alt="" src="/user.svg" />
+
       </div>
     </div>
   );

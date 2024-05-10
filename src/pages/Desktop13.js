@@ -1,17 +1,19 @@
-import { useCallback , useState, useEffect} from "react";
+import React, { useCallback, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Desktop13.css";
+import ImageSlider from "./ImageSlider"; // Import the ImageSlider component
 
 const Desktop13 = () => {
   const navigate = useNavigate(); // useNavigate hook for navigation
   const [loading, setLoading] = useState(true);
   const [percentage, setPercentage] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const intervalTime = 50000 / 100;
+    const intervalTime = 5000 / 100;
 
     const interval = setInterval(() => {
-      setPercentage(prevPercentage =>
+      setPercentage((prevPercentage) =>
         prevPercentage < 100 ? prevPercentage + 1 : prevPercentage
       );
     }, intervalTime);
@@ -20,9 +22,27 @@ const Desktop13 = () => {
       setLoading(true);
       clearInterval(interval);
       navigate("/desktop-109"); // Navigate to Desktop8.js after animation completes
-    }, 50000);
+    }, 5000);
     return () => clearInterval(interval);
   }, [navigate]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      setIsMobile(screenWidth <= 758); // Adjust this value based on your mobile breakpoint
+    };
+
+    // Listen for window resize events
+    window.addEventListener("resize", handleResize);
+
+    // Initial check for mobile device
+    handleResize();
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const onBackTextClick = useCallback(() => {
     navigate("/desktop-114");
@@ -35,11 +55,7 @@ const Desktop13 = () => {
   return (
     <div className="desktop-115">
       <div className="hero12">
-        <img
-          className="ad-place-holder2"
-          alt=""
-          src="/ad-place-holder@2x.png"
-        />
+        <img className="ad-place-holder2" alt="" src="/ad-place-holder@2x.png" />
         <div className="content21">
           <div className="content-child15" />
           <div className="analysing-data">Analysing Data</div>
@@ -54,14 +70,28 @@ const Desktop13 = () => {
             <div className="div19">{percentage}%</div>
           </div>
         ) : null}
+
+<div className="image-slider-container">
+        {isMobile && loading && (
+          <ImageSlider />
+        )}
       </div>
+        
+      </div>
+      
+
+      {/* Conditionally render Image Slider after formulating text */}
+     
+
       <div className="footer13">
         <div className="cevah-parent11">
           <b className="cevah26">CEVAH</b>
           <div className="frame-child27" />
           <div className="frame-child28" />
         </div>
-        <div className="lorem-ipsum-dolor17">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `}</div>
+        <div className="lorem-ipsum-dolor17">
+          {`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `}
+        </div>
         <img className="social-icons39" alt="" src="/vector.svg" />
         <img className="social-icons40" alt="" src="/social-icons.svg" />
         <img className="social-icons41" alt="" src="/social-icons1.svg" />
@@ -81,6 +111,7 @@ const Desktop13 = () => {
       </div>
       <div className="back7" onClick={onBackTextClick}>
         Back
+     
       </div>
       <div className="header12">
         <div className="content22">
@@ -94,9 +125,12 @@ const Desktop13 = () => {
           <div className="navigation13" />
         </div>
         <div className="login12">
-          <div className="jd10">JD</div>
+          <div className="jd10"></div>
         </div>
+        <img className="user-icon4" alt="" src="/user.svg" />
+
       </div>
+      
     </div>
   );
 };

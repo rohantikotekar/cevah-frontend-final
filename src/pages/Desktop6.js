@@ -54,7 +54,7 @@ const Desktop6 = () => {
           <div className="content-child2" />
           <div className="tell-us-about5">Tell us about yourself</div>
           <div className="add-your-educational1">
-            Add your educational background. Add upto 3 degree.
+            Add your educational background. Add upto 3 degrees.
           </div>
           <TextField
             className="content-child3"
@@ -151,8 +151,10 @@ const Desktop6 = () => {
           <div className="navigation6" />
         </div>
         <div className="login5">
-          <div className="jd4">JD</div>
+          <div className="jd4"></div>
         </div>
+        <img className="user-icon4" alt="" src="/user.svg" />
+
       </div>
     </div>
   );
