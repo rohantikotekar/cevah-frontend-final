@@ -54,7 +54,7 @@ const Desktop6 = () => {
           <div className="content-child2" />
           <div className="tell-us-about5">Tell us about yourself</div>
           <div className="add-your-educational1">
-            Add your educational background. Add upto 3 degrees.
+            Add your educational background. Add upto 3 degree.
           </div>
           <TextField
             className="content-child3"
