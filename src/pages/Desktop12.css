@@ -1,0 +1,866 @@
+.ad-place-holder1 {
+  position: absolute;
+  top: 1.25rem;
+  left: 33.313rem;
+  width: 50.875rem;
+  height: 43.438rem;
+  object-fit: cover;
+}
+.content-child13 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2),
+    -4px -4px 20px rgba(154, 154, 154, 0.2);
+  border-radius: var(--br-xl);
+  background-color: var(--white);
+  width: 33.125rem;
+  height: 39rem;
+}
+/* .content-child14 {
+  position: absolute;
+  top: 10.5rem;
+  left: 32.875rem;
+  border-radius: var(--br-81xl);
+  background-color: #7f7f7f;
+  width: 0.188rem;
+  height: 7.375rem;
+  transform: rotate(180deg);
+  transform-origin: 0 0;
+} */
+.select-specialties-offered,
+.tell-us-about10 {
+  position: absolute;
+  left: 0;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+}
+.tell-us-about10 {
+  top: 0;
+  font-weight: 600;
+}
+.select-specialties-offered {
+  top: 2.875rem;
+  font-size: var(--button-m-size);
+}
+.top2 {
+  position: absolute;
+  width: calc(100% - 171px);
+  top: 3.625rem;
+  right: 7.5rem;
+  left: 3.188rem;
+  height: 4.063rem;
+}
+.opthal-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  border: 2px solid var(--color-dimgray-200);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.opthal-child.selected1 {
+  border-color: blue;
+}
+
+.opthal-child.selected2 {
+  border-color: blue;
+}
+
+
+.ophthalmology {
+  cursor: pointer;
+}
+
+.ophthalmology.selected1 {
+  
+  color: blue;
+}
+
+
+
+.ophthalmology {
+  position: absolute;
+  top: 65.42%;
+  left: 12%;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  font-weight: 500;
+}
+.eyeglasses-icon {
+  position: absolute;
+  height: 28.97%;
+  width: 15.5%;
+  top: 26.17%;
+  right: 72.5%;
+  bottom: 44.86%;
+  left: 12%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%; 
+} 
+
+
+
+
+.opthal {
+  width: 11.5rem;
+  position: relative;
+  height: 6.688rem;
+}
+.dermatology1,
+.skin-icon {
+  position: absolute;
+  left: 12.95%;
+}
+.dermatology1 {
+  top: 65.42%;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  font-weight: 500;
+}
+.dermatology1 {
+  cursor: pointer;
+
+}
+
+.dermatology1.selected2 {
+  
+  color: blue;
+}
+
+.skin-icon {
+  height: 28.97%;
+  width: 15.5%;
+  top: 26.17%;
+  right: 71.55%;
+  bottom: 44.86%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.gastroenterology1 {
+  position: absolute;
+  top: 62.62%;
+  left: 12%;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  font-weight: 500;
+}
+.headcircuit-icon {
+  position: absolute;
+  height: 55.36%;
+  width: 46.27%;
+  top: 0;
+  right: 53.73%;
+  bottom: 44.64%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.heartbeat-icon,
+.neurology-parent {
+  position: absolute;
+  height: 52.34%;
+  width: 33.5%;
+  top: 26.17%;
+  right: 53.55%;
+  bottom: 21.5%;
+  left: 12.95%;
+}
+.heartbeat-icon {
+  height: 55.36%;
+  width: 43.66%;
+  top: 0;
+  right: 56.34%;
+  bottom: 44.64%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.cardiology-parent {
+  position: absolute;
+  height: 52.34%;
+  width: 35.5%;
+  top: 24.3%;
+  right: 52.5%;
+  bottom: 23.36%;
+  left: 12%;
+}
+.oncology1 {
+  position: absolute;
+  top: 60.75%;
+  left: 13.95%;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  font-weight: 500;
+}
+.cancer-ribbon-icon {
+  position: absolute;
+  height: 28.97%;
+  width: 15.5%;
+  top: 24.3%;
+  right: 71.55%;
+  bottom: 46.73%;
+  left: 12.95%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.anestesiology2 {
+  position: absolute;
+  top: 71.19%;
+  left: 0;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  font-weight: 500;
+}
+.syringe-icon {
+  position: absolute;
+  height: 52.54%;
+  width: 33.7%;
+  top: 0;
+  right: 66.3%;
+  bottom: 47.46%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.anestesiology1 {
+  position: absolute;
+  height: 55.14%;
+  width: 46%;
+  top: 26.17%;
+  right: 41.05%;
+  bottom: 18.69%;
+  left: 12.95%;
+}
+.nephrology1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  font-weight: 500;
+}
+.kidneys-icon,
+.nephrology-wrapper {
+  position: absolute;
+  height: 15.89%;
+  width: 38%;
+  top: 62.62%;
+  right: 49.05%;
+  bottom: 21.5%;
+  left: 12.95%;
+}
+.kidneys-icon {
+  height: 28.97%;
+  width: 15.5%;
+  top: 26.17%;
+  right: 71.5%;
+  bottom: 44.86%;
+  left: 13%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.gynecology1 {
+  position: absolute;
+  top: 60.75%;
+  left: 12%;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  font-weight: 500;
+}
+.baby-icon,
+.uterus-icon-2 {
+  position: absolute;
+  height: 25.23%;
+  width: 16%;
+  top: 28.04%;
+  right: 71.5%;
+  bottom: 46.73%;
+  left: 12.5%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.baby-icon {
+  height: 55.36%;
+  width: 47.69%;
+  top: 0;
+  right: 52.31%;
+  bottom: 44.64%;
+  left: 0;
+}
+.brain-icon,
+.pediatrics-parent {
+  position: absolute;
+  height: 52.34%;
+  width: 32.5%;
+  top: 24.3%;
+  right: 53.55%;
+  bottom: 23.36%;
+  left: 13.95%;
+}
+.brain-icon {
+  height: 28.97%;
+  width: 15%;
+  top: 28.04%;
+  right: 73%;
+  bottom: 42.99%;
+  left: 12%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.emergency-medicine {
+  position: absolute;
+  top: 70.69%;
+  left: 0;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  font-weight: 500;
+}
+.ambulance-icon {
+  position: absolute;
+  height: 55.17%;
+  width: 23.53%;
+  top: 0;
+  right: 76.47%;
+  bottom: 44.83%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.emergency-medicine-parent,
+.old-man-icon {
+  position: absolute;
+  height: 54.21%;
+  width: 68%;
+  top: 27.1%;
+  right: 19.05%;
+  bottom: 18.69%;
+  left: 12.95%;
+}
+.old-man-icon {
+  height: 28.97%;
+  width: 15.5%;
+  top: 25.23%;
+  right: 72.5%;
+  bottom: 45.79%;
+  left: 12%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.radiology1 {
+  position: absolute;
+  top: 66.67%;
+  left: 0;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  font-weight: 500;
+}
+.layer-1-icon {
+  position: absolute;
+  height: 62.75%;
+  width: 50%;
+  top: 0;
+  right: 50%;
+  bottom: 37.25%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.heartbeat-icon1,
+.radiology-parent {
+  position: absolute;
+  height: 47.66%;
+  width: 32%;
+  top: 30.84%;
+  right: 55.05%;
+  bottom: 21.5%;
+  left: 12.95%;
+}
+.heartbeat-icon1 {
+  height: 55.36%;
+  width: 33.33%;
+  top: 0;
+  right: 66.67%;
+  bottom: 44.64%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.endocrinology-parent,
+.testtube-icon {
+  position: absolute;
+  height: 52.34%;
+  width: 46.5%;
+  top: 24.3%;
+  right: 41.5%;
+  bottom: 23.36%;
+  left: 12%;
+}
+.testtube-icon {
+  height: 55.36%;
+  width: 46.97%;
+  top: 0;
+  right: 53.03%;
+  bottom: 44.64%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.geneticist-parent,
+.plant-icon {
+  position: absolute;
+  height: 52.34%;
+  width: 33%;
+  top: 24.3%;
+  right: 53.05%;
+  bottom: 23.36%;
+  left: 13.95%;
+}
+.plant-icon {
+  height: 28.04%;
+  width: 15%;
+  top: 26.17%;
+  right: 72.05%;
+  bottom: 45.79%;
+  left: 12.95%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.infectious-diseases {
+  position: absolute;
+  top: 69.64%;
+  left: 0;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  font-weight: 500;
+}
+.virus-icon {
+  position: absolute;
+  height: 55.36%;
+  width: 24.6%;
+  top: 0;
+  right: 75.4%;
+  bottom: 44.64%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.frame-icon,
+.infectious-diseases-parent,
+.osteology-parent {
+  position: absolute;
+  height: 52.34%;
+  width: 63%;
+  top: 26.17%;
+  right: 24.05%;
+  bottom: 21.5%;
+  left: 12.95%;
+}
+.frame-icon,
+.osteology-parent {
+  width: 33.5%;
+  top: 24.3%;
+  right: 54.5%;
+  bottom: 23.36%;
+  left: 12%;
+}
+.frame-icon {
+  height: 28.97%;
+  width: 15.5%;
+  right: 70.55%;
+  bottom: 46.73%;
+  left: 13.95%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.content-inner2,
+.opthal-parent {
+  position: absolute;
+  width: 29.063rem;
+  height: 23.563rem;
+  overflow-y: auto;
+  
+
+}
+.opthal-parent {
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-xl);
+  box-sizing: border-box;
+  gap: 0.937rem 1.062rem;
+}
+.content-inner2 {
+  top: 9.063rem;
+  left: 3.563rem;
+  font-size: var(--font-size-sm);
+  color: var(--color-dimgray-200);
+}
+.bottom-child,
+.group-child31 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bottom-child {
+  border-radius: 0 0 var(--br-xl) var(--br-xl);
+  background-color: var(--white);
+  width: 33.125rem;
+  height: 6.188rem;
+}
+.group-child31 {
+  width: 100%;
+  right: 0;
+  background-color: var(--color-darkslategray-200);
+  height: 0.313rem;
+}
+.status-bar-child3,
+.status-bar-inner2 {
+  position: absolute;
+  width: calc(100% - 269px);
+  top: 0;
+}
+.status-bar-inner2 {
+  right: 16.813rem;
+  left: 0;
+  height: 0.313rem;
+}
+.status-bar-child3 {
+  right: 0;
+  left: 16.813rem;
+  background-color: var(--color-darkslategray-200);
+  height: 0.306rem;
+}
+.status-bar2 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 0.313rem;
+}
+.back-button,
+.continue-button {
+  position: absolute;
+  cursor: pointer;
+}
+.continue-button {
+  width: calc(100% - 334px);
+  top: 1.938rem;
+  right: 1.438rem;
+  left: 19.438rem;
+}
+.back-button {
+  top: 2.813rem;
+  left: 2.5rem;
+  text-decoration: underline;
+  letter-spacing: 0.02em;
+  line-height: 120%;
+}
+.bottom,
+.content19,
+.hero11 {
+  position: absolute;
+  width: 33.125rem;
+}
+.bottom {
+  top: 32.813rem;
+  left: 0;
+  height: 6.188rem;
+  font-size: var(--caption-m-size);
+}
+.content19,
+.hero11 {
+  top: 2.188rem;
+  left: 0.188rem;
+  height: 39rem;
+}
+.hero11 {
+  top: 5rem;
+  left: 5.813rem;
+  width: 84rem;
+  height: 45.719rem;
+}
+.cevah24 {
+  position: absolute;
+  top: 0;
+  left: 2.063rem;
+  display: inline-block;
+  width: 5.188rem;
+  height: 2.063rem;
+}
+.frame-child24,
+.frame-child25 {
+  position: absolute;
+  border-radius: var(--br-12xs);
+  width: 0.525rem;
+  height: 1.844rem;
+}
+.frame-child24 {
+  top: 1.319rem;
+  left: 0;
+  background: linear-gradient(180deg, #3cd0ce, #5ce1df 35.89%, #95fffd);
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+}
+.frame-child25 {
+  top: 0.131rem;
+  left: 0.656rem;
+  background: linear-gradient(90deg, #3cd0ce, #6eeae9 65.39%, #75eeed);
+}
+.cevah-parent10 {
+  position: absolute;
+  top: 3.25rem;
+  left: 6rem;
+  width: 7.25rem;
+  height: 2.063rem;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-ibm-plex-sans);
+}
+.lorem-ipsum-dolor16 {
+  position: absolute;
+  top: 5.813rem;
+  left: 6rem;
+  display: flex;
+  align-items: center;
+  width: 14.25rem;
+  height: 4.188rem;
+}
+.social-icons36,
+.social-icons37,
+.social-icons38 {
+  position: absolute;
+  top: 12.25rem;
+  left: 10.813rem;
+  width: 1.438rem;
+  height: 1.438rem;
+  overflow: hidden;
+}
+.social-icons37,
+.social-icons38 {
+  left: 8.438rem;
+  width: 1.375rem;
+}
+.social-icons38 {
+  left: 6rem;
+  width: 1.438rem;
+}
+.contact-us12,
+.support12 {
+  position: absolute;
+  top: 3.313rem;
+  left: 25.875rem;
+  font-size: var(--button-m-size);
+  font-weight: 600;
+}
+.support12 {
+  left: 39.125rem;
+}
+.hellocevahgmailcom12 {
+  position: absolute;
+  top: 0.063rem;
+  left: 1.5rem;
+}
+.envelope-icon12 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.125rem;
+  height: 1.125rem;
+  overflow: hidden;
+}
+.hellocevahgmailcom-parent10 {
+  position: absolute;
+  top: 7.688rem;
+  left: 25.875rem;
+  width: 9.688rem;
+  height: 1.125rem;
+  font-family: var(--font-red-hat-text);
+}
+.privacy-policy12,
+.terms-of-use12 {
+  position: absolute;
+  top: 7.688rem;
+  left: 39.125rem;
+}
+.privacy-policy12 {
+  top: 9.563rem;
+}
+.div18 {
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+}
+.vector-icon21 {
+  position: absolute;
+  height: 87.65%;
+  width: 11.31%;
+  top: 11.76%;
+  right: 88.69%;
+  bottom: 0.59%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.faqs12,
+.parent14 {
+  position: absolute;
+  top: 5.813rem;
+}
+.parent14 {
+  left: 25.875rem;
+  width: 7.625rem;
+  height: 1.063rem;
+  font-family: var(--font-red-hat-text);
+}
+.faqs12 {
+  left: 39.125rem;
+}
+.footer12 {
+  position: absolute;
+  top: 49.688rem;
+  left: 0;
+  background-color: var(--color-darkslategray-200);
+  width: 90rem;
+  height: 16.938rem;
+  font-size: var(--font-size-smi);
+  color: var(--white);
+}
+.icon-child22,
+.icon-child23 {
+  position: absolute;
+  border-radius: var(--br-12xs);
+}
+.icon-child22 {
+  top: 1.188rem;
+  left: 0;
+  background: linear-gradient(180deg, #3cd0ce, #5ce1df 35.89%, #95fffd);
+  width: 0.525rem;
+  height: 1.888rem;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+}
+.icon-child23 {
+  top: 0;
+  left: 0.675rem;
+  background: linear-gradient(90deg, #3cd0ce, #6eeae9 65.39%, #75eeed);
+  width: 0.538rem;
+  height: 1.844rem;
+}
+.cevah25,
+.icon13 {
+  width: 1.888rem;
+  position: relative;
+  height: 1.844rem;
+}
+.cevah25 {
+  width: 5.306rem;
+  display: inline-block;
+  height: 2.063rem;
+  flex-shrink: 0;
+}
+.logo12 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+  cursor: pointer;
+}
+.navigation12 {
+  width: 6.356rem;
+  height: 2.125rem;
+}
+.content20 {
+  position: absolute;
+  top: 1.063rem;
+  left: 5.988rem;
+  width: 77.988rem;
+  height: 2.313rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-941xl);
+}
+.jd9 {
+  position: relative;
+  font-size: var(--font-size-lg);
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  font-weight: 600;
+  font-family: var(--font-inter);
+  color: var(--white);
+  text-align: left;
+}
+.login11 {
+  cursor: pointer;
+  border: 1px solid var(--color-darkturquoise);
+  padding: var(--padding-3xs);
+  background-color: var(--color-darkturquoise);
+  position: absolute;
+  top: 0.625rem;
+  left: 81.813rem;
+  border-radius: var(--br-81xl);
+  box-sizing: border-box;
+  width: 3rem;
+  height: 3.125rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.desktop-114,
+.header11 {
+  background-color: var(--white);
+}
+.header11 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 720px);
+  box-shadow: 0 4px 20px rgba(249, 249, 249, 0.25);
+  width: 90rem;
+  height: 4.063rem;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-ibm-plex-sans);
+}
+.desktop-114 {
+  width: 100%;
+  position: relative;
+  height: 66.625rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-gray-100);
+  font-family: var(--font-inter);
+}
