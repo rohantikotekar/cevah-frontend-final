@@ -73,10 +73,13 @@ const Desktop5 = () => {
           color="primary"
           variant="contained"
           sx={{ borderRadius: "0px 0px 0px 0px", width: 196, height: 51 }}
-          onClick={onFrameButtonClick}
+          onClick={(onFrameButtonClick)}
+
+
         >
-          Continue
+          Continueee
         </Button>
+
         <div className="back1" onClick={onBackTextClick}>
           Back
         </div>
@@ -126,5 +129,8 @@ const Desktop5 = () => {
     </div>
   );
 };
+
+
+
 
 export default Desktop5;

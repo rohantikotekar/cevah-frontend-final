@@ -1,22 +1,50 @@
-import { useCallback } from "react";
+import React, { useState, useCallback } from "react";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import "./Desktop17.css";
 
 const Desktop17 = () => {
+  const [phoneNumber, setPhoneNumber] = useState("");
   const navigate = useNavigate();
 
   const onFrameButtonClick = useCallback(() => {
+    sendOTPRequest(phoneNumber);
     navigate("/desktop-89");
-  }, [navigate]);
+  }, [phoneNumber, navigate]);
 
   const onPhnoClick = useCallback(() => {
-    // Please sync "Desktop - 84" to the project
+    // Any specific logic to be added when phone number input is clicked
   }, []);
 
   const onLogoContainerClick = useCallback(() => {
     navigate("/");
   }, [navigate]);
+
+  async function sendOTPRequest(phoneNumber) {
+    const url = 'https://clownfish-app-kymio.ondigitalocean.app/auth';
+    const payload = { phone_number: phoneNumber };
+
+    const bearerToken = 'd1c1edd7-fb31-11ee-87c7-6c9466f8da35';
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${bearerToken}`
+      },
+      body: JSON.stringify(payload)
+    };
+
+    try {
+      const response = await fetch(url, options);
+      if (!response.ok) {
+        throw new Error(`API request failed with status: ${response.status}`);
+      }
+      const data = await response.json();
+      console.log('OTP sent successfully:', data); // Handle the response data (e.g., OTP)
+    } catch (error) {
+      console.error('Error sending OTP request:', error);
+    }
+  }
 
   return (
     <div className="desktop-83">
@@ -76,7 +104,7 @@ const Desktop17 = () => {
               sx={{ borderRadius: "0px 0px 0px 0px", width: 398, height: 60 }}
               onClick={onFrameButtonClick}
             >
-              Continue
+              Continueee
             </Button>
             <div className="phone-number2">Phone Number</div>
             <div className="error-message2">
@@ -84,9 +112,11 @@ const Desktop17 = () => {
             </div>
             <input
               className="phno"
-              name=" Phone Number"
-              id="phoneid"
+              name="phoneNumber"
+              id="phoneNumber"
               type="number"
+              value={phoneNumber}
+              onChange={(e) => setPhoneNumber(e.target.value)}
               onClick={onPhnoClick}
             />
             <div className="login-or-sign2">Login or Sign Up</div>

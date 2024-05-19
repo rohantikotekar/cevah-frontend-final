@@ -1,40 +1,61 @@
-import { useCallback } from "react";
-import {
-  Button,
-  TextField,
-  InputAdornment,
-  Icon,
-  IconButton,
-} from "@mui/material";
+import React, { useState, useCallback } from "react";
+import { Button, TextField } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import "./Desktop11.css";
 
 const Desktop11 = () => {
+  const [area, setArea] = useState("");
+  const [fsi, setFsi] = useState("");
+  const [height, setHeight] = useState("");
   const navigate = useNavigate();
 
   const onFrameButtonClick = useCallback(() => {
+    sendDetailsRequest(area, fsi, height);
     navigate("/desktop-114");
-  }, [navigate]);
+  }, [area, fsi, height, navigate]);
 
   const onBackTextClick = useCallback(() => {
     navigate("/desktop-107");
   }, [navigate]);
 
   const onGroupInputClick = useCallback(() => {
-    // Please sync "Desktop - 110" to the project
-  }, []);
-
-  const onGroupContainerClick = useCallback(() => {
-    // Please sync "Desktop - 166" to the project
-  }, []);
-
-  const onGroupContainer1Click = useCallback(() => {
-    // Please sync "Desktop - 78" to the project
+    // Any specific logic to be added when input is clicked
   }, []);
 
   const onLogoContainerClick = useCallback(() => {
     navigate("/");
   }, [navigate]);
+
+  async function sendDetailsRequest(land_area, fsi, height_restriction) {
+    const url = 'https://clownfish-app-kymio.ondigitalocean.app/calculate';
+    const payload = {
+      land_area,
+      fsi,
+      height_restriction,
+      phone_number: "918847752307"
+    };
+
+    const bearerToken = 'd1c1edd7-fb31-11ee-87c7-6c9466f8da35';
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${bearerToken}`
+      },
+      body: JSON.stringify(payload)
+    };
+
+    try {
+      const response = await fetch(url, options);
+      if (!response.ok) {
+        throw new Error(`API request failed with status: ${response.status}`);
+      }
+      const data = await response.json();
+      console.log('Details submitted successfully:', data); // Handle the response data
+    } catch (error) {
+      console.error('Error submitting details:', error);
+    }
+  }
 
   return (
     <div className="desktop-108">
@@ -73,19 +94,30 @@ const Desktop11 = () => {
           label="Area"
           variant="outlined"
           sx={{ "& .MuiInputBase-root": { height: "57px" }, width: "405px" }}
+          value={area}
+          onChange={(e) => setArea(e.target.value)}
           onClick={onGroupInputClick}
         />
-        <div className="hero-inner1" onClick={onGroupContainerClick}>
-          <div className="height-restriction-parent">
-            <div className="height-restriction">Height Restriction</div>
-            <div className="meters">Meters</div>
-          </div>
-        </div>
-        <div className="hero-inner2" onClick={onGroupContainer1Click}>
-          <div className="fsi-wrapper">
-            <div className="height-restriction">FSI</div>
-          </div>
-        </div>
+        <TextField
+          className="hero-inner2"
+          color="primary"
+          label="Fsi"
+          variant="outlined"
+          sx={{ "& .MuiInputBase-root": { height: "57px" }, width: "405px" }}
+          value={fsi}
+          onChange={(e) => setFsi(e.target.value)}
+          onClick={onGroupInputClick}
+        />
+        <TextField
+          className="hero-inner1"
+          color="primary"
+          label="Height"
+          variant="outlined"
+          sx={{ "& .MuiInputBase-root": { height: "57px" }, width: "405px" }}
+          value={height}
+          onChange={(e) => setHeight(e.target.value)}
+          onClick={onGroupInputClick}
+        />
       </div>
       <div className="footer11">
         <div className="cevah-parent9">
