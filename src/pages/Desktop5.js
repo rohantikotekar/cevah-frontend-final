@@ -32,7 +32,7 @@ const Desktop5 = () => {
         <img
           className="ad-placeholder-icon2"
           alt=""
-          src="/ad-placeholder.svg"
+          src="https://aws-demo-s3-bucket-01.s3.amazonaws.com/img1.avif"
         />
         <div className="hero-item" />
         <div className="tell-us-about4">Tell us about yourself</div>
@@ -42,21 +42,21 @@ const Desktop5 = () => {
         <TextField
           className="hero-inner"
           color="primary"
-          label="Phone Number"
+          label="Last Name"
           variant="outlined"
           sx={{ "& .MuiInputBase-root": { height: "64px" }, width: "405px" }}
         />
         <TextField
           className="hero-child1"
           color="primary"
-          label="Name"
+          label="First Name"
           variant="outlined"
           sx={{ "& .MuiInputBase-root": { height: "64px" }, width: "405px" }}
         />
         <TextField
           className="hero-child2"
           color="primary"
-          label="Email ID"
+          label="Phone Number"
           variant="outlined"
           sx={{ "& .MuiInputBase-root": { height: "64px" }, width: "405px" }}
         />
@@ -77,7 +77,7 @@ const Desktop5 = () => {
 
 
         >
-          Continueee
+          Continue
         </Button>
 
         <div className="back1" onClick={onBackTextClick}>
