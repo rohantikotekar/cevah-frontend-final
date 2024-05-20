@@ -130,6 +130,40 @@ const Desktop5 = () => {
   );
 };
 
+async function sendPostRequest() {
+  const url = "https://clownfish-app-kymio.ondigitalocean.app/details";
+  const payload = {
+      first_name: "Rohan",
+      last_name: "T",
+      phone_number: "918847752307",
+      education: "VIT",
+      speciality: "CS",
+      location: "Nagpur"
+  };
+
+  try {
+      const response = await fetch(url, {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(payload)
+      });
+
+      if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      console.log('Response Status Code:', response.status);
+      console.log('Response JSON:', data);
+  } catch (error) {
+      console.error('An error occurred:', error);
+  }
+}
+
+// Call the function
+sendPostRequest();
 
 
 
