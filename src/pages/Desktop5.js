@@ -37,7 +37,7 @@ const Desktop5 = () => {
         <div className="hero-item" />
         <div className="tell-us-about4">Tell us about yourself</div>
         <div className="add-name-phone">
-          Add Name, Phone number and Email ID
+          Add Name, Phone number, Location
         </div>
         <TextField
           className="hero-inner"
@@ -56,7 +56,7 @@ const Desktop5 = () => {
         <TextField
           className="hero-child2"
           color="primary"
-          label="Phone Number"
+          label="Location"
           variant="outlined"
           sx={{ "& .MuiInputBase-root": { height: "64px" }, width: "405px" }}
         />
