@@ -104,7 +104,7 @@ const Desktop17 = () => {
               sx={{ borderRadius: "0px 0px 0px 0px", width: 398, height: 60 }}
               onClick={onFrameButtonClick}
             >
-              Continueee
+              Continue
             </Button>
             <div className="phone-number2">Phone Number</div>
             <div className="error-message2">

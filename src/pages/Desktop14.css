@@ -504,3 +504,9 @@
   font-size: var(--button-m-size);
 }
 }
+
+@media screen and (min-height: 740px) and (max-width: 758px) {
+  .footer14{
+    display: none;
+  }
+}

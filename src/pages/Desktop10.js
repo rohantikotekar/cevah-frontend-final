@@ -13,12 +13,12 @@ const Desktop10 = () => {
   const navigate = useNavigate();
 
   const onFrameButtonClick = useCallback(() => {
-    navigate("/desktop-108");
+    navigate("/desktop-114");
   }, [navigate]);
 
   const onBackClick = useCallback(() => {
-    // Please sync "Desktop - 106" to the project
-  }, []);
+    navigate("/desktop-92");
+  }, [navigate]);
 
   const onLogoClick = useCallback(() => {
     navigate("/");
@@ -101,7 +101,9 @@ const Desktop10 = () => {
       <TextField
         className="desktop-107-child"
         color="primary"
-        label="Society Name, Street Name"
+        label="House no, Building Name"
+        required={true}
+
         variant="outlined"
         sx={{ "& .MuiInputBase-root": { height: "57px" }, width: "405px" }}
       />

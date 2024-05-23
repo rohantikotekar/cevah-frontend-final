@@ -11,11 +11,11 @@ const Desktop11 = () => {
 
   const onFrameButtonClick = useCallback(() => {
     sendDetailsRequest(area, fsi, height);
-    navigate("/desktop-114");
+    navigate("/desktop-115");
   }, [area, fsi, height, navigate]);
 
   const onBackTextClick = useCallback(() => {
-    navigate("/desktop-107");
+    navigate("/desktop-114");
   }, [navigate]);
 
   const onGroupInputClick = useCallback(() => {
@@ -93,6 +93,7 @@ const Desktop11 = () => {
           color="primary"
           label="Area"
           variant="outlined"
+          required={true}
           sx={{ "& .MuiInputBase-root": { height: "57px" }, width: "405px" }}
           value={area}
           onChange={(e) => setArea(e.target.value)}
@@ -103,6 +104,7 @@ const Desktop11 = () => {
           color="primary"
           label="Fsi"
           variant="outlined"
+          required={true}
           sx={{ "& .MuiInputBase-root": { height: "57px" }, width: "405px" }}
           value={fsi}
           onChange={(e) => setFsi(e.target.value)}
@@ -113,6 +115,7 @@ const Desktop11 = () => {
           color="primary"
           label="Height"
           variant="outlined"
+          required={true}
           sx={{ "& .MuiInputBase-root": { height: "57px" }, width: "405px" }}
           value={height}
           onChange={(e) => setHeight(e.target.value)}

@@ -74,29 +74,44 @@ const Desktop8 = () => {
             >
               Continue
             </Button>
-            <div className="enter-ph-no1">
-              <div className="otp-field1">
-                <div className="otp-field-child4" />
-                <div className="otp-field-child5" />
-                <div className="otp-field-child6" />
-                <div className="otp-field-child7" />
-                <div className="otp-field-child8" />
-                <div className="otp-field-child9" />
-                <input className="input2" type="text" />
-                <input className="input3" type="text" />
-                <label className="label">6</label>
-                <input className="input4" type="text" />
+
+
+
+            <div  className="otp">
+                <div className="otp-field1">
+                  {/* <div className="otp-field-child3" />
+                  <div className="otp-field-child4" /> */}
+                   <div className="otp-field-child5" /> 
+                  <div className="otp-field-child6" />
+                  <div className="otp-field-child7" />
+                  <div className="otp-field-child8" />
+                  <input className="input6" maxlength="1" type="text" />
+                  <input className="input7" maxlength="1"type="text" />
+                  <input className="input8" maxlength="1"type="text" />
+                  <input className="input9" maxlength="1" type="text" />
+                </div>
               </div>
+
+
+
+
+
+
+
+
+
+            <div className="enter-ph-no1">
+             
               <div className="enter-otp1">Enter OTP</div>
               <div className="error-message1">
-                <span>{`Resend OTP in `}</span>
-                <span className="span1">00:01</span>
+                <span className="resend-otp-in">{`Resend OTP`}</span>
+                {/* <span className="span1">00:01</span> */}
               </div>
             </div>
             <div className="login-or-sign1">Login or Sign Up</div>
           </div>
         </div>
-        <input className="input5" type="text" />
+        {/* <input className="input5" type="text" /> */}
       </div>
       <div className="footer8">
         <div className="cevah-parent6">

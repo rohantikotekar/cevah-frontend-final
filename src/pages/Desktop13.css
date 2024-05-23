@@ -525,3 +525,9 @@
 
 }
 }
+
+@media screen and (min-height: 740px) and (max-width: 758px) {
+  .footer13{
+    display: none;
+  }
+}

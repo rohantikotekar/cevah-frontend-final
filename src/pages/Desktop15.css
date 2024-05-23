@@ -421,3 +421,9 @@
   color: var(--color-black);
   font-family: var(--font-inter);
 }
+
+@media screen and (min-height: 740px) and (max-width: 758px) {
+  .footer15{
+    display: none;
+  }
+}

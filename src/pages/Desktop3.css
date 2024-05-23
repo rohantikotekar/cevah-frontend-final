@@ -514,7 +514,11 @@
     height: auto;
     font-size: 1.25rem;
   }
-  
+  .div8 {
+    top: 0;
+    left: 3vw;
+    font-weight: 600;
+  }
   
   .footer3 {
     top: 49.688rem; 
@@ -574,7 +578,7 @@
 .hospital-building-amico-1 {
   position: absolute;
   top: 27.375rem;
-  left: 15.125rem;
+  left: 15.525rem;
   width: 5rem;
   height: 5rem;
   object-fit: cover;
@@ -582,4 +586,11 @@
 .doctor-amico-icon {
   top: 19.25rem;
 }
+}
+
+
+@media screen and (min-height: 740px) and (max-width: 758px) {
+  .footer3{
+    display: none;
+  }
 }

@@ -29,26 +29,28 @@ const Desktop5 = () => {
   return (
     <div className="desktop-90">
       <div className="hero4">
-        <img
+        {/* <img
           className="ad-placeholder-icon2"
           alt=""
           src="https://aws-demo-s3-bucket-01.s3.amazonaws.com/img1.avif"
-        />
+        /> */}
         <div className="hero-item" />
         <div className="tell-us-about4">Tell us about yourself</div>
         <div className="add-name-phone">
-          Add Name, Phone number, Location
+          Add Name, Location
         </div>
         <TextField
           className="hero-inner"
           color="primary"
           label="Last Name"
+          required={true}
           variant="outlined"
           sx={{ "& .MuiInputBase-root": { height: "64px" }, width: "405px" }}
         />
         <TextField
           className="hero-child1"
           color="primary"
+          required={true}
           label="First Name"
           variant="outlined"
           sx={{ "& .MuiInputBase-root": { height: "64px" }, width: "405px" }}
@@ -57,6 +59,7 @@ const Desktop5 = () => {
           className="hero-child2"
           color="primary"
           label="Location"
+          required={true}
           variant="outlined"
           sx={{ "& .MuiInputBase-root": { height: "64px" }, width: "405px" }}
         />

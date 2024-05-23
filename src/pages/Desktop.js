@@ -26,7 +26,7 @@ const Desktop = () => {
               <div className="icon-child" />
               <div className="icon-item" />
             </div>
-            <b className="cevah">CEVAAAHH</b>
+            <b className="cevah">CEVAH</b>
           </div>
           <div className="navigation" />
         </div>

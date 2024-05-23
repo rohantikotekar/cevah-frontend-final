@@ -685,7 +685,7 @@
   top: 0;
   left: 0;
   background-color: rgba(60, 208, 206, 0.36);
-  width: 90rem;
+  width: 120rem;
   height: 45.688rem;
 }
 .what-does-cevah {
@@ -848,16 +848,17 @@
   height: 0.75rem;
   overflow: hidden;
 }
+.get-started-parent {
+  top: 0;
+  left: 0;
+}
 .get-started-parent,
 .group-frame {
   position: absolute;
   width: 6.75rem;
   height: 1.188rem;
 }
-.get-started-parent {
-  top: 0;
-  left: 0;
-}
+
 .group-frame {
   top: 1.188rem;
   left: 2.438rem;
@@ -897,15 +898,112 @@
   position: absolute;
   top: 4.063rem;
   left: 0;
-  width: 90rem;
+  width: 100rem;
   height: 45.625rem;
 }
+
+
 .desktop-82 {
-  width: 100%;
-  position: relative;
-  height: 49.688rem;
-  text-align: left;
-  font-size: var(--font-size-29xl);
-  color: var(--color-black);
-  font-family: var(--font-inter);
+  max-width: 1600px; /* Limit the maximum width to 1440px */
+   width: 100%;
+   position: relative;
+   height: auto;
+   min-height: 47.625rem;
+   overflow: hidden;
+   text-align: left;
+   padding: 1rem;
+   margin: 0 auto;
+   font-size: var(--font-size-13xl);
+   color: var(--color-gray-100);
+   font-family: var(--font-inter);
+ }
+ 
+ 
+ 
+ @media only screen and (max-width: 758px){
+
+  .desktop-82 {
+    font-size: 1rem; 
+    padding: 0.5rem; 
+    min-height: 100vh; 
+    background-color: white;
+  }
+
+  .header-button {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: -20vw;
+    box-shadow: 0 4px 20px rgba(249, 249, 249, 0.25);
+    background-color: var(--white);
+    width: 90rem;
+    height: 4.063rem;
+    text-align: left;
+    font-size: var(--font-size-5xl);
+    color: var(--color-black);
+    font-family: var(--font-ibm-plex-sans);
+  }
+
+  .login-button {
+    cursor: pointer;
+    border: 1px solid var(--color-darkturquoise);
+    padding: var(--padding-3xs) var(--padding-13xl);
+    background-color: var(--color-darkturquoise);
+    position: absolute;
+    top: 0.688rem;
+    left: 75.375vw;
+    border-radius: var(--br-5xs);
+    box-sizing: border-box;
+    width: 8.375rem;
+    height: 2.688rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .blueprint-to-breakthrough {
+  position: absolute;
+  top: -2.125rem;
+  font-size: 12vw;
+  display: inline-block;
+  width: 30vw;
+  height: 20vw;
+  font-weight: bold;
+  left: -15vw;
 }
+.turn-your-healthcare {
+  top: 12.625rem;
+  font-size: var(--font-size-5xl);
+  line-height: 120%;
+  color: var(--color-black);
+  width: 80.25vw;
+  font-size: 5vw;
+  left: -15vw;
+
+}
+.get-started-parent,
+.group-frame {
+  position: absolute;
+  width: 6.75rem;
+  height: 1.188rem;
+}
+
+.group-frame {
+  top: 1.188rem;
+  left: 2.438rem;
+}
+.rectangle-container {
+  position: absolute;
+  top: 22.125rem;
+  left: -1rem;
+  width: 11.75rem;
+  height: 3.5rem;
+  font-size: var(--button-m-size);
+  color: var(--white);
+}
+
+
+ }
+

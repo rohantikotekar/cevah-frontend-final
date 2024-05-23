@@ -393,7 +393,7 @@
   font-family: var(--font-ibm-plex-sans);
 }
 .desktop-95 {
-  max-width: 1600px; /* Limit the maximum width to 1440px */
+  max-width: 1600px; 
   width: 100%;
   position: relative;
   height: auto;
@@ -550,5 +550,10 @@
     font-size: var(--font-size-xs);
     text-decoration: underline;
     cursor: pointer;
+  }
+}
+@media screen and (min-height: 740px) and (max-width: 758px) {
+  .footer7{
+    display: none;
   }
 }

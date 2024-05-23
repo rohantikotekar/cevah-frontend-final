@@ -530,8 +530,7 @@
   font-size: 4.5vmin;
 }
 .hero-child2,
-.hero-child1,
-.hero-inner {
+.hero-child1 {
   border: 0;
   background-color: transparent;
   position: absolute;
@@ -542,6 +541,17 @@
   font-family: "Red Hat Text";
   font-size: 1rem;
   color: #aaa;
+}
+.hero-inner {
+  border: 0;
+  background-color: transparent;
+  position: absolute;
+  width: 20rem;
+  right: 55.5rem;
+  left: 3.188rem;
+  font-family: var(--font-inter);
+  font-size: var(--button-m-size);
+  cursor: pointer;
 }
 .hero-child2,
 .hero-child1 {
@@ -581,4 +591,10 @@
   color: #fff;
   font-family: Inter
 }
+}
+
+@media screen and (min-height: 740px) and (max-width: 758px) {
+  .footer5{
+    display: none;
+  }
 }
