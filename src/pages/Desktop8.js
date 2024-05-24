@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import React, { useCallback } from "react";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import "./Desktop8.css";
@@ -13,6 +13,36 @@ const Desktop8 = () => {
   const onLogoClick = useCallback(() => {
     navigate("/");
   }, [navigate]);
+
+  // Function to send OTP request
+  const sendResendRequest = async () => {
+    const phoneNumber = "918847752307"; // Updated phone number
+    const url = "https://clownfish-app-kymio.ondigitalocean.app/resend";
+    const payload = { phone_number: phoneNumber };
+
+    const bearerToken = "d1c1edd7-fb31-11ee-87c7-6c9466f8da35";
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${bearerToken}`,
+      },
+      body: JSON.stringify(payload),
+    };
+
+    try {
+      const response = await fetch(url, options);
+      if (!response.ok) {
+        throw new Error(`API request failed with status: ${response.status}`);
+      }
+      const data = await response.json();
+      console.log("OTP sent successfully:", data);
+      console.log(data.body);
+    } catch (error) {
+      console.error("Error sending OTP request:", error);
+      
+    }
+  };
 
   return (
     <div className="desktop-89">
@@ -66,7 +96,7 @@ const Desktop8 = () => {
           <div className="frame-group">
             <Button
               className="group-child19"
-              disableElevation={true}
+              disableElevation
               color="primary"
               variant="contained"
               sx={{ borderRadius: "0px 0px 0px 0px", width: 398, height: 60 }}
@@ -75,43 +105,30 @@ const Desktop8 = () => {
               Continue
             </Button>
 
-
-
-            <div  className="otp">
-                <div className="otp-field1">
-                  {/* <div className="otp-field-child3" />
-                  <div className="otp-field-child4" /> */}
-                   <div className="otp-field-child5" /> 
-                  <div className="otp-field-child6" />
-                  <div className="otp-field-child7" />
-                  <div className="otp-field-child8" />
-                  <input className="input6" maxlength="1" type="text" />
-                  <input className="input7" maxlength="1"type="text" />
-                  <input className="input8" maxlength="1"type="text" />
-                  <input className="input9" maxlength="1" type="text" />
-                </div>
+            <div className="otp">
+              <div className="otp-field1">
+                <div className="otp-field-child5" />
+                <div className="otp-field-child6" />
+                <div className="otp-field-child7" />
+                <div className="otp-field-child8" />
+                <input className="input6" maxLength="1" type="text" />
+                <input className="input7" maxLength="1" type="text" />
+                <input className="input8" maxLength="1" type="text" />
+                <input className="input9" maxLength="1" type="text" />
               </div>
-
-
-
-
-
-
-
-
+            </div>
 
             <div className="enter-ph-no1">
-             
               <div className="enter-otp1">Enter OTP</div>
               <div className="error-message1">
-                <span className="resend-otp-in">{`Resend OTP`}</span>
-                {/* <span className="span1">00:01</span> */}
+                <button onClick={sendResendRequest}>
+                  <span className="resend-otp-in">Resend OTP</span>
+                </button>
               </div>
             </div>
             <div className="login-or-sign1">Login or Sign Up</div>
           </div>
         </div>
-        {/* <input className="input5" type="text" /> */}
       </div>
       <div className="footer8">
         <div className="cevah-parent6">
