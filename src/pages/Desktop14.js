@@ -6,7 +6,7 @@ const Desktop14 = () => {
   const navigate = useNavigate();
 
   const onFrameContainerClick = useCallback(() => {
-    navigate("/");
+    navigate("/new-desktop-216");
   }, [navigate]);
 
   const onBackTextClick = useCallback(() => {

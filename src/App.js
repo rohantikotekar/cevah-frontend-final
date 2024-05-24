@@ -23,6 +23,7 @@ import Desktop14 from "./pages/Desktop14";
 import Desktop15 from "./pages/Desktop15";
 import Desktop16 from "./pages/Desktop16";
 import Desktop17 from "./pages/Desktop17";
+import Report from "./pages/report";
 
 function App() {
   const action = useNavigationType();
@@ -112,6 +113,10 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+      case "/desktop-216":
+          title = "";
+          metaDescription = "";
+          break;
     }
 
     if (title) {
@@ -148,6 +153,9 @@ function App() {
       <Route path="/desktop-91" element={<Desktop15 />} />
       <Route path="/desktop-93" element={<Desktop16 />} />
       <Route path="/desktop-83" element={<Desktop17 />} />
+      <Route path="/new-desktop-216" element={<Report />} />
+
+      
     </Routes>
   );
 }

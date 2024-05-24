@@ -1,0 +1,1083 @@
+.new-thank-you-for {
+  margin-block-start: 0;
+  margin-block-end: 1px;
+}
+.new-cevah-masterplanning-report,
+.new-thank-you-for-container {
+  position: absolute;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  display: inline-block;
+}
+.new-thank-you-for-container {
+  top: 313.438rem;
+  left: 5.313rem;
+  width: 77.938rem;
+  height: 32.5rem;
+}
+.new-cevah-masterplanning-report {
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-45xl);
+  width: 64.125rem;
+  height: 5.5rem;
+}
+.new-welcome-to-your {
+  margin-block-start: 0;
+  margin-block-end: 2px;
+}
+.new-blank-line4 {
+  margin: 0;
+}
+.new-we-are-delighted,
+.new-welcome-to-your-container {
+  position: absolute;
+  left: 0;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  display: inline-block;
+  width: 77.938rem;
+}
+.new-welcome-to-your-container {
+  top: 8.188rem;
+  height: 1.875rem;
+}
+.new-we-are-delighted {
+  top: 12.563rem;
+}
+.new-cevah-masterplanning-report-parent {
+  position: absolute;
+  top: 0;
+  left: 6rem;
+  width: 77.938rem;
+  height: 24.563rem;
+}
+.new-hospital-building-amico-2-1 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 263px);
+  width: 34.375rem;
+  height: 34.375rem;
+  object-fit: cover;
+}
+.new-group-child {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 624px);
+  border-radius: var(--br-xl);
+  background-color: var(--color-azure);
+  width: 78rem;
+  height: 34.938rem;
+}
+.new-site-information {
+  top: 0;
+  left: 0;
+}
+.new-number-of-floors,
+.new-site-information,
+.new-sq-ft {
+  position: absolute;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+}
+.new-sq-ft {
+  top: 0;
+  left: 36.875rem;
+}
+.new-number-of-floors {
+  top: 15.75rem;
+  left: 0;
+  font-weight: 600;
+  text-align: left;
+}
+.new-carpet-area {
+  top: 11.813rem;
+}
+.new-carpet-area,
+.new-height-restriction,
+.new-total-built-up {
+  position: absolute;
+  left: 0;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  font-weight: 600;
+  text-align: left;
+}
+.new-height-restriction {
+  top: 7.875rem;
+}
+.new-total-built-up {
+  top: 0;
+}
+.new-div {
+  top: 3.938rem;
+  left: 47.875rem;
+}
+.new-div,
+.new-div1,
+.new-fsi-floor-space,
+.new-sq-ft1,
+.new-xx-meters {
+  position: absolute;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+}
+.new-fsi-floor-space {
+  top: 3.938rem;
+  left: 0;
+  font-weight: 600;
+  text-align: left;
+}
+.new-div1,
+.new-sq-ft1,
+.new-xx-meters {
+  top: 7.875rem;
+  left: 39.75rem;
+}
+.new-div1,
+.new-sq-ft1 {
+  top: 11.813rem;
+  left: 36.563rem;
+}
+.new-div1 {
+  top: 15.75rem;
+  left: 49.938rem;
+}
+.new-sq-ft-parent {
+  position: absolute;
+  top: 6.938rem;
+  left: 0;
+  width: 51.5rem;
+  height: 18.75rem;
+  text-align: right;
+  font-size: var(--font-size-21xl);
+}
+.new-site-information-parent {
+  position: absolute;
+  top: 4.625rem;
+  left: 13.25rem;
+  width: 51.5rem;
+  height: 25.688rem;
+}
+.new-rectangle-parent {
+  position: absolute;
+  top: 36.25rem;
+  left: calc(50% - 624px);
+  width: 78rem;
+  height: 34.938rem;
+}
+.new-hospital-building-amico-2-1-parent {
+  position: absolute;
+  top: 27.563rem;
+  left: calc(50% - 636px);
+  width: 78rem;
+  height: 71.188rem;
+  font-size: var(--font-size-45xl);
+}
+.new-researching-amico-4-icon {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 288px);
+  width: 37.5rem;
+  height: 37.5rem;
+  object-fit: cover;
+}
+.new-group-item {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 624px);
+  border-radius: var(--br-xl);
+  background-color: rgb(186, 255, 255);
+  width: 78rem;
+  height: 37.938rem;
+}
+.new-floor {
+  position: absolute;
+  top: 6.813rem;
+  left: 0;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+}
+.new-g-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0.125rem;
+  width: 4.625rem;
+  height: 7.188rem;
+  font-size: var(--font-size-77xl);
+}
+.new-floor-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4.875rem;
+  height: 9.188rem;
+}
+.new-opd-area {
+  top: 11.813rem;
+  left: 0;
+  font-weight: 600;
+}
+.new-diagnostic-area,
+.new-opd-area,
+.new-sq-ft2 {
+  position: absolute;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+}
+.new-sq-ft2 {
+  top: 23.625rem;
+  left: 35rem;
+  text-align: right;
+}
+.new-diagnostic-area {
+  top: 19.688rem;
+  left: 0;
+  font-weight: 600;
+}
+.new-circulation-area {
+  top: 23.625rem;
+  left: 0;
+  font-weight: 600;
+}
+.new-circulation-area,
+.new-pharmacy-area,
+.new-reception-area,
+.new-sq-ft3 {
+  position: absolute;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+}
+.new-sq-ft3 {
+  top: 19.688rem;
+  left: 37.063rem;
+  text-align: right;
+}
+.new-pharmacy-area,
+.new-reception-area {
+  top: 15.75rem;
+  left: 0;
+  font-weight: 600;
+}
+.new-reception-area {
+  top: 7.875rem;
+}
+.new-total-ground-floor {
+  top: 0;
+  left: 0;
+  font-weight: 600;
+}
+.new-casualty-area,
+.new-sq-ft4,
+.new-sq-ft5,
+.new-sq-ft6,
+.new-sq-ft7,
+.new-sq-ft8,
+.new-total-ground-floor {
+  position: absolute;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+}
+.new-casualty-area {
+  top: 3.938rem;
+  left: 0;
+  font-weight: 600;
+}
+.new-sq-ft4,
+.new-sq-ft5,
+.new-sq-ft6,
+.new-sq-ft7,
+.new-sq-ft8 {
+  text-align: right;
+}
+.new-sq-ft4 {
+  top: 0;
+  left: 37.063rem;
+}
+.new-sq-ft5,
+.new-sq-ft6,
+.new-sq-ft7,
+.new-sq-ft8 {
+  top: 3.938rem;
+  left: 36.75rem;
+}
+.new-sq-ft6,
+.new-sq-ft7,
+.new-sq-ft8 {
+  top: 7.875rem;
+}
+.new-sq-ft7,
+.new-sq-ft8 {
+  top: 11.813rem;
+  left: 35rem;
+}
+.new-sq-ft8 {
+  top: 15.75rem;
+  left: 36.75rem;
+}
+.new-group-parent,
+.new-opd-area-parent {
+  position: absolute;
+  height: 26.625rem;
+}
+.new-opd-area-parent {
+  top: 0;
+  left: 10.688rem;
+  width: 51.5rem;
+  font-size: var(--font-size-21xl);
+}
+.new-group-parent {
+  top: 5.688rem;
+  left: 8.688rem;
+  width: 62.188rem;
+}
+.new-rectangle-group,
+.new-researching-amico-4-parent {
+  position: absolute;
+  top: 39.375rem;
+  left: calc(50% - 624px);
+  width: 78rem;
+  height: 37.938rem;
+}
+.new-researching-amico-4-parent {
+  top: 106.125rem;
+  left: calc(50% - 636px);
+  height: 77.313rem;
+  font-size: var(--font-size-13xl);
+}
+.new-group-inner {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 624px);
+  border-radius: var(--br-xl);
+  background-color: var(--color-azure);
+  width: 78rem;
+  height: 82.906rem;
+}
+.new-floor1 {
+  position: absolute;
+  top: 7.281rem;
+  left: 0;
+  width: 4.875rem;
+  height: 2.538rem;
+}
+.new-b,
+.new-floor1,
+.new-nd {
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  display: inline-block;
+}
+.new-b {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3.813rem;
+  height: 7.681rem;
+}
+.new-nd {
+  left: 3.5rem;
+  font-size: var(--font-size-17xl);
+  width: 2.813rem;
+  height: 2.875rem;
+}
+.new-floor-group,
+.new-nd,
+.new-parent {
+  position: absolute;
+  top: 0;
+}
+.new-parent {
+  left: 0.125rem;
+  width: 6.313rem;
+  height: 7.681rem;
+  font-size: var(--font-size-77xl);
+}
+.new-floor-group {
+  left: 0;
+  width: 6.438rem;
+  height: 9.819rem;
+}
+.new-sq-ft10,
+.new-sq-ft9 {
+  position: absolute;
+  line-height: 120%;
+  display: inline-block;
+  height: 3.206rem;
+}
+.new-sq-ft9 {
+  top: 0;
+  left: 36.5rem;
+  width: 15rem;
+}
+.new-sq-ft10 {
+  top: 4.544rem;
+  left: 36.625rem;
+  width: 14.875rem;
+}
+.new-sq-ft11 {
+  top: 13.631rem;
+  left: 37.563rem;
+  width: 13.938rem;
+}
+.new-div2,
+.new-div3,
+.new-sq-ft11,
+.new-sq-ft12,
+.new-sq-ft13 {
+  position: absolute;
+  line-height: 120%;
+  display: inline-block;
+  height: 3.206rem;
+}
+.new-sq-ft12 {
+  top: 27.256rem;
+  left: 37.813rem;
+  text-align: right;
+  width: 13.688rem;
+}
+.new-div2,
+.new-div3,
+.new-sq-ft13 {
+  top: 9.088rem;
+  left: 48.5rem;
+  width: 3rem;
+}
+.new-div3,
+.new-sq-ft13 {
+  top: 22.719rem;
+  left: 46.875rem;
+  width: 4.625rem;
+}
+.new-sq-ft13 {
+  top: 18.175rem;
+  left: 32.688rem;
+  width: 18.813rem;
+}
+.new-circulation-area1,
+.new-total-first-floor {
+  position: absolute;
+  left: 0;
+  line-height: 120%;
+  font-weight: 600;
+}
+.new-circulation-area1 {
+  top: 31.8rem;
+  display: inline-block;
+  width: 20.188rem;
+  height: 3.206rem;
+}
+.new-total-first-floor {
+  top: 0;
+  width: 25.875rem;
+}
+.new-area-per-bed,
+.new-private-beds,
+.new-total-first-floor {
+  display: inline-block;
+  height: 3.206rem;
+}
+.new-private-beds {
+  position: absolute;
+  top: 4.544rem;
+  left: 0;
+  line-height: 120%;
+  font-weight: 600;
+  width: 15.938rem;
+}
+.new-area-per-bed {
+  top: 13.631rem;
+  left: 1.875rem;
+  width: 16.438rem;
+}
+.new-area-per-bed,
+.new-number-of-beds,
+.new-semi-private-rooms {
+  position: absolute;
+  line-height: 120%;
+  font-weight: 600;
+}
+.new-number-of-beds {
+  top: 9.088rem;
+  left: 1.875rem;
+  display: inline-block;
+  width: 20.188rem;
+  height: 3.206rem;
+}
+.new-semi-private-rooms {
+  top: 18.175rem;
+  left: 0;
+}
+.new-area-per-room,
+.new-number-of-rooms {
+  position: absolute;
+  top: 27.256rem;
+  left: 1.875rem;
+  line-height: 120%;
+  font-weight: 600;
+}
+.new-number-of-rooms {
+  top: 22.719rem;
+}
+.new-group-child1,
+.new-line-div {
+  position: absolute;
+  top: 8.219rem;
+  left: 0.563rem;
+  border-right: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 0.063rem;
+  height: 7.275rem;
+}
+.new-group-child1 {
+  top: 21.981rem;
+}
+.new-group-child2,
+.new-group-child3,
+.new-group-child4,
+.new-group-child5 {
+  position: absolute;
+  top: 10.894rem;
+  left: 0.563rem;
+  border-top: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 1.063rem;
+  height: 0.063rem;
+}
+.new-group-child3,
+.new-group-child4,
+.new-group-child5 {
+  top: 24.65rem;
+}
+.new-group-child4,
+.new-group-child5 {
+  top: 15.431rem;
+}
+.new-group-child5 {
+  top: 29.194rem;
+}
+.new-sq-ft14 {
+  position: absolute;
+  top: 31.8rem;
+  left: 34.625rem;
+  line-height: 120%;
+  display: inline-block;
+  width: 16.875rem;
+  height: 3.206rem;
+}
+.new-group-parent1,
+.new-sq-ft-group {
+  position: absolute;
+  height: 35.006rem;
+}
+.new-sq-ft-group {
+  top: 0;
+  left: 10.688rem;
+  width: 51.5rem;
+  font-size: var(--font-size-21xl);
+}
+.new-group-parent1 {
+  top: 39.263rem;
+  left: 0;
+  width: 62.188rem;
+}
+.new-b1,
+.new-st {
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  display: inline-block;
+}
+.new-b1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.875rem;
+  height: 7.681rem;
+}
+.new-st {
+  left: 2.688rem;
+  font-size: var(--font-size-17xl);
+  width: 2.125rem;
+  height: 2.875rem;
+}
+.new-group,
+.new-group-frame,
+.new-st {
+  position: absolute;
+  top: 0;
+}
+.new-group {
+  left: 0.125rem;
+  width: 4.813rem;
+  height: 7.681rem;
+  font-size: var(--font-size-77xl);
+}
+.new-group-frame {
+  left: 0;
+  width: 4.938rem;
+  height: 9.819rem;
+}
+.new-div5,
+.new-sq-ft19 {
+  position: absolute;
+  top: 22.713rem;
+  left: 46.875rem;
+  line-height: 120%;
+  display: inline-block;
+  width: 4.625rem;
+  height: 3.206rem;
+}
+.new-sq-ft19 {
+  top: 18.169rem;
+  left: 32.688rem;
+  width: 18.813rem;
+}
+.new-area-per-room1,
+.new-number-of-rooms1,
+.new-private-rooms {
+  position: absolute;
+  line-height: 120%;
+  font-weight: 600;
+}
+.new-private-rooms {
+  top: 4.544rem;
+  left: 0;
+}
+.new-area-per-room1,
+.new-number-of-rooms1 {
+  top: 13.631rem;
+  left: 1.875rem;
+}
+.new-number-of-rooms1 {
+  top: 9.088rem;
+}
+.new-area-per-bed1,
+.new-number-of-beds1,
+.new-semi-private-beds {
+  position: absolute;
+  line-height: 120%;
+  font-weight: 600;
+  display: inline-block;
+  height: 3.206rem;
+}
+.new-semi-private-beds {
+  top: 18.169rem;
+  left: 0;
+  width: 23.125rem;
+}
+.new-area-per-bed1,
+.new-number-of-beds1 {
+  top: 27.256rem;
+  left: 1.875rem;
+  width: 16.438rem;
+}
+.new-number-of-beds1 {
+  top: 22.713rem;
+  width: 20.188rem;
+}
+.new-group-child8 {
+  position: absolute;
+  top: 10.888rem;
+  left: 0.563rem;
+  border-top: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 1.063rem;
+  height: 0.063rem;
+}
+.new-sq-ft-container {
+  position: absolute;
+  top: 0.019rem;
+  left: 10.688rem;
+  width: 51.5rem;
+  height: 35.006rem;
+  font-size: var(--font-size-21xl);
+  display: flex;
+  flex-direction: column;
+}
+.new-sq-ft-container label,
+.new-sq-ft-container input {
+  margin-bottom: 10px;
+}
+.new-group-parent2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 62.188rem;
+  height: 35.031rem;
+}
+.new-group-div,
+.new-group-wrapper {
+  position: absolute;
+  width: 62.188rem;
+  height: 74.275rem;
+}
+.new-group-div {
+  top: 0;
+  left: 0;
+}
+.new-group-wrapper {
+  top: 3.919rem;
+  left: 7.938rem;
+}
+.new-rectangle-container {
+  position: absolute;
+  top: 40.313rem;
+  left: calc(50% - 624px);
+  width: 78rem;
+  height: 82.906rem;
+}
+.new-hospital-room-amico-icon {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 288px);
+  width: 37.5rem;
+  height: 38.438rem;
+  object-fit: cover;
+}
+.floor-details-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 0rem; /* Adds spacing between each floor detail container */
+  padding: 1rem; /* Adds some padding for better readability */
+  top: 200rem; /* Adjust as needed */
+  width: 78rem; /* Adjust width as needed */
+  left: calc(50% - 635px);
+  border-radius: var(--br-xl);
+  background-color: rgb(186, 255, 255);
+  height: auto;
+}
+
+.input-box {
+  width: 20%; /* Ensures input boxes take full width within their containers */
+  padding: 0.5rem; /* Adds padding inside input boxes */
+  margin-top: 0.5rem; /* Adds space between the label and input box */
+  margin-left: 15rem; /* Moves the input box to the right */
+  font-size: var(--font-size-21xl);
+}
+.floor-details {
+  position: relative;
+  top: 5.688rem;
+  left: 8.688rem;
+  width: 62.188rem;
+  height: 70rem;
+}
+
+.label-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  position: relative;
+  left: 20rem; /* Adjust the margin to move the labels to the right */
+}
+
+.floor-details-header {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  
+}
+
+.floor-detail-item {
+  margin-bottom: 1rem; /* Adds space between each input field */
+  font-weight: 600;
+  left:10rem;
+
+}
+.new-thank-you-for-entrusting-cevah-parent {
+  position: absolute;
+  top: 4.313rem;
+  left: 0;
+  width: 90rem;
+  height: auto; /* Increased height to accommodate content */
+}
+.new-desktop-216,
+.new-desktop-216-inner {
+  background-color: var(--color-white);
+}
+.new-desktop-216-inner {
+  position: absolute;
+  top: 4.125rem;
+  left: 0;
+  width: 1600px;
+  height: 50rem;
+  overflow-y: auto;
+}
+.new-desktop-216 {
+  max-width: 1600px; /* Limit the maximum width to 1440px */
+
+  width: 100%;
+  position: relative;
+  height: 66.625rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+
+.faqs5,
+.footer5,
+.parent7 {
+  position: absolute;
+}
+.faqs5 {
+  top: 5.813rem;
+  left: 39.125rem;
+}
+.parent7 {
+  top: 5.813rem;
+  left: 25.875rem;
+  width: 7.625rem;
+  height: 1.063rem;
+  font-family: var(--font-red-hat-text);
+}
+
+
+.footer5 {
+  top: 49.688rem; /* Reset top position */
+    background-color: #004051;
+    width: auto; /* Allow width to adjust based on screen size */
+    height:  16.938rem; /* Allow height to adjust based on content */
+    font-size: 0.813rem; /* Keep font size */
+    color: #fff; /* Keep text color */
+    padding: 100rem; 
+    left:0rem;
+}
+.cevah-parent3 {
+  position: absolute;
+  top: 3.25rem;
+  left: 6rem;
+  width: 7.25rem;
+  height: 2.063rem;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-ibm-plex-sans);
+}
+.cevah10 {
+  position: absolute;
+  top: 0;
+  left: 2.063rem;
+  display: inline-block;
+  width: 5.188rem;
+  height: 2.063rem;
+}
+
+.frame-child10,
+.frame-child11 {
+  position: absolute;
+  border-radius: var(--br-12xs);
+  width: 0.525rem;
+  height: 1.844rem;
+}
+.frame-child10 {
+  top: 1.319rem;
+  left: 0;
+  background: linear-gradient(180deg, #3cd0ce, #5ce1df 35.89%, #95fffd);
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+}
+.frame-child11 {
+  top: 0.131rem;
+  left: 0.656rem;
+  background: linear-gradient(90deg, #3cd0ce, #6eeae9 65.39%, #75eeed);
+}
+
+.lorem-ipsum-dolor7 {
+  position: absolute;
+  top: 5.813rem;
+  left: 6rem;
+  display: flex;
+  align-items: center;
+  width: 14.25rem;
+  height: 4.188rem;
+}
+.social-icons15,
+.social-icons16,
+.social-icons17 {
+  position: absolute;
+  top: 12.25rem;
+  left: 10.813rem;
+  width: 1.438rem;
+  height: 1.438rem;
+  overflow: hidden;
+}
+.social-icons16,
+.social-icons17 {
+  left: 8.438rem;
+  width: 1.375rem;
+}
+.social-icons17 {
+  left: 6rem;
+  width: 1.438rem;
+}
+.contact-us5,
+.support5 {
+  position: absolute;
+  top: 3.313rem;
+  left: 25.875rem;
+  font-size: var(--button-m-size);
+  font-weight: 600;
+}
+.support5 {
+  left: 39.125rem;
+}
+.hellocevahgmailcom5 {
+  position: absolute;
+  top: 0.063rem;
+  left: 1.5rem;
+}
+
+.envelope-icon5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.125rem;
+  height: 1.125rem;
+  overflow: hidden;
+}
+.hellocevahgmailcom-parent3 {
+  position: absolute;
+  top: 7.688rem;
+  left: 25.875rem;
+  width: 9.688rem;
+  height: 1.125rem;
+  font-family: var(--font-red-hat-text);
+}
+.privacy-policy5,
+.terms-of-use5 {
+  position: absolute;
+  top: 7.688rem;
+  left: 39.125rem;
+}
+.privacy-policy5 {
+  top: 9.563rem;
+}
+
+.div11 {
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+}
+.vector-icon14 {
+  position: absolute;
+  height: 87.65%;
+  width: 11.31%;
+  top: 11.76%;
+  right: 88.69%;
+  bottom: 0.59%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.new-desktop-216,
+.header4 {
+  background-color: var(--white);
+}
+.header4 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 720px);
+  box-shadow: 0 4px 20px rgba(249, 249, 249, 0.25);
+  width: 90rem;
+  height: 4.063rem;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-ibm-plex-sans);
+}
+.content8 {
+  position: absolute;
+  top: 1.063rem;
+  left: 5.988rem;
+  width: 77.988rem;
+  height: 2.313rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-941xl);
+}
+.jd3 {
+  width: 1.438rem;
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  font-weight: 600;
+  display: none;
+}
+.login4,
+.user-icon2 {
+  position: absolute;
+  overflow: hidden;
+}
+.login4 {
+  top: 0.625rem;
+  left: 81.813rem;
+  border-radius: var(--br-81xl);
+  background-color: var(--color-darkturquoise);
+  border: 1px solid var(--color-darkturquoise);
+  box-sizing: border-box;
+  width: 3rem;
+  height: 3.125rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-3xs);
+  font-size: var(--font-size-lg);
+  color: var(--white);
+  font-family: var(--font-inter);
+}
+.user-icon2 {
+  top: 1.25rem;
+  left: 82.375rem;
+  width: 1.813rem;
+  height: 1.813rem;
+}
+.logo5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+  cursor: pointer;
+}
+
+.navigation5 {
+  width: 6.356rem;
+  height: 2.125rem;
+}
+.cevah11,
+.icon5 {
+  width: 1.888rem;
+  position: relative;
+  height: 1.844rem;
+}
+.cevah11 {
+  width: 5.306rem;
+  display: inline-block;
+  height: 2.063rem;
+  flex-shrink: 0;
+}
+.icon-child8,
+.icon-child9 {
+  position: absolute;
+  border-radius: var(--br-12xs);
+}
+.icon-child8 {
+  top: 1.188rem;
+  left: 0;
+  background: linear-gradient(180deg, #3cd0ce, #5ce1df 35.89%, #95fffd);
+  width: 0.525rem;
+  height: 1.888rem;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+}
+.icon-child9 {
+  top: 0;
+  left: 0.675rem;
+  background: linear-gradient(90deg, #3cd0ce, #6eeae9 65.39%, #75eeed);
+  width: 0.538rem;
+  height: 1.844rem;
+}
