@@ -144,8 +144,10 @@ const Desktop10 = () => {
           <div className="navigation10" />
         </div>
         <button className="login9">
-          <div className="jd7">JD</div>
+          {/* <div className="jd7">JD</div> */}
         </button>
+        <img className="user-icon100" alt="" src="/user.svg" />
+
       </div>
     </div>
   );
