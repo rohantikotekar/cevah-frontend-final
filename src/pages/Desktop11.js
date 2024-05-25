@@ -7,12 +7,12 @@ const Desktop11 = () => {
   const [area, setArea] = useState("");
   const [fsi, setFsi] = useState("");
   const [height, setHeight] = useState("");
+  const [apiResponse, setApiResponse] = useState(null); // New state to store API response
   const navigate = useNavigate();
 
   const onFrameButtonClick = useCallback(() => {
     sendDetailsRequest(area, fsi, height);
-    navigate("/desktop-115");
-  }, [area, fsi, height, navigate]);
+  }, [area, fsi, height]);
 
   const onBackTextClick = useCallback(() => {
     navigate("/desktop-114");
@@ -51,7 +51,8 @@ const Desktop11 = () => {
         throw new Error(`API request failed with status: ${response.status}`);
       }
       const data = await response.json();
-      console.log('Details submitted successfully:', data); // Handle the response data
+      setApiResponse(data); // Store response data in state
+      console.log('Details submitted successfully:', data);
     } catch (error) {
       console.error('Error submitting details:', error);
     }
@@ -122,6 +123,60 @@ const Desktop11 = () => {
           onClick={onGroupInputClick}
         />
       </div>
+
+      {apiResponse && (
+        <div className="api-response">
+          <h2>API Response</h2>
+          <p>Total Built-up Area: {apiResponse.total_built_up_area}</p>
+          <p>FSI: {apiResponse.FSI}</p>
+          <p>Carpet Area: {apiResponse.carpet_area}</p>
+          <p>Number of Floors: {apiResponse.no_of_floors}</p>
+          <div>
+            <h3>Ground Floor Area</h3>
+            {apiResponse.ground_floor_area.map((area, index) => (
+              <div key={index}>
+                <p>Total Area: {area.total_area}</p>
+                <p>Casualty: {area.casualty[0]}, {area.casualty[1]}</p>
+                <p>Reception: {area.reception}</p>
+                <p>OPD: {area.opd[0]}, {area.opd[1]}</p>
+                <p>Pharmacy: {area.pharmacy}</p>
+                <p>Diagnostic: {area.diagnostic}</p>
+                <p>Circulation: {area.circulation}</p>
+              </div>
+            ))}
+          </div>
+          <div>
+            <h3>Floors Area</h3>
+            {apiResponse.floors_area.map((floor, index) => (
+              <div key={index}>
+                <p>Total Area: {floor.total_area}</p>
+                <p>Private: {floor.private[0]}, {floor.private[1]}</p>
+                <p>Semi-Private: {floor.semi_private[0]}, {floor.semi_private[1]}</p>
+                <p>Circulation: {floor.circulation}</p>
+              </div>
+            ))}
+          </div>
+          <div>
+            <h3>ICU</h3>
+            <p>Total Area: {apiResponse.ICU.total_area}</p>
+            <p>Total Beds: {apiResponse.ICU.total_beds}</p>
+          </div>
+          <div>
+            <h3>Isolation</h3>
+            <p>Total Area: {apiResponse.isolation.total_area}</p>
+            <p>Total Beds: {apiResponse.isolation.total_beds}</p>
+          </div>
+          <p>Nursing Station: {apiResponse.nursing_station}</p>
+          <p>Circulation: {apiResponse.circulation}</p>
+          <p>Miscellaneous: {apiResponse.miscelleneous}</p>
+          <div>
+            <h3>Semi ICU</h3>
+            <p>Total Area: {apiResponse.semi_icu.total_area}</p>
+            <p>Total Beds: {apiResponse.semi_icu.total_beds}</p>
+          </div>
+        </div>
+      )}
+
       <div className="footer11">
         <div className="cevah-parent9">
           <b className="cevah22">CEVAH</b>
