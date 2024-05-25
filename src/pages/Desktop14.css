@@ -300,7 +300,7 @@
 .login13 {
   position: absolute;
   top: calc(50% - 25px);
-  left: 81.813rem;
+  left: 90vw;
   border-radius: var(--br-81xl);
   background-color: var(--color-darkturquoise);
   border: 1px solid var(--color-darkturquoise);
@@ -317,6 +317,17 @@
   color: var(--white);
   font-family: var(--font-inter);
 }
+.login13,
+.user-icon5 {
+  position: absolute;
+  overflow: hidden;
+}
+.user-icon5 {
+  top: 1.25rem;
+  left: 90.5vw;
+  width: 1.813rem;
+  height: 1.813rem;
+}
 .desktop-109,
 .header13 {
   background-color: var(--white);
@@ -324,7 +335,7 @@
 .header13 {
   position: absolute;
   top: 0;
-  left: calc(50% - 720px);
+  left: calc(50% - 50vw);
   box-shadow: 0 4px 20px #f0f0f0;
   width: 90rem;
   height: 4.125rem;
@@ -333,7 +344,6 @@
   font-family: var(--font-ibm-plex-sans);
 }
 .desktop-109 {
-  max-width: 1600px; /* Limit the maximum width to 1440px */
   width: 100%;
   position: relative;
   height: auto;

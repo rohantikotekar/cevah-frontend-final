@@ -337,7 +337,6 @@
   object-fit: cover;
 }
 .desktop-120 {
-  max-width: 1600px; /* Limit the maximum width to 1440px */
   width: 100%;
   position: relative;
   height: auto;

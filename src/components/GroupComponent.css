@@ -1,9 +1,21 @@
+:root {
+  --color-darkturquoise-200: #b6e8f3; /* Example color */
+  --color-darkturquoise-100: #20B2AA; /* Example color */
+  --br-8xs: 4px; /* Example border radius */
+  --font-size-5xl: 24px; /* Example font size */
+  --font-size-xl: 20px; /* Example font size */
+  --font-size-29xl: 48px; /* Example font size */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --font-inter: 'Inter', sans-serif; /* Example font family */
+}
+
 .rectangle-div {
   position: absolute;
   top: 0;
   left: 0;
   background-color: var(--color-darkturquoise-200);
-  width: 90rem;
+  width: 99vw;
   height: 24.813rem;
 }
 .ready-to-take {

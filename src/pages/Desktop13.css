@@ -302,7 +302,7 @@
 }
 .login12 {
   top: 0.625rem;
-  left: 81.813rem;
+  left: 90vw;
   border-radius: var(--br-81xl);
   background-color: var(--color-darkturquoise);
   border: 1px solid var(--color-darkturquoise);
@@ -320,7 +320,7 @@
 }
 .user-icon7 {
   top: 1.25rem;
-  left: 82.375rem;
+  left: 90.5vw;
   width: 1.813rem;
   height: 1.813rem;
 }
@@ -331,7 +331,7 @@
 .header12 {
   position: absolute;
   top: 0;
-  left: calc(50% - 720px);
+  left: calc(50% - 50vw);
   box-shadow: 0 4px 20px rgba(249, 249, 249, 0.25);
   width: 90rem;
   height: 4.063rem;
@@ -340,7 +340,6 @@
   font-family: var(--font-ibm-plex-sans);
 }
 .desktop-115 {
-  max-width: 1600px; /* Limit the maximum width to 1440px */
   width: 100%;
   position: relative;
   height: auto;

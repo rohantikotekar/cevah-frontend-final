@@ -428,7 +428,7 @@
 }
 .login8 {
   top: 0.625rem;
-  left: 81.813rem;
+  left: 90.5vw;
   border-radius: var(--br-81xl);
   background-color: var(--color-darkturquoise);
   border: 1px solid var(--color-darkturquoise);
@@ -446,7 +446,7 @@
 }
 .user-icon6 {
   top: 1.25rem;
-  left: 82.375rem;
+  left:91vw;
   width: 1.813rem;
   height: 1.813rem;
 }
@@ -457,7 +457,7 @@
 .header8 {
   position: absolute;
   top: 0;
-  left: calc(50% - 720px);
+  left: calc(50% - 50vw);
   box-shadow: 0 4px 20px rgba(249, 249, 249, 0.25);
   width: 90rem;
   height: 4.063rem;
@@ -466,7 +466,6 @@
   font-family: var(--font-ibm-plex-sans);
 }
 .desktop-92 {
-  max-width: 1600px; /* Limit the maximum width to 1440px */
   width: 100%;
   position: relative;
   height: auto;
@@ -481,6 +480,9 @@
 }
 
 @media only screen and (max-width: 758px) {
+  .login8{
+    display: none;
+  }
   .desktop-92 {
     font-size: 1rem; /* Adjust font size for smaller screens */
     padding: 0.5rem; /* Reduce padding */

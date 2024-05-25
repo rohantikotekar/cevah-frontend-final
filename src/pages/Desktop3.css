@@ -402,6 +402,7 @@
   top: 12.375rem;
   left: 3.688rem;
   width: 25.813rem;
+  
 }
 .content-inner,
 .content-inner1,
@@ -440,7 +441,7 @@
 .hospital-building-amico-1 {
   position: absolute;
   top: 27.375rem;
-  left: 31.125rem;
+  left: 75vmin;
   width: 5rem;
   height: 5rem;
   object-fit: cover;
@@ -449,7 +450,7 @@
   top: 19.25rem;
 }
 .desktop-119 {
-  max-width: 1600px; /* Limit the maximum width to 1440px */
+  /* Limit the maximum width to 1440px */
   width: 100%;
   position: relative;
   height: auto;
