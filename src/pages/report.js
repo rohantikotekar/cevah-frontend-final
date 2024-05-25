@@ -16,6 +16,25 @@ const Report = () => {
   const [numberOfFloors, setNumberOfFloors] = useState('');
   const [floorDetails, setFloorDetails] = useState([]);
 
+  const [siteInfo, setSiteInfo] = useState({
+    sqFt: '35000',
+    carpetArea: '',
+    heightRestriction: '',
+    totalBuiltUpArea: '28700',
+    fsi: '3.5',
+    fsiHeight: 'XX'
+  });
+
+  const [gFloorInfo, setGFloorInfo] = useState({
+    opdArea: '8968.75',
+    diagnosticArea: '',
+    circulationArea: '7175.0',
+    pharmacyArea: '',
+    receptionArea: '',
+    totalGroundFloorArea: '35875',
+    casualtyArea: '3587.5'
+  });
+
   // Handler for input changes
   const handleNumberOfFloorsChange = (e) => {
     const numFloors = parseInt(e.target.value) || '';
@@ -34,6 +53,14 @@ const Report = () => {
       circulationArea: ''
     }));
     setFloorDetails(updatedDetails);
+  };
+
+  const handleSiteInfoChange = (field, value) => {
+    setSiteInfo(prev => ({ ...prev, [field]: value }));
+  };
+
+  const handleGFloorInfoChange = (field, value) => {
+    setGFloorInfo(prev => ({ ...prev, [field]: value }));
   };
 
   // Handlers for floor details changes
@@ -97,9 +124,18 @@ const Report = () => {
               <div className="new-site-information-parent">
                 <b className="new-site-information">Site Information</b>
                 <div className="new-sq-ft-parent">
-                  <div className="new-sq-ft">35000 sq. ft.</div>
-                  <div className="new-number-of-floors">Number of Floors :</div>
-                  <div>
+                  <div className="label-input-container">
+                    <label htmlFor="sqFt">Area (sq. ft):</label>
+                    <input
+                      type="text"
+                      id="sqFt"
+                      value={siteInfo.sqFt}
+                      onChange={(e) => handleSiteInfoChange('sqFt', e.target.value)}
+                      className="input-box"
+                    />
+                  </div>
+                  <div className="label-input-container">
+                    <label htmlFor="numberOfFloors">Number of Floors:</label>
                     <input
                       type="text"
                       id="numberOfFloors"
@@ -108,16 +144,56 @@ const Report = () => {
                       className="input-box"
                     />
                   </div>
-                  <div className="new-carpet-area">Carpet Area :</div>
-                  <div className="new-height-restriction">Height Restriction:</div>
-                  <div className="new-total-built-up">Total Built Up Area :</div>
-                  <div className="new-div">3.5</div>
-                  <div className="new-fsi-floor-space">
-                    FSI (Floor Space Index) :
+                  <div className="label-input-container">
+                    <label htmlFor="carpetArea">Carpet Area:</label>
+                    <input
+                      type="text"
+                      id="carpetArea"
+                      value={siteInfo.carpetArea}
+                      onChange={(e) => handleSiteInfoChange('carpetArea', e.target.value)}
+                      className="input-box"
+                    />
                   </div>
-                  <div className="new-xx-meters">XX meters</div>
-                  <div className="new-sq-ft1">28.700 sq. ft.</div>
-                  <div className="new-div1">8</div>
+                  <div className="label-input-container">
+                    <label htmlFor="heightRestriction">Height Restriction:</label>
+                    <input
+                      type="text"
+                      id="heightRestriction"
+                      value={siteInfo.heightRestriction}
+                      onChange={(e) => handleSiteInfoChange('heightRestriction', e.target.value)}
+                      className="input-box"
+                    />
+                  </div>
+                  <div className="label-input-container">
+                    <label htmlFor="totalBuiltUpArea">Total Built Up Area:</label>
+                    <input
+                      type="text"
+                      id="totalBuiltUpArea"
+                      value={siteInfo.totalBuiltUpArea}
+                      onChange={(e) => handleSiteInfoChange('totalBuiltUpArea', e.target.value)}
+                      className="input-box"
+                    />
+                  </div>
+                  <div className="label-input-container">
+                    <label htmlFor="fsi">FSI (Floor Space Index):</label>
+                    <input
+                      type="text"
+                      id="fsi"
+                      value={siteInfo.fsi}
+                      onChange={(e) => handleSiteInfoChange('fsi', e.target.value)}
+                      className="input-box"
+                    />
+                  </div>
+                  <div className="label-input-container">
+                    <label htmlFor="fsiHeight">FSI Height (meters):</label>
+                    <input
+                      type="text"
+                      id="fsiHeight"
+                      value={siteInfo.fsiHeight}
+                      onChange={(e) => handleSiteInfoChange('fsiHeight', e.target.value)}
+                      className="input-box"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -138,22 +214,76 @@ const Report = () => {
                   </div>
                 </div>
                 <div className="new-opd-area-parent">
-                  <div className="new-opd-area">OPD Area:</div>
-                  <div className="new-sq-ft2">8968.75 sq. ft.</div>
-                  <div className="new-diagnostic-area">Diagnostic Area:</div>
-                  <div className="new-circulation-area">Circulation Area:</div>
-                  <div className="new-sq-ft3">7175.0 sq. ft.</div>
-                  <div className="new-pharmacy-area">Pharmacy Area:</div>
-                  <div className="new-reception-area">Reception Area:</div>
-                  <div className="new-total-ground-floor">
-                    Total Ground Floor Area:
+                  <div className="label-input-container">
+                    <label htmlFor="opdArea">OPD Area (sq ft):</label>
+                    <input
+                      type="text"
+                      id="opdArea"
+                      value={gFloorInfo.opdArea}
+                      onChange={(e) => handleGFloorInfoChange('opdArea', e.target.value)}
+                      className="input-box"
+                    />
                   </div>
-                  <div className="new-casualty-area">Casualty Area:</div>
-                  <div className="new-sq-ft4">35875 sq. ft.</div>
-                  <div className="new-sq-ft5">3587.5 sq. ft.</div>
-                  <div className="new-sq-ft6">3587.5 sq. ft.</div>
-                  <div className="new-sq-ft7">8968.75 sq. ft.</div>
-                  <div className="new-sq-ft8">3587.5 sq. ft.</div>
+                  <div className="label-input-container">
+                    <label htmlFor="diagnosticArea">Diagnostic Area (sq ft):</label>
+                    <input
+                      type="text"
+                      id="diagnosticArea"
+                      value={gFloorInfo.diagnosticArea}
+                      onChange={(e) => handleGFloorInfoChange('diagnosticArea', e.target.value)}
+                      className="input-box"
+                    />
+                  </div>
+                  <div className="label-input-container">
+                    <label htmlFor="circulationArea">Circulation Area (sq ft):</label>
+                    <input
+                      type="text"
+                      id="circulationArea"
+                      value={gFloorInfo.circulationArea}
+                      onChange={(e) => handleGFloorInfoChange('circulationArea', e.target.value)}
+                      className="input-box"
+                    />
+                  </div>
+                  <div className="label-input-container">
+                    <label htmlFor="pharmacyArea">Pharmacy Area (sq ft):</label>
+                    <input
+                      type="text"
+                      id="pharmacyArea"
+                      value={gFloorInfo.pharmacyArea}
+                      onChange={(e) => handleGFloorInfoChange('pharmacyArea', e.target.value)}
+                      className="input-box"
+                    />
+                  </div>
+                  <div className="label-input-container">
+                    <label htmlFor="receptionArea">Reception Area (sq ft):</label>
+                    <input
+                      type="text"
+                      id="receptionArea"
+                      value={gFloorInfo.receptionArea}
+                      onChange={(e) => handleGFloorInfoChange('receptionArea', e.target.value)}
+                      className="input-box"
+                    />
+                  </div>
+                  <div className="label-input-container">
+                    <label htmlFor="totalGroundFloorArea">Total Ground Floor Area (sq ft):</label>
+                    <input
+                      type="text"
+                      id="totalGroundFloorArea"
+                      value={gFloorInfo.totalGroundFloorArea}
+                      onChange={(e) => handleGFloorInfoChange('totalGroundFloorArea', e.target.value)}
+                      className="input-box"
+                    />
+                  </div>
+                  <div className="label-input-container">
+                    <label htmlFor="casualtyArea">Casualty Area (sq ft):</label>
+                    <input
+                      type="text"
+                      id="casualtyArea"
+                      value={gFloorInfo.casualtyArea}
+                      onChange={(e) => handleGFloorInfoChange('casualtyArea', e.target.value)}
+                      className="input-box"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
