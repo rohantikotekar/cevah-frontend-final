@@ -1,10 +1,11 @@
-import React, { useCallback } from "react";
+import React, { useState, useCallback } from "react";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import "./Desktop8.css";
 
 const Desktop8 = () => {
   const navigate = useNavigate();
+  const [otp, setOtp] = useState("");
 
   const onFrameButtonClick = useCallback(() => {
     navigate("/desktop-119");
@@ -16,9 +17,62 @@ const Desktop8 = () => {
 
   // Function to send OTP request
   const sendResendRequest = async () => {
-    const phoneNumber = "918847752307"; // Updated phone number
-    const url = "https://clownfish-app-kymio.ondigitalocean.app/resend";
-    const payload = { phone_number: phoneNumber };
+    try {
+      // Define the URL and payload for fetching the phone number
+      const phoneNumberUrl = 'https://clownfish-app-kymio.ondigitalocean.app/auth';
+      function createPhoneNumberPayload(phoneNumber) {
+        return {
+            "phone_number": phoneNumber
+        };
+    }  
+      const phoneNumberOptions = {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(phoneNumberPayload),
+      };
+  
+      // Fetch phone number
+      const phoneNumberResponse = await fetch(phoneNumberUrl, phoneNumberOptions);
+      if (!phoneNumberResponse.ok) {
+        throw new Error(`Failed to fetch phone number with status: ${phoneNumberResponse.status}`);
+      }
+      const phoneNumberData = await phoneNumberResponse.json();
+      const phoneNumber = phoneNumberData.phone_number;
+  
+      // Prepare payload and options for OTP request
+      const otpUrl = "https://clownfish-app-kymio.ondigitalocean.app/resend";
+      const otpPayload = { phone_number: phoneNumber };
+      const bearerToken = "d1c1edd7-fb31-11ee-87c7-6c9466f8da35";
+      const otpOptions = {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${bearerToken}`,
+        },
+        body: JSON.stringify(otpPayload),
+      };
+  
+      // Send OTP request
+      const otpResponse = await fetch(otpUrl, otpOptions);
+      if (!otpResponse.ok) {
+        throw new Error(`API request failed with status: ${otpResponse.status}`);
+      }
+      const otpData = await otpResponse.json();
+      console.log("OTP sent successfully:", otpData);
+      console.log(otpData.body);
+    } catch (error) {
+      console.error("Error sending OTP request:", error);
+    }
+  };
+  
+  
+  // Function to verify OTP
+  const verifyOTP = async () => {
+    const phoneNumber = "918847752307";
+    const url = "https://clownfish-app-kymio.ondigitalocean.app/verify";
+    const payload = { phone_number: phoneNumber, otp };
 
     const bearerToken = "d1c1edd7-fb31-11ee-87c7-6c9466f8da35";
     const options = {
@@ -36,13 +90,24 @@ const Desktop8 = () => {
         throw new Error(`API request failed with status: ${response.status}`);
       }
       const data = await response.json();
-      console.log("OTP sent successfully:", data);
-      console.log(data.body);
+      console.log("OTP verified successfully:", data);
+      // Navigate or perform any action after successful verification
+      onFrameButtonClick();
     } catch (error) {
-      console.error("Error sending OTP request:", error);
-      
+      console.error("Error verifying OTP:", error);
     }
   };
+
+  // Handler for OTP input change
+  const handleOtpChange = (e, index) => {
+    const value = e.target.value;
+    setOtp((prevOtp) => {
+      const newOtp = prevOtp.split("");
+      newOtp[index] = value;
+      return newOtp.join("");
+    });
+  };
+  
 
   return (
     <div className="desktop-89">
@@ -100,7 +165,7 @@ const Desktop8 = () => {
               color="primary"
               variant="contained"
               sx={{ borderRadius: "0px 0px 0px 0px", width: 398, height: 60 }}
-              onClick={onFrameButtonClick}
+              onClick={verifyOTP}
             >
               Continue
             </Button>
@@ -111,10 +176,16 @@ const Desktop8 = () => {
                 <div className="otp-field-child6" />
                 <div className="otp-field-child7" />
                 <div className="otp-field-child8" />
-                <input className="input6" maxLength="1" type="text" />
-                <input className="input7" maxLength="1" type="text" />
-                <input className="input8" maxLength="1" type="text" />
-                <input className="input9" maxLength="1" type="text" />
+                {Array.from({ length: 4 }).map((_, index) => (
+                  <input
+                    key={index}
+                    className={`input${6 + index}`}
+                    maxLength="1"
+                    type="text"
+                    value={otp[index] || ""}
+                    onChange={(e) => handleOtpChange(e, index)}
+                  />
+                ))}
               </div>
             </div>
 
