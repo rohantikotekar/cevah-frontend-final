@@ -497,6 +497,7 @@
   height: 16.938rem;
   font-size: var(--font-size-smi);
   color: var(--white);
+  
 }
 .icon-child20,
 .icon-child21 {
@@ -555,12 +556,12 @@
   justify-content: flex-start;
   gap: var(--gap-941xl);
 }
-.jd8 {
+/* .jd8 {
   position: relative;
   letter-spacing: -0.02em;
   line-height: 120%;
   font-weight: 600;
-}
+} */
 .login10 {
   position: absolute;
   top: 0.625rem;
@@ -623,11 +624,29 @@
    font-family: var(--font-inter);
  }
  
- 
+ .user-icon11 {
+  position: absolute;
+  overflow: hidden;
+}
+.user-icon11 {
+  top: 1.25rem;
+  left: 82.375rem;
+  width: 1.813rem;
+  height: 1.813rem;
+  color: black;
+}
  
  @media only screen and (max-width: 758px){
+  
+  .user-icon11 {
+    top: 1.25rem;
+    left: 102.5vw;
+    width: 1.813rem;
+    height: 1.813rem;
+    color: black;
+  }
  
- 
+
    .desktop-108 {
      font-size: 1rem; 
      padding: 0.5rem; 
@@ -831,7 +850,7 @@
       display: inline-block;
     }
 }
-@media screen and (min-height: 700px) {
+@media screen and (min-height: 740px) and (max-width: 758px) {
   .footer11{
     display: none;
   }

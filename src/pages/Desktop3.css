@@ -278,6 +278,12 @@
   position: absolute;
   overflow: hidden;
 }
+.user-icon {
+  top: 1.25rem;
+  left: 82.375rem;
+  width: 1.813rem;
+  height: 1.813rem;
+}
 .login2 {
   top: calc(50% - 24.5px);
   left: 81.813rem;
@@ -296,12 +302,7 @@
   color: var(--white);
   font-family: var(--font-inter);
 }
-.user-icon {
-  top: 1.25rem;
-  left: 82.375rem;
-  width: 1.813rem;
-  height: 1.813rem;
-}
+
 .header2 {
   position: absolute;
   top: 0;

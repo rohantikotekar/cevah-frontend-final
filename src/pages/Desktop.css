@@ -1,133 +1,6 @@
-.group-icon,
-.group-icon1,
-.group-icon2 {
-  position: absolute;
-  height: 1.72%;
-  width: 4.6%;
-  top: 81.9%;
-  right: 95.26%;
-  bottom: 16.38%;
-  left: 0.14%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-.group-icon1,
-.group-icon2 {
-  height: 2.01%;
-  width: 5.37%;
-  top: 91.28%;
-  right: 90.94%;
-  bottom: 6.7%;
-  left: 3.69%;
-}
-.group-icon2 {
-  height: 2.58%;
-  width: 6.9%;
-  top: 87.51%;
-  right: 62.83%;
-  bottom: 9.91%;
-  left: 30.26%;
-}
-.icon-child,
-.icon-item {
-  position: absolute;
-  border-radius: var(--br-12xs);
-}
-.icon-child {
-  top: 1.188rem;
-  left: 0;
-  background: linear-gradient(180deg, #3cd0ce, #5ce1df 35.89%, #95fffd);
-  width: 0.525rem;
-  height: 1.888rem;
-  transform: rotate(-90deg);
-  transform-origin: 0 0;
-}
-.icon-item {
-  top: 0;
-  left: 0.675rem;
-  background: linear-gradient(90deg, #3cd0ce, #6eeae9 65.39%, #75eeed);
-  width: 0.538rem;
-  height: 1.844rem;
-}
-.cevah,
-.icon {
-  width: 1.888rem;
-  position: relative;
-  height: 1.844rem;
-}
+
+
 .cevah {
-  width: 5.306rem;
-  display: inline-block;
-  height: 2.063rem;
-  flex-shrink: 0;
-}
-.logo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-9xs);
-}
-.navigation {
-  width: 6.356rem;
-  height: 2.125rem;
-}
-.content {
-  position: absolute;
-  top: 1.063rem;
-  left: 5.988rem;
-  width: 77.988rem;
-  height: 2.313rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-874xl);
-}
-.sign-in {
-  position: relative;
-  font-size: var(--button-m-size);
-  letter-spacing: -0.02em;
-  line-height: 120%;
-  font-weight: 600;
-  font-family: var(--font-inter);
-  color: var(--white);
-  text-align: left;
-}
-.login-button {
-  cursor: pointer;
-  border: 1px solid var(--color-darkturquoise);
-  padding: var(--padding-3xs) var(--padding-13xl);
-  background-color: var(--color-darkturquoise);
-  position: absolute;
-  top: 0.688rem;
-  left: 77.375rem;
-  border-radius: var(--br-5xs);
-  box-sizing: border-box;
-  width: 8.375rem;
-  height: 2.688rem;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.header-button {
-  margin: 0;
-  position: absolute;
-  top: 0;
-  left: calc(50% - 720px);
-  box-shadow: 0 4px 20px rgba(249, 249, 249, 0.25);
-  background-color: var(--white);
-  width: 90rem;
-  height: 4.063rem;
-  text-align: left;
-  font-size: var(--font-size-5xl);
-  color: var(--color-black);
-  font-family: var(--font-ibm-plex-sans);
-}
-.cevah1 {
   position: absolute;
   top: 0;
   left: 2.063rem;
@@ -163,10 +36,12 @@
   font-size: var(--font-size-5xl);
   font-family: var(--font-ibm-plex-sans);
 }
-.lorem-ipsum-dolor {
+.at-cevah-our {
   position: absolute;
   top: 5.813rem;
   left: 6rem;
+  font-size: 0.813rem;
+  line-height: 120%;
   display: flex;
   align-items: center;
   width: 14.25rem;
@@ -189,7 +64,7 @@
 }
 .social-icons {
   text-decoration: none;
-  top: 12.25rem;
+  top: 11rem;
   left: 10.813rem;
   width: 1.438rem;
   height: 1.438rem;
@@ -198,28 +73,28 @@
 .vector-icon3 {
   position: absolute;
   height: 51.3%;
-  width: 51.36%;
+  width: 51.3%;
   top: 24.35%;
-  right: 24.55%;
+  right: 24.35%;
   bottom: 24.35%;
-  left: 24.09%;
+  left: 24.35%;
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
 }
 .vector-icon3 {
   height: 12.17%;
-  width: 11.82%;
+  width: 12.17%;
   top: 17.39%;
-  right: 17.27%;
+  right: 16.96%;
   bottom: 70.43%;
-  left: 70.91%;
+  left: 70.87%;
 }
 .social-icons1 {
   text-decoration: none;
-  top: 12.25rem;
+  top: 11rem;
   left: 8.438rem;
-  width: 1.375rem;
+  width: 1.438rem;
   height: 1.438rem;
 }
 .social-icons1,
@@ -240,7 +115,7 @@
 }
 .social-icons2 {
   text-decoration: none;
-  top: 12.25rem;
+  top: 11rem;
   left: 6rem;
   width: 1.438rem;
   height: 1.438rem;
@@ -250,83 +125,82 @@
   position: absolute;
   top: 3.313rem;
   left: 25.875rem;
-  font-size: var(--button-m-size);
+  font-size: var(--font-size-base);
   font-weight: 600;
 }
 .support {
   left: 39.125rem;
 }
-.hellocevahgmailcom {
-  position: absolute;
-  top: 0.063rem;
-  left: 1.5rem;
-}
-.envelope-icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1.125rem;
-  height: 1.125rem;
-  overflow: hidden;
-}
-.hellocevahgmailcom-parent {
-  position: absolute;
-  top: 7.688rem;
-  left: 25.875rem;
-  width: 9.688rem;
-  height: 1.125rem;
-  font-family: var(--font-red-hat-text);
-}
 .privacy-policy,
 .terms-of-use {
   position: absolute;
-  top: 7.688rem;
+  top: 5.813rem;
   left: 39.125rem;
 }
 .privacy-policy {
-  top: 9.563rem;
+  top: 7.375rem;
 }
-.div {
+.cevah9gmailcom {
   position: absolute;
   top: 0;
-  left: 1.5rem;
+  left: 1.125rem;
 }
 .vector-icon5 {
   position: absolute;
-  height: 87.65%;
-  width: 11.31%;
+  height: 62.94%;
+  width: 9.52%;
+  top: 29.41%;
+  right: 90.48%;
+  bottom: 7.65%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.cevah9gmailcom-parent {
+  position: absolute;
+  top: 7.375rem;
+  left: 25.875rem;
+  width: 9.188rem;
+  height: 1.063rem;
+}
+.vector-icon6 {
+  position: absolute;
+  height: 82.35%;
+  width: 10.69%;
   top: 11.76%;
-  right: 88.69%;
-  bottom: 0.59%;
+  right: 89.31%;
+  bottom: 5.88%;
   left: 0;
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
 }
 .parent {
+  position: absolute;
   top: 5.813rem;
   left: 25.875rem;
-  width: 7.625rem;
+  width: 8.188rem;
   height: 1.063rem;
-  font-family: var(--font-red-hat-text);
 }
-.faqs,
-.footer,
-.parent {
+.illustrations-from-storyset {
   position: absolute;
+  top: 14.875rem;
+  left: calc(50% - 624px);
+  font-size: 0.688rem;
+  display: flex;
+  align-items: center;
+  width: 80.313rem;
 }
-.faqs {
-  top: 5.813rem;
-  left: 39.125rem;
-}
-.footer {
+.footer-final {
+  position: absolute;
   top: 219.813rem;
-  left: calc(50% - 720px);
+  left: 0;
   background-color: var(--color-darkslategray-200);
-  width: 90rem;
+  width: 100rem;
   height: 16.938rem;
-  font-size: var(--font-size-smi);
-  color: var(--white);
+  font-size: var(--font-size-sm);
+  color: white;
 }
 .rectangle-icon {
   position: absolute;
@@ -370,12 +244,12 @@
   color: #032651;
   width: 78.375rem;
 }
-.group-icon3,
+.group-icon,
 .rectangle-parent {
   position: absolute;
   overflow: hidden;
 }
-.group-icon3 {
+.group-icon {
   height: 4.81%;
   width: 7.24%;
   top: 6.96%;
@@ -387,19 +261,19 @@
 }
 .rectangle-parent {
   top: 193.688rem;
-  left: calc(50% - 720px);
+  left:0;
   background-color: #b8dbf7;
-  width: 90rem;
+  width: 100rem;
   height: 26.125rem;
   font-size: var(--font-size-13xl);
 }
-.what-our-do {
+.what-our-do-final {
   position: absolute;
   top: 0;
   left: 3.125rem;
   letter-spacing: -0.01em;
   line-height: 120%;
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 .group-child {
   position: absolute;
@@ -428,23 +302,25 @@
 }
 .group-inner {
   left: 46.813rem;
+  top: 29rem;
   transform: rotate(180deg);
   transform-origin: 0 0;
 }
 .group-child1,
-.rectangle-div {
+.rectangle-div-final {
   top: 2.313rem;
   background-color: var(--color-gainsboro-100);
   width: 46.875rem;
   height: 29.375rem;
 }
-.rectangle-div {
+.rectangle-div-final {
   position: absolute;
   left: 18.875rem;
   border-radius: var(--br-xl);
 }
 .group-child1 {
   left: 52.125rem;
+  top: 32rem;
   transform: rotate(180deg);
   transform-origin: 0 0;
 }
@@ -476,13 +352,13 @@
   height: 34rem;
 }
 .dr-xyz-abcd,
-.lorem-ipsum-dolor1 {
+.lorem-ipsum-dolor {
   position: absolute;
   left: 0;
   letter-spacing: -0.01em;
   line-height: 120%;
 }
-.lorem-ipsum-dolor1 {
+.lorem-ipsum-dolor {
   top: 3rem;
   display: inline-block;
   width: 40.75rem;
@@ -490,7 +366,7 @@
 }
 .dr-xyz-abcd {
   top: 0;
-  font-size: var(--font-size-17xl);
+  font-size: 2.25rem;
   font-weight: 500;
 }
 .group-container,
@@ -512,13 +388,15 @@
 .group-parent,
 .why-choose-cevah {
   position: absolute;
-  color: var(--blue-gray-900);
+  color: var(--color-gray-100);
 }
 .group-parent {
   top: 149.5rem;
   left: 8.125rem;
   width: 73.75rem;
   height: 40.875rem;
+  font-weight: 0rem;
+  font-size: 600;
 }
 .why-choose-cevah {
   top: 0;
@@ -536,25 +414,30 @@
   width: 1.875rem;
   height: 1.875rem;
 }
-.medical-masterplanning-at {
+.break-through-barriers {
+  position: absolute;
   top: 3.563rem;
   left: calc(50% - 621px);
+  letter-spacing: -0.02em;
+  line-height: 120%;
   display: inline-block;
   width: 77.563rem;
+  font-size: var(--font-size-29xl);
+  color: var(--color-darkslategray);
+  width: 77.625rem;
 }
-.div1,
-.medical-masterplanning-at,
+.div1-final,
 .our-online-tools,
 .tailored-solutions {
   position: absolute;
   letter-spacing: -0.01em;
   line-height: 120%;
 }
-.div1 {
+ .div1-final {
   top: 0;
   left: 0;
   font-weight: 800;
-}
+} 
 .our-online-tools,
 .tailored-solutions {
   display: inline-block;
@@ -571,7 +454,7 @@
   top: 0;
   left: 5.7rem;
   font-size: var(--font-size-13xl);
-  color: var(--blue-gray-900);
+  color: var(--color-gray-100);
   width: 19.919rem;
   height: 2.819rem;
 }
@@ -582,7 +465,7 @@
   width: 43.938rem;
   height: 6.813rem;
 }
-.innovative-approach,
+.innovative-approach-final,
 .with-our-innovative {
   position: absolute;
   letter-spacing: -0.01em;
@@ -597,15 +480,15 @@
   width: 38.25rem;
   height: 5.813rem;
 }
-.innovative-approach {
+.innovative-approach-final {
   top: 0;
   left: 5.7rem;
   font-size: var(--font-size-13xl);
-  color: var(--blue-gray-900);
+  color: var(--color-gray-100);
   width: 22.919rem;
   height: 2.819rem;
 }
-.container {
+.landing-container {
   position: absolute;
   top: 19.563rem;
   left: 0;
@@ -613,13 +496,13 @@
   height: 8.806rem;
 }
 .personalized-assistance,
-.receive-personalized-guidance {
+.receive-personalized-guidance-final {
   position: absolute;
   letter-spacing: -0.01em;
   line-height: 120%;
   display: inline-block;
 }
-.receive-personalized-guidance {
+.receive-personalized-guidance-final {
   top: 3.188rem;
   left: 5.688rem;
   font-size: var(--font-size-5xl);
@@ -631,7 +514,7 @@
   top: 0;
   left: 5.7rem;
   font-size: var(--font-size-13xl);
-  color: var(--blue-gray-900);
+  color: var(--color-gray-100);
   width: 27.144rem;
   height: 2.819rem;
 }
@@ -675,17 +558,17 @@
 .why-choose-cevah-parent {
   position: absolute;
   top: 94.938rem;
-  left: calc(50% - 624px);
+  left: 6.125rem;
   width: 78rem;
   height: 48.313rem;
-  color: var(--color-darkslategray-200);
+  color: var(--color-darkslategray);
 }
-.frame-child1 {
+.landing-page-full-scroll-child {
   position: absolute;
   top: 0;
   left: 0;
   background-color: rgba(60, 208, 206, 0.36);
-  width: 120rem;
+  width: 100rem;
   height: 45.688rem;
 }
 .what-does-cevah {
@@ -713,7 +596,7 @@
   width: 24.188rem;
   height: 2.375rem;
   font-size: var(--font-size-13xl);
-  color: var(--blue-gray-900);
+  color: var(--color-gray-100);
 }
 .floor-plan-3-icon {
   position: absolute;
@@ -725,7 +608,7 @@
 }
 .empowering-medical-professiona {
   position: absolute;
-  top: 6.875rem;
+  top: 7.188rem;
   left: calc(50% - 230.5px);
   letter-spacing: -0.01em;
   line-height: 120%;
@@ -737,7 +620,7 @@
   top: 0;
   left: 0;
   width: 28.813rem;
-  height: 12.875rem;
+  height: 11.313rem;
 }
 .empowering-3-1-icon {
   position: absolute;
@@ -749,7 +632,7 @@
 }
 .we-offer-a {
   position: absolute;
-  top: 6.875rem;
+  top: 7.188rem;
   left: 0;
   letter-spacing: -0.01em;
   line-height: 120%;
@@ -764,31 +647,31 @@
   top: 16.75rem;
   left: 0.188rem;
   width: 28.813rem;
-  height: 11.313rem;
+  height: 11.625rem;
 }
 .group-parent3,
 .light-bulb-3-1-parent {
   left: 37.938rem;
 }
 .group-parent3 {
-  top: 12.188rem;
+  top: 13.688rem;
   left: 6.5rem;
   width: 66.75rem;
-  height: 28.063rem;
+  height: 28.375rem;
   text-align: center;
 }
-.medical-masterplanning-at1,
+.medical-masterplanning-at,
 .our-platform-provides {
   position: absolute;
   letter-spacing: -0.01em;
   line-height: 120%;
   display: inline-block;
 }
-.medical-masterplanning-at1 {
+.medical-masterplanning-at {
   top: 3.563rem;
   left: 0.188rem;
   font-size: var(--font-size-29xl);
-  color: var(--color-darkslategray-200);
+  color: var(--color-darkslategray);
   width: 77.625rem;
 }
 .our-platform-provides {
@@ -798,10 +681,10 @@
 }
 .our-platform-provides-personal-wrapper {
   position: absolute;
-  top: 20.063rem;
+  top: 20.875rem;
   left: 44.813rem;
   width: 28.063rem;
-  height: 4.5rem;
+  height: 4.125rem;
   text-align: center;
 }
 .group-parent2 {
@@ -809,8 +692,8 @@
   top: 48.438rem;
   left: 6.125rem;
   width: 77.813rem;
-  height: 40.25rem;
-  font-size: var(--caption-m-size);
+  height: 42.063rem;
+  font-size: var(--font-size-lg);
 }
 .blueprint-to-breakthrough,
 .turn-your-healthcare {
@@ -822,7 +705,7 @@
   width: 39rem;
 }
 .turn-your-healthcare {
-  top: 12.625rem;
+  top: 14.625rem;
   font-size: var(--font-size-5xl);
   line-height: 120%;
   color: var(--color-black);
@@ -838,7 +721,11 @@
   position: absolute;
   top: 0;
   left: 0;
+  font-size: var(--font-size-base);
   line-height: 120%;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: left;
 }
 .arrowdownright-icon {
   position: absolute;
@@ -848,29 +735,30 @@
   height: 0.75rem;
   overflow: hidden;
 }
-.get-started-parent {
-  top: 0;
-  left: 0;
-}
 .get-started-parent,
 .group-frame {
   position: absolute;
   width: 6.75rem;
   height: 1.188rem;
 }
-
+.get-started-parent {
+  top: 0;
+  left: 0;
+}
 .group-frame {
   top: 1.188rem;
   left: 2.438rem;
 }
 .rectangle-container {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
   position: absolute;
   top: 24.125rem;
   left: 0;
   width: 11.75rem;
   height: 3.5rem;
-  font-size: var(--button-m-size);
-  color: var(--white);
 }
 .docbusiness2-1-icon {
   position: absolute;
@@ -887,123 +775,46 @@
   width: 77.688rem;
   height: 35.063rem;
   font-size: 4rem;
-  color: var(--color-gray-100);
+  color: #2b2b2b;
 }
-.desktop-82,
-.footer-parent {
-  background-color: var(--white);
+.userfocus-icon {
+  position: absolute;
+  top: 62.125rem;
+  left: 61.875rem;
+  width: 6.25rem;
+  height: 6.25rem;
   overflow: hidden;
 }
-.footer-parent {
-  position: absolute;
-  top: 4.063rem;
-  left: 0;
-  width: 100rem;
-  height: 45.625rem;
+.desktop-82 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 236.75rem;
+  overflow-y: auto;
+  text-align: left;
+  font-size: var(--font-size-29xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
 }
 
-
 .desktop-82 {
-  max-width: 1600px; /* Limit the maximum width to 1440px */
-   width: 100%;
-   position: relative;
-   height: auto;
-   min-height: 47.625rem;
-   overflow: hidden;
-   text-align: left;
-   padding: 1rem;
-   margin: 0 auto;
-   font-size: var(--font-size-13xl);
-   color: var(--color-gray-100);
-   font-family: var(--font-inter);
- }
- 
- 
- 
- @media only screen and (max-width: 758px){
-
+  max-width: 1600px; 
+  width: 100%;
+  position: relative;
+  height: auto;
+  min-height: 66.625rem;
+  overflow: hidden;
+  text-align: left;
+  padding: 1rem;
+  margin: 0 auto;
+  font-size: var(--font-size-13xl);
+  color: var(--color-gray-100);
+  font-family: var(--font-inter);
+}
+@media only screen and (max-width: 758px) {
   .desktop-82 {
     font-size: 1rem; 
     padding: 0.5rem; 
     min-height: 100vh; 
-    background-color: white;
   }
-
-  .header-button {
-    margin: 0;
-    position: absolute;
-    top: 0;
-    left: -20vw;
-    box-shadow: 0 4px 20px rgba(249, 249, 249, 0.25);
-    background-color: var(--white);
-    width: 90rem;
-    height: 4.063rem;
-    text-align: left;
-    font-size: var(--font-size-5xl);
-    color: var(--color-black);
-    font-family: var(--font-ibm-plex-sans);
-  }
-
-  .login-button {
-    cursor: pointer;
-    border: 1px solid var(--color-darkturquoise);
-    padding: var(--padding-3xs) var(--padding-13xl);
-    background-color: var(--color-darkturquoise);
-    position: absolute;
-    top: 0.688rem;
-    left: 75.375vw;
-    border-radius: var(--br-5xs);
-    box-sizing: border-box;
-    width: 8.375rem;
-    height: 2.688rem;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .blueprint-to-breakthrough {
-  position: absolute;
-  top: -2.125rem;
-  font-size: 12vw;
-  display: inline-block;
-  width: 30vw;
-  height: 20vw;
-  font-weight: bold;
-  left: -15vw;
-}
-.turn-your-healthcare {
-  top: 12.625rem;
-  font-size: var(--font-size-5xl);
-  line-height: 120%;
-  color: var(--color-black);
-  width: 80.25vw;
-  font-size: 5vw;
-  left: -15vw;
-
-}
-.get-started-parent,
-.group-frame {
-  position: absolute;
-  width: 6.75rem;
-  height: 1.188rem;
-}
-
-.group-frame {
-  top: 1.188rem;
-  left: 2.438rem;
-}
-.rectangle-container {
-  position: absolute;
-  top: 22.125rem;
-  left: -1rem;
-  width: 11.75rem;
-  height: 3.5rem;
-  font-size: var(--button-m-size);
-  color: var(--white);
-}
-
-
- }
-
+} 

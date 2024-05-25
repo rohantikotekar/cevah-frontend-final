@@ -492,11 +492,28 @@
   color: var(--color-gray-100);
   font-family: var(--font-inter);
 }
+.user-icon100 {
+  position: absolute;
+  overflow: hidden;
+}
+.user-icon100 {
+  top: 1.25rem;
+  left: 82.375rem;
+  width: 1.813rem;
+  height: 1.813rem;
+  color: black;
+}
 
 
 @media only screen and (max-width: 758px){
 
-
+  .user-icon100 {
+    top: 1.25rem;
+    left: 92.5vw;
+    width: 1.813rem;
+    height: 1.813rem;
+    color: black;
+  }
   .desktop-107 {
     font-size: 1rem; 
     padding: 0.5rem; 
