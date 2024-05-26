@@ -8,6 +8,7 @@ const Desktop17 = () => {
   const navigate = useNavigate();
 
   const onFrameButtonClick = useCallback(() => {
+    localStorage.setItem("phoneNumber", phoneNumber); // Store phone number in local storage
     sendOTPRequest(phoneNumber);
     navigate("/desktop-89");
   }, [phoneNumber, navigate]);

@@ -25,12 +25,18 @@ const Desktop11 = () => {
   }, [navigate]);
 
   async function sendDetailsRequest(land_area, fsi, height_restriction) {
+    const storedPhoneNumber = localStorage.getItem("phoneNumber");
+    if (!storedPhoneNumber) {
+      console.error('Phone number not found in local storage.');
+      return;
+    }
+
     const url = 'https://clownfish-app-kymio.ondigitalocean.app/calculate';
     const payload = {
       land_area,
       fsi,
       height_restriction,
-      phone_number: "918847752307"
+      phone_number: storedPhoneNumber
     };
 
     const bearerToken = 'd1c1edd7-fb31-11ee-87c7-6c9466f8da35';

@@ -1,9 +1,6 @@
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import {
   TextField,
-  InputAdornment,
-  Icon,
-  IconButton,
   Button,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
@@ -12,11 +9,18 @@ import "./Desktop5.css";
 const Desktop5 = () => {
   const navigate = useNavigate();
 
-  
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
 
   const onFrameButtonClick = useCallback(() => {
+    // Save the values to local storage
+    localStorage.setItem("firstName", firstName);
+    localStorage.setItem("lastName", lastName);
+    localStorage.setItem("phoneNumber", phoneNumber);
+
     navigate("/desktop-93");
-  }, [navigate]);
+  }, [navigate, firstName, lastName, phoneNumber]);
 
   const onBackTextClick = useCallback(() => {
     navigate("/desktop-120");
@@ -45,6 +49,8 @@ const Desktop5 = () => {
           label="Last Name"
           variant="outlined"
           sx={{ "& .MuiInputBase-root": { height: "64px" }, width: "405px" }}
+          value={lastName}
+          onChange={(e) => setLastName(e.target.value)}
         />
         <TextField
           className="new1-hero-child1"
@@ -52,6 +58,8 @@ const Desktop5 = () => {
           label="First Name"
           variant="outlined"
           sx={{ "& .MuiInputBase-root": { height: "64px" }, width: "405px" }}
+          value={firstName}
+          onChange={(e) => setFirstName(e.target.value)}
         />
         <TextField
           className="new1-hero-child2"
@@ -59,6 +67,8 @@ const Desktop5 = () => {
           label="Phone Number"
           variant="outlined"
           sx={{ "& .MuiInputBase-root": { height: "64px" }, width: "405px" }}
+          value={phoneNumber}
+          onChange={(e) => setPhoneNumber(e.target.value)}
         />
         <div className="new1-group-parent6">
           <div className="new1-rectangle-parent2">
@@ -73,9 +83,7 @@ const Desktop5 = () => {
           color="primary"
           variant="contained"
           sx={{ borderRadius: "0px 0px 0px 0px", width: 196, height: 51 }}
-          onClick={(onFrameButtonClick)}
-
-
+          onClick={onFrameButtonClick}
         >
           Continue
         </Button>
@@ -83,7 +91,6 @@ const Desktop5 = () => {
         <div className="new1-back1" onClick={onBackTextClick}>
           Back
         </div>
-        
       </div>
       <div className="new1-desktop-90-child" />
       <div className="new1-footer5">
@@ -122,15 +129,12 @@ const Desktop5 = () => {
           <div className="new1-navigation5" />
         </div>
         <div className="new1-login4">
-          <div className="new1-jd3">JD</div>
+          <div className="new1-jd3"></div>
         </div>
         <img className="new1-user-icon2" alt="" src="/user.svg" />
       </div>
     </div>
   );
 };
-
-
-
 
 export default Desktop5;

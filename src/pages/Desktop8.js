@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import "./Desktop8.css";
@@ -6,6 +6,15 @@ import "./Desktop8.css";
 const Desktop8 = () => {
   const navigate = useNavigate();
   const [otp, setOtp] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+
+  useEffect(() => {
+    // Retrieve phone number from local storage
+    const storedPhoneNumber = localStorage.getItem("phoneNumber");
+    if (storedPhoneNumber) {
+      setPhoneNumber(storedPhoneNumber);
+    }
+  }, []);
 
   const onFrameButtonClick = useCallback(() => {
     navigate("/desktop-119");
@@ -18,62 +27,33 @@ const Desktop8 = () => {
   // Function to send OTP request
   const sendResendRequest = async () => {
     try {
-      // Define the URL and payload for fetching the phone number
-      const phoneNumberUrl = 'https://clownfish-app-kymio.ondigitalocean.app/auth';
-      function createPhoneNumberPayload(phoneNumber) {
-        return {
-            "phone_number": phoneNumber
-        };
-    }  
-      const phoneNumberOptions = {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(phoneNumberPayload),
-      };
-  
-      // Fetch phone number
-      const phoneNumberResponse = await fetch(phoneNumberUrl, phoneNumberOptions);
-      if (!phoneNumberResponse.ok) {
-        throw new Error(`Failed to fetch phone number with status: ${phoneNumberResponse.status}`);
-      }
-      const phoneNumberData = await phoneNumberResponse.json();
-      const phoneNumber = phoneNumberData.phone_number;
-  
-      // Prepare payload and options for OTP request
-      const otpUrl = "https://clownfish-app-kymio.ondigitalocean.app/resend";
-      const otpPayload = { phone_number: phoneNumber };
+      const url = "https://clownfish-app-kymio.ondigitalocean.app/resend";
+      const payload = { phone_number: phoneNumber };
       const bearerToken = "d1c1edd7-fb31-11ee-87c7-6c9466f8da35";
-      const otpOptions = {
+      const options = {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${bearerToken}`,
         },
-        body: JSON.stringify(otpPayload),
+        body: JSON.stringify(payload),
       };
-  
-      // Send OTP request
-      const otpResponse = await fetch(otpUrl, otpOptions);
-      if (!otpResponse.ok) {
-        throw new Error(`API request failed with status: ${otpResponse.status}`);
+
+      const response = await fetch(url, options);
+      if (!response.ok) {
+        throw new Error(`API request failed with status: ${response.status}`);
       }
-      const otpData = await otpResponse.json();
-      console.log("OTP sent successfully:", otpData);
-      console.log(otpData.body);
+      const data = await response.json();
+      console.log("OTP sent successfully:", data);
     } catch (error) {
       console.error("Error sending OTP request:", error);
     }
   };
-  
-  
+
   // Function to verify OTP
   const verifyOTP = async () => {
-    const phoneNumber = "917888044612";
     const url = "https://clownfish-app-kymio.ondigitalocean.app/verify";
     const payload = { phone_number: phoneNumber, otp };
-
     const bearerToken = "d1c1edd7-fb31-11ee-87c7-6c9466f8da35";
     const options = {
       method: "POST",
@@ -91,7 +71,6 @@ const Desktop8 = () => {
       }
       const data = await response.json();
       console.log("OTP verified successfully:", data);
-      // Navigate or perform any action after successful verification
       onFrameButtonClick();
     } catch (error) {
       console.error("Error verifying OTP:", error);
@@ -107,7 +86,6 @@ const Desktop8 = () => {
       return newOtp.join("");
     });
   };
-  
 
   return (
     <div className="desktop-89">
