@@ -12,17 +12,15 @@ const Report = () => {
     navigate("/");
   }, [navigate]);
 
-  // State variables to store input values
   const [numberOfFloors, setNumberOfFloors] = useState('');
   const [floorDetails, setFloorDetails] = useState([]);
-
   const [siteInfo, setSiteInfo] = useState({
-    sqFt: '35000',
+    sqFt: '',
     carpetArea: '',
     heightRestriction: '',
-    totalBuiltUpArea: '28700',
-    fsi: '3.5',
-    fsiHeight: 'XX'
+    totalBuiltUpArea: '',
+    fsi: '',
+    fsiHeight: ''
   });
 
   const [gFloorInfo, setGFloorInfo] = useState({
@@ -35,51 +33,74 @@ const Report = () => {
     casualtyArea: ''
   });
 
-  // Fetch data from the API and update the state variables
+  const [additionalInfo, setAdditionalInfo] = useState({
+    icu: { totalArea: '', totalBeds: '' },
+    isolation: { totalArea: '', totalBeds: '' },
+    nursingStation: '',
+    circulation: '',
+    miscellaneous: '',
+    semiIcu: { totalArea: '', totalBeds: '' }
+  });
+
   useEffect(() => {
-    fetch('https://clownfish-app-kymio.ondigitalocean.app/calculate')
-      .then(response => response.json())
-      .then(data => {
-        setSiteInfo({
-          sqFt: data.total_built_up_area,
-          carpetArea: data.carpet_area,
-          heightRestriction: '',
-          totalBuiltUpArea: data.total_built_up_area,
-          fsi: data.FSI,
-          fsiHeight: ''
-        });
+    const storedResponse = localStorage.getItem('apiResponse');
+    if (storedResponse) {
+      const data = JSON.parse(storedResponse);
 
-        setGFloorInfo({
-          opdArea: data.ground_floor_area[0].opd[0],
-          diagnosticArea: data.ground_floor_area[0].diagnostic,
-          circulationArea: data.ground_floor_area[0].circulation,
-          pharmacyArea: data.ground_floor_area[0].pharmacy,
-          receptionArea: data.ground_floor_area[0].reception,
-          totalGroundFloorArea: data.ground_floor_area[0].total_area,
-          casualtyArea: data.ground_floor_area[0].casualty[0]
-        });
-
-        const numFloors = data.no_of_floors;
-        setNumberOfFloors(numFloors);
-
-        const updatedDetails = data.floors_area.map((floor, index) => ({
-          floorNumber: index + 1,
-          floorArea: floor.total_area,
-          floorRestriction: '',
-          totalFloorArea: floor.total_area,
-          totalAreaPrivateRooms: floor.private[0],
-          numBedsPrivate: floor.private[1],
-          totalAreaSemiPrivateRooms: floor.semi_private[0],
-          numBedsSemiPrivate: floor.semi_private[1],
-          circulationArea: floor.circulation
-        }));
-        setFloorDetails(updatedDetails);
-      })
-      .catch(error => {
-        console.error('Error fetching data from API:', error);
+      setSiteInfo({
+        sqFt: data.total_built_up_area,
+        carpetArea: data.carpet_area,
+        heightRestriction: '',
+        totalBuiltUpArea: data.total_built_up_area,
+        fsi: data.FSI,
+        fsiHeight: ''
       });
-  }, []);
 
+      setGFloorInfo({
+        opdArea: data.ground_floor_area[0].opd[0],
+        diagnosticArea: data.ground_floor_area[0].diagnostic,
+        circulationArea: data.ground_floor_area[0].circulation,
+        pharmacyArea: data.ground_floor_area[0].pharmacy,
+        receptionArea: data.ground_floor_area[0].reception,
+        totalGroundFloorArea: data.ground_floor_area[0].total_area,
+        casualtyArea: data.ground_floor_area[0].casualty[0]
+      });
+
+      const numFloors = data.no_of_floors;
+      setNumberOfFloors(numFloors);
+
+      const updatedDetails = data.floors_area.map((floor, index) => ({
+        floorNumber: index + 1,
+        floorArea: floor.total_area,
+        floorRestriction: '',
+        totalFloorArea: floor.total_area,
+        totalAreaPrivateRooms: floor.private[0],
+        numBedsPrivate: floor.private[1],
+        totalAreaSemiPrivateRooms: floor.semi_private[0],
+        numBedsSemiPrivate: floor.semi_private[1],
+        circulationArea: floor.circulation
+      }));
+      setFloorDetails(updatedDetails);
+
+      setAdditionalInfo({
+        icu: {
+          totalArea: data.ICU.total_area,
+          totalBeds: data.ICU.total_beds
+        },
+        isolation: {
+          totalArea: data.isolation.total_area,
+          totalBeds: data.isolation.total_beds
+        },
+        nursingStation: data.nursing_station,
+        circulation: data.circulation,
+        miscellaneous: data.miscelleneous,
+        semiIcu: {
+          totalArea: data.semi_icu.total_area,
+          totalBeds: data.semi_icu.total_beds
+        }
+      });
+    }
+  }, []);
 
   const handleNumberOfFloorsChange = (e) => {
     const numFloors = parseInt(e.target.value) || '';
@@ -99,23 +120,9 @@ const Report = () => {
     setFloorDetails(updatedDetails);
   };
 
-  const handleSiteInfoChange = (field, value) => {
-    setSiteInfo(prev => ({ ...prev, [field]: value }));
-  };
-
-  const handleGFloorInfoChange = (field, value) => {
-    setGFloorInfo(prev => ({ ...prev, [field]: value }));
-  };
-
-  const handleFloorDetailChange = (index, field, value) => {
-    const updatedDetails = floorDetails.map((detail, i) =>
-      i === index ? { ...detail, [field]: value } : detail
-    );
-    setFloorDetails(updatedDetails);
-  };
-
   return (
     <div className="new-desktop-216">
+      <Header />
       <div className="new-desktop-216-inner">
         <div className="new-thank-you-for-entrusting-cevah-parent">
           <div className="new-thank-you-for-container">
@@ -127,294 +134,203 @@ const Report = () => {
             </p>
             <p className="new-thank-you-for">&nbsp;</p>
             <p className="new-thank-you-for">
-              We are committed to supporting you every step of the way, from
-              concept to completion, to ensure that your facility exceeds
-              expectations and delivers exceptional patient care.
+              We are committed to supporting you every step of the way, ensuring
+              that your facility becomes a beacon of excellence and a symbol of
+              quality healthcare. Our team of experts is dedicated to providing
+              the highest level of service and expertise to meet your specific
+              requirements.
             </p>
             <p className="new-thank-you-for">&nbsp;</p>
             <p className="new-thank-you-for">
-              <b>CEVAH Masterplanning Team</b>
+              We look forward to the opportunity to contribute to the success
+              of your healthcare facility and to making a positive impact on
+              the lives of patients and healthcare professionals alike.
             </p>
           </div>
-          <GroupComponent />
-          <div className="new-cevah-masterplanning-report-parent">
-            <b className="new-cevah-masterplanning-report">
-              Cevah Masterplanning Report
-            </b>
-            <div className="new-welcome-to-your-container">
-              <p className="new-welcome-to-your">
-                Welcome to your custom CEVAH Masterplanning Report!
-              </p>
-              <p className="new-welcome-to-your">&nbsp;</p>
-              <p className="new-welcome-to-your">&nbsp;</p>
-              <p className="new-blank-line4">&nbsp;</p>
+          <div className="new-frame-parent">
+            <div className="new-feasibility-study-details-parent">
+              <div className="new-feasibility-study">
+                Feasibility Study Details
+              </div>
+              <div className="inner-p">
+              <div className="new-report-section">
+                <div className="new-label">Total site area (sq ft) :</div>
+                <div className="new-value">{siteInfo.sqFt}</div>
+              </div>
+              <div className="new-report-section">
+                <div className="new-label">Total carpet area (sq ft) :</div>
+                <div className="new-value">{siteInfo.carpetArea}</div>
+              </div>
+              <div className="new-report-section">
+                <div className="new-label">Height restriction (ft) :</div>
+                <div className="new-value">{siteInfo.heightRestriction}</div>
+              </div>
+              <div className="new-report-section">
+                <div className="new-label">Total built up area (sq ft) :</div>
+                <div className="new-value">{siteInfo.totalBuiltUpArea}</div>
+              </div>
+              <div className="new-report-section">
+                <div className="new-label">FSI (Floor Space Index) :</div>
+                <div className="new-value">{siteInfo.fsi}</div>
+              </div>
+              <div className="new-report-section">
+                <div className="new-label">FSI Height (ft) :</div>
+                <div className="new-value">{siteInfo.fsiHeight}</div>
+              </div>
+              <div className="new-report-section">
+                <div className="new-label">Number of floors :</div>
+                
+                <label className="new-value" onChange={handleNumberOfFloorsChange}>{numberOfFloors}</label>
+
+              </div>
+              </div>
             </div>
-            <div className="new-we-are-delighted">
-              We are delighted to present you with a comprehensive analysis of
-              your healthcare facility requirements. This report serves as a
-              roadmap to guide you in optimizing the design and layout of your
-              facility, ensuring that it meets your unique needs and vision.
+            <div className="new-ground-floor-details-parent">
+              <div className="new-ground-floor">
+                Ground Floor Details
+              </div>
+              <div className="inner-p">
+              <div className="new-report-section">
+                <div className="new-label">OPD area (sq ft) :</div>
+                <div className="new-value">{gFloorInfo.opdArea}</div>
+              </div>
+              <div className="new-report-section">
+                <div className="new-label">Diagnostic area (sq ft) :</div>
+                <div className="new-value">{gFloorInfo.diagnosticArea}</div>
+              </div>
+              <div className="new-report-section">
+                <div className="new-label">Circulation area (sq ft) :</div>
+                <div className="new-value">{gFloorInfo.circulationArea}</div>
+              </div>
+              <div className="new-report-section">
+                <div className="new-label">Pharmacy area (sq ft) :</div>
+                <div className="new-value">{gFloorInfo.pharmacyArea}</div>
+              </div>
+              <div className="new-report-section">
+                <div className="new-label">Reception area (sq ft) :</div>
+                <div className="new-value">{gFloorInfo.receptionArea}</div>
+              </div>
+              <div className="new-report-section">
+                <div className="new-label">Total ground floor area (sq ft) :</div>
+                <div className="new-value">{gFloorInfo.totalGroundFloorArea}</div>
+              </div>
+              <div className="new-report-section">
+                <div className="new-label">Casualty area (sq ft) :</div>
+                <div className="new-value">{gFloorInfo.casualtyArea}</div>
+              </div>
+              </div>
             </div>
-          </div>
-          <div className="new-hospital-building-amico-2-1-parent">
-            <img
-              className="new-hospital-building-amico-2-1"
-              alt=""
-              src="/hospital-buildingamico-2-1@2x.png"
-            />
-            <div className="new-rectangle-parent">
-              <div className="new-group-child" />
-              <div className="new-site-information-parent">
-                <b className="new-site-information">Site Information</b>
-                <div className="new-sq-ft-parent">
-                  <div className="label-input-container">
-                    <label htmlFor="sqFt">Area (sq. ft):</label>
-                    <input
-                      type="text"
-                      id="sqFt"
-                      value={siteInfo.sqFt}
-                      onChange={(e) => handleSiteInfoChange('sqFt', e.target.value)}
-                      className="input-box"
-                    />
+            <div className="new-other-floors-details-parent">
+             
+              
+              {floorDetails.map((floor, index) => (
+                <div key={index} className="new-floor-detail">
+                  <div className="new-floor-title">
+                    Floor {floor.floorNumber}
                   </div>
-                  <div className="label-input-container">
-                    <label htmlFor="numberOfFloors">Number of Floors:</label>
-                    <input
-                      type="text"
-                      id="numberOfFloors"
-                      value={numberOfFloors}
-                      onChange={handleNumberOfFloorsChange}
-                      className="input-box"
-                    />
+                  <div className="inner-p">
+
+                  <div className="new-report-section">
+                    <div className="new-label">Total floor area (sq ft) : </div>
+                    <div className="new-value">{floor.floorArea}</div>
                   </div>
-                  <div className="label-input-container">
-                    <label htmlFor="carpetArea">Carpet Area:</label>
-                    <input
-                      type="text"
-                      id="carpetArea"
-                      value={siteInfo.carpetArea}
-                      onChange={(e) => handleSiteInfoChange('carpetArea', e.target.value)}
-                      className="input-box"
-                    />
+                  <div className="new-report-section">
+                    <div className="new-label">Total area of private rooms (sq ft) : </div>
+                    <div className="new-value">{floor.totalAreaPrivateRooms}</div>
                   </div>
-                  <div className="label-input-container">
-                    <label htmlFor="heightRestriction">Height Restriction:</label>
-                    <input
-                      type="text"
-                      id="heightRestriction"
-                      value={siteInfo.heightRestriction}
-                      onChange={(e) => handleSiteInfoChange('heightRestriction', e.target.value)}
-                      className="input-box"
-                    />
+                  <div className="new-report-section">
+                    <div className="new-label">Number of beds in private rooms : </div>
+                    <div className="new-value">{floor.numBedsPrivate}</div>
                   </div>
-                  <div className="label-input-container">
-                    <label htmlFor="totalBuiltUpArea">Total Built Up Area:</label>
-                    <input
-                      type="text"
-                      id="totalBuiltUpArea"
-                      value={siteInfo.totalBuiltUpArea}
-                      onChange={(e) => handleSiteInfoChange('totalBuiltUpArea', e.target.value)}
-                      className="input-box"
-                    />
+                  <div className="new-report-section">
+                    <div className="new-label">Total area of semi-private rooms (sq ft) : </div>
+                    <div className="new-value">{floor.totalAreaSemiPrivateRooms}</div>
                   </div>
-                  <div className="label-input-container">
-                    <label htmlFor="fsi">FSI (Floor Space Index):</label>
-                    <input
-                      type="text"
-                      id="fsi"
-                      value={siteInfo.fsi}
-                      onChange={(e) => handleSiteInfoChange('fsi', e.target.value)}
-                      className="input-box"
-                    />
+                  <div className="new-report-section">
+                    <div className="new-label">Number of beds in semi-private rooms : </div>
+                    <div className="new-value">{floor.numBedsSemiPrivate}</div>
                   </div>
-                  <div className="label-input-container">
-                    <label htmlFor="fsiHeight">FSI Height:</label>
-                    <input
-                      type="text"
-                      id="fsiHeight"
-                      value={siteInfo.fsiHeight}
-                      onChange={(e) => handleSiteInfoChange('fsiHeight', e.target.value)}
-                      className="input-box"
-                    />
+                  <div className="new-report-section">
+                    <div className="new-label">Circulation area (sq ft) : </div>
+                    <div className="new-value">{floor.circulationArea}</div>
+                  </div>
                   </div>
                 </div>
-              </div>
+              ))}
             </div>
-            <div className="new-rectangle-group">
-              <div className="new-group-item" />
-              <div className="new-ground-floor-information-parent">
-                <b className="new-ground-floor-information">
-                  Ground Floor Information
-                </b>
-                <div className="new-opd-area-parent">
-                  <div className="label-input-container">
-                    <label htmlFor="opdArea">OPD Area:</label>
-                    <input
-                      type="text"
-                      id="opdArea"
-                      value={gFloorInfo.opdArea}
-                      onChange={(e) => handleGFloorInfoChange('opdArea', e.target.value)}
-                      className="input-box"
-                    />
-                  </div>
-                  <div className="label-input-container">
-                    <label htmlFor="diagnosticArea">Diagnostic Area:</label>
-                    <input
-                      type="text"
-                      id="diagnosticArea"
-                      value={gFloorInfo.diagnosticArea}
-                      onChange={(e) => handleGFloorInfoChange('diagnosticArea', e.target.value)}
-                      className="input-box"
-                    />
-                  </div>
-                  <div className="label-input-container">
-                    <label htmlFor="circulationArea">Circulation Area:</label>
-                    <input
-                      type="text"
-                      id="circulationArea"
-                      value={gFloorInfo.circulationArea}
-                      onChange={(e) => handleGFloorInfoChange('circulationArea', e.target.value)}
-                      className="input-box"
-                    />
-                  </div>
-                  <div className="label-input-container">
-                    <label htmlFor="pharmacyArea">Pharmacy Area:</label>
-                    <input
-                      type="text"
-                      id="pharmacyArea"
-                      value={gFloorInfo.pharmacyArea}
-                      onChange={(e) => handleGFloorInfoChange('pharmacyArea', e.target.value)}
-                      className="input-box"
-                    />
-                  </div>
-                  <div className="label-input-container">
-                    <label htmlFor="receptionArea">Reception Area:</label>
-                    <input
-                      type="text"
-                      id="receptionArea"
-                      value={gFloorInfo.receptionArea}
-                      onChange={(e) => handleGFloorInfoChange('receptionArea', e.target.value)}
-                      className="input-box"
-                    />
-                  </div>
-                  <div className="label-input-container">
-                    <label htmlFor="totalGroundFloorArea">Total Ground Floor Area:</label>
-                    <input
-                      type="text"
-                      id="totalGroundFloorArea"
-                      value={gFloorInfo.totalGroundFloorArea}
-                      onChange={(e) => handleGFloorInfoChange('totalGroundFloorArea', e.target.value)}
-                      className="input-box"
-                    />
-                  </div>
-                  <div className="label-input-container">
-                    <label htmlFor="casualtyArea">Casualty Area:</label>
-                    <input
-                      type="text"
-                      id="casualtyArea"
-                      value={gFloorInfo.casualtyArea}
-                      onChange={(e) => handleGFloorInfoChange('casualtyArea', e.target.value)}
-                      className="input-box"
-                    />
-                  </div>
-                </div>
+            <div className="new-additional-info-parent">
+              <div className="new-additional-info">
+                Last Floor
               </div>
-            </div>
-            <div className="new-rectangle-container">
-              <div className="new-group-inner" />
-              <div className="new-floor-information-parent">
-                <b className="new-floor-information">Floor Information</b>
-                {floorDetails.map((floor, index) => (
-                  <div key={index} className="new-opd-area-parent">
-                    <div className="label-input-container">
-                      <label htmlFor={`floorArea${index + 1}`}>Floor {floor.floorNumber} Area:</label>
-                      <input
-                        type="text"
-                        id={`floorArea${index + 1}`}
-                        value={floor.floorArea}
-                        onChange={(e) => handleFloorDetailChange(index, 'floorArea', e.target.value)}
-                        className="input-box"
-                      />
-                    </div>
-                    <div className="label-input-container">
-                      <label htmlFor={`floorRestriction${index + 1}`}>Floor Restriction:</label>
-                      <input
-                        type="text"
-                        id={`floorRestriction${index + 1}`}
-                        value={floor.floorRestriction}
-                        onChange={(e) => handleFloorDetailChange(index, 'floorRestriction', e.target.value)}
-                        className="input-box"
-                      />
-                    </div>
-                    <div className="label-input-container">
-                      <label htmlFor={`totalFloorArea${index + 1}`}>Total Floor Area:</label>
-                      <input
-                        type="text"
-                        id={`totalFloorArea${index + 1}`}
-                        value={floor.totalFloorArea}
-                        onChange={(e) => handleFloorDetailChange(index, 'totalFloorArea', e.target.value)}
-                        className="input-box"
-                      />
-                    </div>
-                    <div className="label-input-container">
-                      <label htmlFor={`totalAreaPrivateRooms${index + 1}`}>Total Area of Private Rooms:</label>
-                      <input
-                        type="text"
-                        id={`totalAreaPrivateRooms${index + 1}`}
-                        value={floor.totalAreaPrivateRooms}
-                        onChange={(e) => handleFloorDetailChange(index, 'totalAreaPrivateRooms', e.target.value)}
-                        className="input-box"
-                      />
-                    </div>
-                    <div className="label-input-container">
-                      <label htmlFor={`numBedsPrivate${index + 1}`}>Number of Beds in Private Rooms:</label>
-                      <input
-                        type="text"
-                        id={`numBedsPrivate${index + 1}`}
-                        value={floor.numBedsPrivate}
-                        onChange={(e) => handleFloorDetailChange(index, 'numBedsPrivate', e.target.value)}
-                        className="input-box"
-                      />
-                    </div>
-                    <div className="label-input-container">
-                      <label htmlFor={`totalAreaSemiPrivateRooms${index + 1}`}>Total Area of Semi-Private Rooms:</label>
-                      <input
-                        type="text"
-                        id={`totalAreaSemiPrivateRooms${index + 1}`}
-                        value={floor.totalAreaSemiPrivateRooms}
-                        onChange={(e) => handleFloorDetailChange(index, 'totalAreaSemiPrivateRooms', e.target.value)}
-                        className="input-box"
-                      />
-                    </div>
-                    <div className="label-input-container">
-                      <label htmlFor={`numBedsSemiPrivate${index + 1}`}>Number of Beds in Semi-Private Rooms:</label>
-                      <input
-                        type="text"
-                        id={`numBedsSemiPrivate${index + 1}`}
-                        value={floor.numBedsSemiPrivate}
-                        onChange={(e) => handleFloorDetailChange(index, 'numBedsSemiPrivate', e.target.value)}
-                        className="input-box"
-                      />
-                    </div>
-                    <div className="label-input-container">
-                      <label htmlFor={`circulationArea${index + 1}`}>Circulation Area:</label>
-                      <input
-                        type="text"
-                        id={`circulationArea${index + 1}`}
-                        value={floor.circulationArea}
-                        onChange={(e) => handleFloorDetailChange(index, 'circulationArea', e.target.value)}
-                        className="input-box"
-                      />
-                    </div>
-                  </div>
-                ))}
+              <div className="inner-p">
+
+              <div className="new-report-section">
+                <div className="new-label">ICU total area (sq ft) : </div>
+                <div className="new-value">{additionalInfo.icu.totalArea}</div>
               </div>
+              <div className="new-report-section">
+                <div className="new-label">ICU total beds : </div>
+                <div className="new-value">{additionalInfo.icu.totalBeds}</div>
+              </div>
+              <div className="new-report-section">
+                <div className="new-label">Isolation total area (sq ft) : </div>
+                <div className="new-value">{additionalInfo.isolation.totalArea}</div>
+              </div>
+              <div className="new-report-section">
+                <div className="new-label">Isolation total beds : </div>
+                <div className="new-value">{additionalInfo.isolation.totalBeds}</div>
+              </div>
+              <div className="new-report-section">
+                <div className="new-label">Nursing station area (sq ft) : </div>
+                <div className="new-value">{additionalInfo.nursingStation}</div>
+              </div>
+              <div className="new-report-section">
+                <div className="new-label">Circulation area (sq ft) :</div>
+                <div className="new-value">{additionalInfo.circulation}</div>
+              </div>
+              <div className="new-report-section">
+                <div className="new-label">Miscellaneous area (sq ft) :</div>
+                <div className="new-value">{additionalInfo.miscellaneous}</div>
+              </div>
+              <div className="new-report-section">
+                <div className="new-label">Semi-ICU total area (sq ft) :</div>
+                <div className="new-value">{additionalInfo.semiIcu.totalArea}</div>
+              </div>
+              <div className="new-report-section">
+                <div className="new-label">Semi-ICU total beds :</div>
+                <div className="new-value">{additionalInfo.semiIcu.totalBeds}</div>
+              </div>
+              </div>
+
             </div>
           </div>
-        </div>
+                
       </div>
-      <Footer />
-      <Header />
+      </div>
+      <div className="footer5">
+        <div className="cevah-parent3">
+          <b className="cevah10">CEVAH</b>
+          <div className="frame-child10" />
+          <div className="frame-child11" />
+        </div>
+        <div className="lorem-ipsum-dolor7">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `}</div>
+        <img className="social-icons15" alt="" src="/vector.svg" />
+        <img className="social-icons16" alt="" src="/social-icons.svg" />
+        <img className="social-icons17" alt="" src="/social-icons1.svg" />
+        <div className="contact-us5">Contact Us</div>
+        <div className="support5">Support</div>
+        <div className="hellocevahgmailcom-parent3">
+          <div className="hellocevahgmailcom5">hellocevah@gmail.com</div>
+          <img className="envelope-icon5" alt="" src="/envelope.svg" />
+        </div>
+        <div className="terms-of-use5">Terms of Use</div>
+        <div className="privacy-policy5">Privacy Policy</div>
+        <div className="parent7">
+          <div className="div11">+91 9922883377</div>
+          <img className="vector-icon14" alt="" src="/vector5.svg" />
+        </div>
+        <div className="faqs5">FAQs</div>
+      </div>
     </div>
   );
 };

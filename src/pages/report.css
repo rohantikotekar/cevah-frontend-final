@@ -1,4 +1,6 @@
 .new-thank-you-for {
+  
+  top: 0rem;
   margin-block-start: 0;
   margin-block-end: 1px;
 }
@@ -10,7 +12,7 @@
   display: inline-block;
 }
 .new-thank-you-for-container {
-  top: 313.438rem;
+  top: 0rem;
   left: 5.313rem;
   width: 77.938rem;
   height: 32.5rem;
@@ -1080,4 +1082,64 @@
   background: linear-gradient(90deg, #3cd0ce, #6eeae9 65.39%, #75eeed);
   width: 0.538rem;
   height: 1.844rem;
+}
+.new-report-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: left;
+}
+
+.new-value {
+  flex: 1;
+  font-weight: bold;
+  text-align: left;
+  border: hidden;
+  background: none;
+}
+
+.new-label {
+  flex: 2;
+  text-align: right;
+}
+.inner-p .new-label {
+  text-align: left; /* Align labels on the left within .inner-p */
+}
+.new-feasibility-study,.new-ground-floor,.new-floor-title, .new-additional-info{
+  position: relative;
+  left: 5rem;
+}
+.new-feasibility-study-details-parent{
+  position: relative;
+  top: 50rem;
+  left: 10rem;
+  width: 75rem;
+  background-color: #b6e8f3;
+  border-radius: 15px;
+
+}
+.inner-p{
+  position: relative;
+  left:10rem;
+  
+}
+
+.new-ground-floor-details-parent{
+  position: relative;
+  top: 50rem;
+  left: 10rem;
+  width: 75rem;
+  background-color: #b6e8f3;
+  border-radius: 15px;
+
+
+}
+.new-other-floors-details-parent,.new-additional-info-parent{
+  position: relative;
+  top: 50rem;
+  left: 10rem;
+  width: 75rem;
+  background-color: #b6e8f3;
+  border-radius: 15px;
+
 }

@@ -1,13 +1,22 @@
-import { useCallback } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Desktop14.css";
 
 const Desktop14 = () => {
   const navigate = useNavigate();
+  const [apiResponse, setApiResponse] = useState(null);
+
+  useEffect(() => {
+    const storedResponse = localStorage.getItem('apiResponse');
+    if (storedResponse) {
+      setApiResponse(JSON.parse(storedResponse));
+    }
+  }, []);
 
   const onFrameContainerClick = useCallback(() => {
+    localStorage.setItem('apiResponse', JSON.stringify(apiResponse));
     navigate("/new-desktop-216");
-  }, [navigate]);
+  }, [apiResponse, navigate]);
 
   const onBackTextClick = useCallback(() => {
     navigate("/desktop-115");
@@ -35,7 +44,6 @@ const Desktop14 = () => {
         <img className="hero-child7" alt="" src="/frame-36735.svg" />
         <div className="view-report-wrapper" onClick={onFrameContainerClick}>
           <div className="view-report">View Report</div>
-          
         </div>
         <div className="back8" onClick={onBackTextClick}>
           Back
@@ -80,7 +88,6 @@ const Desktop14 = () => {
           <div className="jd11"></div>
         </div>
         <img className="user-icon5" alt="" src="/user.svg" />
-
       </div>
     </div>
   );

@@ -1,17 +1,17 @@
 import React, { useCallback, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Desktop13.css";
-import ImageSlider from "./ImageSlider"; // Import the ImageSlider component
+import ImageSlider from "./ImageSlider";
 
 const Desktop13 = () => {
-  const navigate = useNavigate(); // useNavigate hook for navigation
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
   const [percentage, setPercentage] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+  const [apiResponse, setApiResponse] = useState(null);
 
   useEffect(() => {
     const intervalTime = 5000 / 100;
-
     const interval = setInterval(() => {
       setPercentage((prevPercentage) =>
         prevPercentage < 100 ? prevPercentage + 1 : prevPercentage
@@ -19,29 +19,33 @@ const Desktop13 = () => {
     }, intervalTime);
 
     setTimeout(() => {
-      setLoading(true);
+      setLoading(false);
       clearInterval(interval);
-      navigate("/desktop-109"); // Navigate to Desktop8.js after animation completes
+      navigate("/desktop-109");  // Navigate to Desktop14
     }, 5000);
+
     return () => clearInterval(interval);
   }, [navigate]);
 
   useEffect(() => {
     const handleResize = () => {
       const screenWidth = window.innerWidth;
-      setIsMobile(screenWidth <= 758); // Adjust this value based on your mobile breakpoint
+      setIsMobile(screenWidth <= 758);
     };
 
-    // Listen for window resize events
     window.addEventListener("resize", handleResize);
-
-    // Initial check for mobile device
     handleResize();
 
-    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
+  }, []);
+
+  useEffect(() => {
+    const storedResponse = localStorage.getItem('apiResponse');
+    if (storedResponse) {
+      setApiResponse(JSON.parse(storedResponse));
+    }
   }, []);
 
   const onBackTextClick = useCallback(() => {
@@ -71,17 +75,10 @@ const Desktop13 = () => {
           </div>
         ) : null}
 
-<div className="image-slider-container">
-        {isMobile && loading && (
-          <ImageSlider />
-        )}
+        <div className="image-slider-container">
+          {isMobile && loading && <ImageSlider />}
+        </div>
       </div>
-        
-      </div>
-      
-
-      {/* Conditionally render Image Slider after formulating text */}
-     
 
       <div className="footer13">
         <div className="cevah-parent11">
@@ -111,7 +108,6 @@ const Desktop13 = () => {
       </div>
       <div className="back7" onClick={onBackTextClick}>
         Back
-     
       </div>
       <div className="header12">
         <div className="content22">
@@ -128,9 +124,7 @@ const Desktop13 = () => {
           <div className="jd10"></div>
         </div>
         <img className="user-icon4" alt="" src="/user.svg" />
-
       </div>
-      
     </div>
   );
 };

@@ -7,7 +7,7 @@ const Desktop11 = () => {
   const [area, setArea] = useState("");
   const [fsi, setFsi] = useState("");
   const [height, setHeight] = useState("");
-  const [apiResponse, setApiResponse] = useState(null); // New state to store API response
+  const [apiResponse, setApiResponse] = useState(null);
   const navigate = useNavigate();
 
   const onFrameButtonClick = useCallback(() => {
@@ -18,9 +18,7 @@ const Desktop11 = () => {
     navigate("/desktop-114");
   }, [navigate]);
 
-  const onGroupInputClick = useCallback(() => {
-    // Any specific logic to be added when input is clicked
-  }, []);
+  const onGroupInputClick = useCallback(() => {}, []);
 
   const onLogoContainerClick = useCallback(() => {
     navigate("/");
@@ -51,8 +49,10 @@ const Desktop11 = () => {
         throw new Error(`API request failed with status: ${response.status}`);
       }
       const data = await response.json();
-      setApiResponse(data); // Store response data in state
+      setApiResponse(data);
       console.log('Details submitted successfully:', data);
+      localStorage.setItem('apiResponse', JSON.stringify(data));
+      navigate("/desktop-115"); // Navigate after storing data
     } catch (error) {
       console.error('Error submitting details:', error);
     }

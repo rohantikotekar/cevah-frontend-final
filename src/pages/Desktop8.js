@@ -70,7 +70,7 @@ const Desktop8 = () => {
   
   // Function to verify OTP
   const verifyOTP = async () => {
-    const phoneNumber = "918847752307";
+    const phoneNumber = "917888044612";
     const url = "https://clownfish-app-kymio.ondigitalocean.app/verify";
     const payload = { phone_number: phoneNumber, otp };
 
