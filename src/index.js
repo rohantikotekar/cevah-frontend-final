@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 
 // Import Babel plugin
-import "@babel/plugin-proposal-private-property-in-object";
+// import "@babel/plugin-proposal-private-property-in-object";
 
 import "./global.css";
 
