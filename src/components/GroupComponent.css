@@ -66,6 +66,9 @@
   height: 3.75rem;
   font-size: var(--font-size-xl);
   color: var(--color-white);
+  padding-bottom: 10rem;
+  margin-bottom: 10rem;
+
 }
 .rectangle-parent1 {
   position: absolute;

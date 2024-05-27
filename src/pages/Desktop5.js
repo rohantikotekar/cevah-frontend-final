@@ -18,6 +18,7 @@ const Desktop5 = () => {
     localStorage.setItem("firstName", firstName);
     localStorage.setItem("lastName", lastName);
     localStorage.setItem("phoneNumber", phoneNumber);
+    
 
     navigate("/desktop-93");
   }, [navigate, firstName, lastName, phoneNumber]);
@@ -128,9 +129,7 @@ const Desktop5 = () => {
           </div>
           <div className="new1-navigation5" />
         </div>
-        <div className="new1-login4">
-          <div className="new1-jd3"></div>
-        </div>
+        
         <img className="new1-user-icon2" alt="" src="/user.svg" />
       </div>
     </div>

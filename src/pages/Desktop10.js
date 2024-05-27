@@ -1,20 +1,35 @@
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import {
   Button,
   TextField,
-  InputAdornment,
-  Icon,
-  IconButton,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import "./Desktop10.css";
 
 const Desktop10 = () => {
   const navigate = useNavigate();
+  
+  // State for form input values
+  const [formValues, setFormValues] = useState({
+    houseNumber: "",
+    societyName: "",
+    cityName: "",
+    pinCode: ""
+  });
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormValues((prevValues) => ({
+      ...prevValues,
+      [name]: value
+    }));
+  };
 
   const onFrameButtonClick = useCallback(() => {
+    // Save form data to local storage
+    localStorage.setItem("projectAddress", JSON.stringify(formValues));
     navigate("/desktop-114");
-  }, [navigate]);
+  }, [navigate, formValues]);
 
   const onBackClick = useCallback(() => {
     navigate("/desktop-92");
@@ -103,8 +118,10 @@ const Desktop10 = () => {
         color="primary"
         label="House no, Building Name"
         required={true}
-
         variant="outlined"
+        name="houseNumber"
+        value={formValues.houseNumber}
+        onChange={handleInputChange}
         sx={{ "& .MuiInputBase-root": { height: "57px" }, width: "405px" }}
       />
       <TextField
@@ -113,6 +130,9 @@ const Desktop10 = () => {
         label="Society Name, Street Name"
         required={true}
         variant="outlined"
+        name="societyName"
+        value={formValues.societyName}
+        onChange={handleInputChange}
         sx={{ "& .MuiInputBase-root": { height: "57px" }, width: "405px" }}
       />
       <TextField
@@ -121,6 +141,9 @@ const Desktop10 = () => {
         label="City Name"
         required={true}
         variant="outlined"
+        name="cityName"
+        value={formValues.cityName}
+        onChange={handleInputChange}
         sx={{ "& .MuiInputBase-root": { height: "57px" }, width: "405px" }}
       />
       <TextField
@@ -129,7 +152,10 @@ const Desktop10 = () => {
         label="Pin Code"
         required={true}
         variant="outlined"
+        name="pinCode"
         type="number"
+        value={formValues.pinCode}
+        onChange={handleInputChange}
         sx={{ "& .MuiInputBase-root": { height: "57px" }, width: "405px" }}
       />
       <div className="header9">
@@ -147,7 +173,6 @@ const Desktop10 = () => {
           {/* <div className="jd7">JD</div> */}
         </button>
         <img className="user-icon100" alt="" src="/user.svg" />
-
       </div>
     </div>
   );

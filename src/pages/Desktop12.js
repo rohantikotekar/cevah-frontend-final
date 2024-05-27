@@ -131,9 +131,45 @@ const Desktop12 = () => {
   }
 
 
+  const onContinueButtonClick = useCallback(async () => {
+    const firstName = localStorage.getItem("firstName");
+    const lastName = localStorage.getItem("lastName");
+    const phoneNumber = localStorage.getItem("phoneNumber");
+    const college = localStorage.getItem("college");
+  const college1 = localStorage.getItem("college1");
+  const college3 = localStorage.getItem("college3");
+  const projectAddress = JSON.parse(localStorage.getItem("projectAddress"));
 
-  const onContinueButtonClick = useCallback(() => {
-    navigate("/desktop-108");
+
+    const payload = {
+      first_name: firstName,
+      last_name: lastName,
+      phone_number: phoneNumber,
+      education: (college,college1,college3),
+      speciality: "CS",
+      location:  projectAddress,
+    };
+
+    try {
+      const response = await fetch('https://clownfish-app-kymio.ondigitalocean.app/details', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer d1c1edd7-fb31-11ee-87c7-6c9466f8da35',
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await response.json();
+      if (response.ok) {
+        console.log('Success:', data);
+        navigate("/desktop-108");
+      } else {
+        console.error('Error:', data);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
   }, [navigate]);
 
   const onBackButtonTextClick = useCallback(() => {
@@ -321,187 +357,6 @@ const Desktop12 = () => {
 
 
 
-{/* Repeat this structure for selected8 through selected24 with appropriate onClick handlers */}
-
-
-
-
-
-
-
-
-
-
-            {/* <div className="opthal">
-        <div className="opthal-child" onClick={handleChildClick}></div>
-        <div className="dermatology1" onClick={handleChildClick}>Dermatology</div>
-        <img className="skin-icon" alt="" src="/skin.svg" onClick={handleChildClick} />
-      </div> */}
-      
-      
-      {/* <div className="opthal">
-                <div className="opthal-child" />
-                <div className="dermatology1">Dermatology</div>
-                <img className="skin-icon" alt="" src="/skin.svg" /> 
-              </div> */}
-
-            {/* <div className="opthal">
-                <div className={selected2 ? "opthal-child selected2" : "opthal-child"}  onClick={handleChildClick2}   ></div>
-                <div className={selected2 ? "dermatology1 selected2" : "dermatology1"} onClick={handleChildClick2}>Dermatology</div>
-                <img className="skin-icon" alt="" src="/skin.svg"   onClick={handleChildClick2} />
-            </div>
-              <div className="opthal">
-                <div className="opthal-child" />
-                <div className="gastroenterology1">Gastroenterology</div>
-                <img className="eyeglasses-icon" alt="" src="/stomach.svg" />
-              </div>
-              <div className="opthal">
-                <div className="opthal-child" />
-                <div className="neurology-parent">
-                  <div className="infectious-diseases">Neurology</div>
-                  <img
-                    className="headcircuit-icon"
-                    alt=""
-                    src="/headcircuit.svg"
-                  />
-                </div>
-              </div>
-              <div className="opthal">
-                <div className="opthal-child" />
-                <div className="cardiology-parent">
-                  <div className="infectious-diseases">Cardiology</div>
-                  <img className="heartbeat-icon" alt="" src="/heartbeat.svg" />
-                </div>
-              </div>
-              <div className="opthal">
-                <div className="opthal-child" />
-                <div className="oncology1">Oncology</div>
-                <img
-                  className="cancer-ribbon-icon"
-                  alt=""
-                  src="/cancer-ribbon.svg"
-                />
-              </div>
-              <div className="opthal">
-                <div className="opthal-child" />
-                <div className="ophthalmology">Family Medicine</div>
-                <img
-                  className="eyeglasses-icon"
-                  alt=""
-                  src="/stethoscope.svg"
-                />
-              </div>
-
-
-
-
-              <div className="opthal">
-                <div className="opthal-child" />
-                <div className="anestesiology1">
-                  <div className="anestesiology2">Anestesiology</div>
-                  <img className="syringe-icon" alt="" src="/syringe.svg" />
-                </div>
-              </div>
-              <div className="opthal">
-                <div className="opthal-child" />
-                <div className="gastroenterology1">Immunology</div>
-                <img className="eyeglasses-icon" alt="" src="/icon.svg" />
-              </div>
-              <div className="opthal">
-                <div className="opthal-child" />
-                <div className="nephrology-wrapper">
-                  <div className="nephrology1">Nephrology</div>
-                </div>
-                <img className="kidneys-icon" alt="" src="/kidneys.svg" />
-              </div>
-              <div className="opthal">
-                <div className="opthal-child" />
-                <div className="gynecology1">Gynecology</div>
-                <img className="uterus-icon-2" alt="" src="/uterusicon-2.svg" />
-              </div>
-              <div className="opthal">
-                <div className="opthal-child" />
-                <div className="pediatrics-parent">
-                  <div className="infectious-diseases">Pediatrics</div>
-                  <img className="baby-icon" alt="" src="/baby.svg" />
-                </div>
-              </div>
-              <div className="opthal">
-                <div className="opthal-child" />
-                <div className="ophthalmology">Psychiatry</div>
-                <img className="brain-icon" alt="" src="/brain.svg" />
-              </div>
-              <div className="opthal">
-                <div className="opthal-child" />
-                <div className="emergency-medicine-parent">
-                  <div className="emergency-medicine">Emergency Medicine</div>
-                  <img className="ambulance-icon" alt="" src="/ambulance.svg" />
-                </div>
-              </div>
-              <div className="opthal">
-                <div className="opthal-child" />
-                <div className="gastroenterology1">Geriatrics</div>
-                <img className="old-man-icon" alt="" src="/old-man.svg" />
-              </div>
-              <div className="opthal">
-                <div className="opthal-child" />
-                <div className="radiology-parent">
-                  <div className="radiology1">Radiology</div>
-                  <img className="layer-1-icon" alt="" src="/layer-1.svg" />
-                </div>
-              </div>
-              <div className="opthal">
-                <div className="opthal-child" />
-                <div className="endocrinology-parent">
-                  <div className="infectious-diseases">Endocrinology</div>
-                  <img
-                    className="heartbeat-icon1"
-                    alt=""
-                    src="/heartbeat.svg"
-                  />
-                </div>
-              </div>
-              <div className="opthal">
-                <div className="opthal-child" />
-                <div className="geneticist-parent">
-                  <div className="infectious-diseases">Geneticist</div>
-                  <img className="testtube-icon" alt="" src="/testtube.svg" />
-                </div>
-              </div>
-              <div className="opthal">
-                <div className="opthal-child" />
-                <img className="eyeglasses-icon" alt="" src="/hospital.svg" />
-                <div className="ophthalmology">{`Hospice & Palliative`}</div>
-              </div>
-              <div className="opthal">
-                <div className="opthal-child" />
-                <div className="dermatology1">Internal Medicine</div>
-                <img className="plant-icon" alt="" src="/plant.svg" />
-              </div>
-              <div className="opthal">
-                <div className="opthal-child" />
-                <div className="gastroenterology1">Hematology</div>
-                <img className="old-man-icon" alt="" src="/blooddrop.svg" />
-              </div>
-              <div className="opthal">
-                <div className="opthal-child" />
-                <div className="infectious-diseases-parent">
-                  <div className="infectious-diseases">Infectious Diseases</div>
-                  <img className="virus-icon" alt="" src="/virus.svg" />
-                </div>
-              </div>
-              <div className="opthal">
-                <div className="opthal-child" />
-                <div className="osteology-parent">
-                  <div className="infectious-diseases">Osteology</div>
-                  <img className="headcircuit-icon" alt="" src="/bone.svg" />
-                </div>
-              </div>
-              <div className="opthal">
-                <div className="opthal-child" />
-                <div className="oncology1">Otolaryngologists</div>
-                <img className="frame-icon" alt="" src="/frame.svg" />
-              </div> */}
             </div>
           </div>
           <div className="bottom">

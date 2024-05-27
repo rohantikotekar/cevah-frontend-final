@@ -356,7 +356,7 @@ const Report = () => {
         <div className="terms-of-use5">Terms of Use</div>
         <div className="privacy-policy5">Privacy Policy</div>
         <div className="parent7">
-          <div className="div11">+91 9922883377</div>
+          <div className="div11">+919922883377</div>
           <img className="vector-icon14" alt="" src="/vector5.svg" />
         </div>
         <div className="faqs5">FAQs</div>
