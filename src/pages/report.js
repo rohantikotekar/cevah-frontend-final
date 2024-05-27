@@ -154,7 +154,7 @@ const Report = () => {
           <div className="new-frame-parent">
             <div className="new-feasibility-study-details-parent">
               <div className="new-feasibility-study">
-              Site Information
+              <b>Site Information</b>
               </div>
               <div className="inner-p">
                 <div className="new-report-section">
@@ -196,7 +196,7 @@ const Report = () => {
             />
             <div className="new-ground-floor-details-parent">
               <div className="new-ground-floor">
-                Ground Floor Details
+               <b>G Floor</b> 
               </div>
               <div className="inner-p">
                 <div className="new-report-section">
@@ -230,20 +230,20 @@ const Report = () => {
                 </div>
               </div>
             </div>
-            <div>
+            
               <img
               className="new-hospital-room-amico-icon"
               alt=""
               src="/hospital-roomamico@2x.png"
             />
-              </div>
+              
             <div className="new-other-floors-details-parent">
              
             
               {floorDetails.map((floor, index) => (
                 <div key={index} className="new-floor-detail">
                   <div className="new-floor-title">
-                    Floor {floor.floorNumber}
+                  <b>Floor {floor.floorNumber}</b>
                   </div>
                   <div className="inner-p">
                     <div className="new-report-section">
@@ -277,7 +277,7 @@ const Report = () => {
             </div>
             <div className="new-additional-info-parent">
               <div className="new-additional-info">
-                Last Floor
+                <b>Last Floor</b>
               </div>
               <div className="inner-p">
                 <div className="new-report-section">
@@ -360,6 +360,20 @@ const Report = () => {
           <img className="vector-icon14" alt="" src="/vector5.svg" />
         </div>
         <div className="faqs5">FAQs</div>
+      </div>
+      <div className="header4">
+        <div className="content8">
+          <div className="logo5" onClick={onLogoContainerClick}>
+            <div className="icon5">
+              <div className="icon-child8" />
+              <div className="icon-child9" />
+            </div>
+            <b className="cevah11">CEVAH</b>
+          </div>
+          <div className="navigation5" />
+        </div>
+        
+        <img className="user-icon2" alt="" src="/user.svg" />
       </div>
     </div >
   );

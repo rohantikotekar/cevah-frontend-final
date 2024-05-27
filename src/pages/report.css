@@ -1153,3 +1153,191 @@
   margin-bottom: 100rem;
 
 }
+@media only screen and (max-width: 758px) {
+  .new-desktop-216{
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    padding: 0.5rem; /* Reduce padding */
+  }
+  .new-thank-you-for-entrusting-cevah-parent {
+    position: absolute;
+    top: 4.313rem;
+    left: 10vw;
+    width: 90rem;
+    height: auto; /* Increased height to accommodate content */
+  }
+  .new-we-are-delighted,
+.new-welcome-to-your-container {
+  position: absolute;
+  left: 0;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  display: inline-block;
+  width: 90vw;
+}
+  .new-cevah-masterplanning-report-parent {
+    position: absolute;
+    top: 0;
+    left: 0rem;
+    width: 10rem;
+    height: 24.563rem;
+  }
+  .new1-hero4 {
+    position: absolute;
+    top: 7.188rem;
+    left: 50%; /* Position at the center horizontally */
+    transform: translateX(-50%); /* Adjust position to center horizontally */
+    width: calc(100% - 0rem); /* Adjust width to fit the screen with some padding */
+    height: auto; /* Allow height to adjust based on content */
+    font-size: 0.875rem;
+    color: #2b2b2b;
+  }
+  
+  .header4 {
+    position: relative;
+    left: -10rem;
+    margin-left: 5rem; 
+    margin-right: 0rem;
+    width: auto;
+    max-width: none;
+    box-shadow: none;
+    height: auto;
+    font-size: 1.25rem;
+  }
+  
+  
+  .footer5 {
+    top: 49.688rem; /* Reset top position */
+    background-color: #004051;
+    width: 15vw; /* Allow width to adjust based on screen size */
+    height:  16.938rem; /* Allow height to adjust based on content */
+    font-size: 0.813rem; /* Keep font size */
+    color: #fff; /* Keep text color */
+  }
+
+
+
+
+.tell-us-about4 {
+  width:60vw;
+  top: 1rem;
+  font-size: 6vw;
+  font-weight: 600;
+}
+.user-icon2 {
+  position: relative;
+  top: 0.625rem;
+  left: 50%; /* Position at the center horizontally */
+  transform: translateX(470%); /* Adjust position to center horizontally */
+  border-radius: 100px;
+  background-color: #17c6c4;
+  border: 1px solid #17c6c4;
+  box-sizing: border-box;
+  width: 3rem;
+  height: 3.125rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.625rem;
+  font-size: 1.125rem;
+  color: #fff;
+  font-family: Inter
+}
+.new-researching-amico-4-parent {
+  top: 30rem;
+  left: calc(50% - 700px);
+  height: 17rem;
+  width: 17rem;
+  font-size: var(--font-size-13xl);
+}
+.new-rectangle-group,
+.new-researching-amico-4-parent {
+  position: absolute;
+  top: 39.375rem;
+  left: calc(50% - 624px);
+  width: 78rem;
+  height: 37.938rem;
+}
+.new-researching-amico-4-icon {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 700px);
+  width: 17.5rem;
+  height: 17.5rem;
+  object-fit: cover;
+}
+.new-hospital-room-amico-icon {
+  position: relative;
+  top: 60rem;
+  left: calc(50% - 700px);
+  width: 17rem;
+  height: 17rem;
+  object-fit: cover;
+}
+.new-hospital-building-amico-2-1 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 700px);
+  width: 17rem;
+  height: 17rem;
+  object-fit: cover;
+}
+.new-feasibility-study-details-parent{
+  position: relative;
+  top: 20rem;
+  left: calc(50% - 700px);
+  width: 85vw;
+  background-color: #b6e8f3;
+  border-radius: 15px;
+
+}
+.new-other-floors-details-parent{
+  position: relative;
+  top: 60rem;
+  left: calc(50% - 700px);
+  width: 85vw;
+  background-color: #b6e8f3;
+  border-radius: 15px;
+}
+.new-ground-floor-details-parent {
+  position: relative;
+  top: 20rem;
+  left: calc(50% - 700px);
+  width: 85vw;
+  background-color: #b6e8f3;
+  border-radius: 15px;
+  font-size: medium;
+}
+.new-ground-floor-details-parent .inner-p  {
+  position: relative;
+  left: 1rem;
+}
+.new-feasibility-study-details-parent .inner-p  {
+  position: relative;
+  left: 1rem;
+}
+.new-floor-detail .inner-p  {
+  position: relative;
+  left: 1rem;
+}
+.new-additional-info-parent .inner-p  {
+  position: relative;
+  left: 1rem;
+}
+.new-additional-info-parent {
+  position: relative;
+  top: 60rem;
+  left: calc(50% - 700px);
+  width: 85vw;
+  background-color: #b6e8f3;
+  border-radius: 15px;
+  margin-bottom: 100rem;
+}
+.new-thank-you-for-container {
+  top: 22rem;
+  left: calc(40% - 150px);
+  width: 85vw;
+  height: 32.5rem;
+}
+}

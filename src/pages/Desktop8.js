@@ -52,7 +52,6 @@ const Desktop8 = () => {
 
   // Function to verify OTP
   const verifyOTP = async () => {
-    const phoneNumber = "918847752307";
     const url = "https://clownfish-app-kymio.ondigitalocean.app/verify";
     const payload = { phone_number: phoneNumber, otp };
     const bearerToken = "d1c1edd7-fb31-11ee-87c7-6c9466f8da35";
