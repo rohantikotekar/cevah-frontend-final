@@ -146,7 +146,7 @@ const Desktop12 = () => {
       last_name: lastName,
       phone_number: phoneNumber,
       education: (college,college1,college3),
-      speciality: "CS",
+      speciality: "CS", 
       location:  projectAddress,
     };
 
