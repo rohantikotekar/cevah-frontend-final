@@ -12,8 +12,8 @@
   display: inline-block;
 }
 .new-thank-you-for-container {
-  top: 0rem;
-  left: 5.313rem;
+  top: 40rem;
+  left: -10rem;
   width: 77.938rem;
   height: 32.5rem;
 }
@@ -169,7 +169,7 @@
   height: 34.938rem;
 }
 .new-hospital-building-amico-2-1-parent {
-  position: absolute;
+  position: relative;
   top: 27.563rem;
   left: calc(50% - 636px);
   width: 78rem;
@@ -342,7 +342,7 @@
   height: 37.938rem;
 }
 .new-researching-amico-4-parent {
-  top: 106.125rem;
+  top: 75rem;
   left: calc(50% - 636px);
   height: 77.313rem;
   font-size: var(--font-size-13xl);
@@ -729,10 +729,10 @@
   height: 82.906rem;
 }
 .new-hospital-room-amico-icon {
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: 110rem;
   left: calc(50% - 288px);
-  width: 37.5rem;
+  width: 38rem;
   height: 38.438rem;
   object-fit: cover;
 }
@@ -1111,8 +1111,8 @@
 }
 .new-feasibility-study-details-parent{
   position: relative;
-  top: 50rem;
-  left: 10rem;
+  top: 40rem;
+  left: 5rem;
   width: 75rem;
   background-color: #b6e8f3;
   border-radius: 15px;
@@ -1126,20 +1126,30 @@
 
 .new-ground-floor-details-parent{
   position: relative;
-  top: 50rem;
-  left: 10rem;
+  top: 40rem;
+  left: 5rem;
   width: 75rem;
   background-color: #b6e8f3;
   border-radius: 15px;
 
 
 }
-.new-other-floors-details-parent,.new-additional-info-parent{
+.new-other-floors-details-parent{
   position: relative;
-  top: 50rem;
-  left: 10rem;
+  top: 110rem;
+  left: 5rem;
   width: 75rem;
   background-color: #b6e8f3;
   border-radius: 15px;
+
+}
+.new-additional-info-parent{
+  position: relative;
+  top: 110rem;
+  left: 5rem;
+  width: 75rem;
+  background-color: #b6e8f3;
+  border-radius: 15px;
+  margin-bottom: 100rem;
 
 }

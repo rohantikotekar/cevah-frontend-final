@@ -125,136 +125,153 @@ const Report = () => {
       <Header />
       <div className="new-desktop-216-inner">
         <div className="new-thank-you-for-entrusting-cevah-parent">
-          <div className="new-thank-you-for-container">
-            <p className="new-thank-you-for">
-              Thank you for entrusting CEVAH with your facility planning needs.
-              Together, we'll shape a future where patient care is elevated,
-              compassion is paramount, and medical facilities are designed to
-              inspire healing and innovation.
-            </p>
-            <p className="new-thank-you-for">&nbsp;</p>
-            <p className="new-thank-you-for">
-              We are committed to supporting you every step of the way, ensuring
-              that your facility becomes a beacon of excellence and a symbol of
-              quality healthcare. Our team of experts is dedicated to providing
-              the highest level of service and expertise to meet your specific
-              requirements.
-            </p>
-            <p className="new-thank-you-for">&nbsp;</p>
-            <p className="new-thank-you-for">
-              We look forward to the opportunity to contribute to the success
-              of your healthcare facility and to making a positive impact on
-              the lives of patients and healthcare professionals alike.
-            </p>
+        <div className="new-cevah-masterplanning-report-parent">
+            <b className="new-cevah-masterplanning-report">
+              Cevah Masterplanning Report
+            </b>
+            <div className="new-welcome-to-your-container">
+              <p className="new-welcome-to-your">
+                Welcome to your custom CEVAH Masterplanning Report!
+              </p>
+              <p className="new-welcome-to-your">&nbsp;</p>
+              <p className="new-welcome-to-your">&nbsp;</p>
+              <p className="new-blank-line4">&nbsp;</p>
+            </div>
+            <div className="new-we-are-delighted">
+              We are delighted to present you with a comprehensive analysis of
+              your healthcare facility requirements. This report serves as a
+              roadmap to guide you in optimizing the design and layout of your
+              facility, ensuring that it meets your unique needs and vision.
+            </div>
           </div>
+          <div className="new-hospital-building-amico-2-1-parent">
+            <img
+              className="new-hospital-building-amico-2-1"
+              alt=""
+              src="/hospital-buildingamico-2-1@2x.png"
+            />
+
           <div className="new-frame-parent">
             <div className="new-feasibility-study-details-parent">
               <div className="new-feasibility-study">
-                Feasibility Study Details
+              Site Information
               </div>
               <div className="inner-p">
-              <div className="new-report-section">
-                <div className="new-label">Total site area (sq ft) :</div>
-                <div className="new-value">{siteInfo.sqFt}</div>
-              </div>
-              <div className="new-report-section">
-                <div className="new-label">Total carpet area (sq ft) :</div>
-                <div className="new-value">{siteInfo.carpetArea}</div>
-              </div>
-              <div className="new-report-section">
-                <div className="new-label">Height restriction (ft) :</div>
-                <div className="new-value">{siteInfo.heightRestriction}</div>
-              </div>
-              <div className="new-report-section">
-                <div className="new-label">Total built up area (sq ft) :</div>
-                <div className="new-value">{siteInfo.totalBuiltUpArea}</div>
-              </div>
-              <div className="new-report-section">
-                <div className="new-label">FSI (Floor Space Index) :</div>
-                <div className="new-value">{siteInfo.fsi}</div>
-              </div>
-              <div className="new-report-section">
-                <div className="new-label">FSI Height (ft) :</div>
-                <div className="new-value">{siteInfo.fsiHeight}</div>
-              </div>
-              <div className="new-report-section">
-                <div className="new-label">Number of floors :</div>
-                
-                <label className="new-value" onChange={handleNumberOfFloorsChange}>{numberOfFloors}</label>
-
-              </div>
+                <div className="new-report-section">
+                  <div className="new-label">Total site area (sq ft) :</div>
+                  <div className="new-value">{siteInfo.sqFt}</div>
+                </div>
+                <div className="new-report-section">
+                  <div className="new-label">Total carpet area (sq ft) :</div>
+                  <div className="new-value">{siteInfo.carpetArea}</div>
+                </div>
+                <div className="new-report-section">
+                  <div className="new-label">Height restriction (ft) :</div>
+                  <div className="new-value">{siteInfo.heightRestriction}</div>
+                </div>
+                <div className="new-report-section">
+                  <div className="new-label">Total built up area (sq ft) :</div>
+                  <div className="new-value">{siteInfo.totalBuiltUpArea}</div>
+                </div>
+                <div className="new-report-section">
+                  <div className="new-label">FSI (Floor Space Index) :</div>
+                  <div className="new-value">{siteInfo.fsi}</div>
+                </div>
+                <div className="new-report-section">
+                  <div className="new-label">FSI Height (ft) :</div>
+                  <div className="new-value">{siteInfo.fsiHeight}</div>
+                </div>
+                <div className="new-report-section">
+                  <div className="new-label">Number of floors :</div>
+                  <label className="new-value" onChange={handleNumberOfFloorsChange}>{numberOfFloors}</label>
+                </div>
+                </div>
               </div>
             </div>
+            <div className="new-researching-amico-4-parent">
+            <img
+              className="new-researching-amico-4-icon"
+              alt=""
+              src="/researchingamico-4@2x.png"
+            />
             <div className="new-ground-floor-details-parent">
               <div className="new-ground-floor">
                 Ground Floor Details
               </div>
               <div className="inner-p">
-              <div className="new-report-section">
-                <div className="new-label">OPD area (sq ft) :</div>
-                <div className="new-value">{gFloorInfo.opdArea}</div>
-              </div>
-              <div className="new-report-section">
-                <div className="new-label">Diagnostic area (sq ft) :</div>
-                <div className="new-value">{gFloorInfo.diagnosticArea}</div>
-              </div>
-              <div className="new-report-section">
-                <div className="new-label">Circulation area (sq ft) :</div>
-                <div className="new-value">{gFloorInfo.circulationArea}</div>
-              </div>
-              <div className="new-report-section">
-                <div className="new-label">Pharmacy area (sq ft) :</div>
-                <div className="new-value">{gFloorInfo.pharmacyArea}</div>
-              </div>
-              <div className="new-report-section">
-                <div className="new-label">Reception area (sq ft) :</div>
-                <div className="new-value">{gFloorInfo.receptionArea}</div>
-              </div>
-              <div className="new-report-section">
-                <div className="new-label">Total ground floor area (sq ft) :</div>
-                <div className="new-value">{gFloorInfo.totalGroundFloorArea}</div>
-              </div>
-              <div className="new-report-section">
-                <div className="new-label">Casualty area (sq ft) :</div>
-                <div className="new-value">{gFloorInfo.casualtyArea}</div>
-              </div>
+                <div className="new-report-section">
+                  <div className="new-label">OPD area (sq ft) :</div>
+                  <div className="new-value">{gFloorInfo.opdArea}</div>
+                </div>
+                <div className="new-report-section">
+                  <div className="new-label">Diagnostic area (sq ft) :</div>
+                  <div className="new-value">{gFloorInfo.diagnosticArea}</div>
+                </div>
+                <div className="new-report-section">
+                  <div className="new-label">Circulation area (sq ft) :</div>
+                  <div className="new-value">{gFloorInfo.circulationArea}</div>
+                </div>
+                <div className="new-report-section">
+                  <div className="new-label">Pharmacy area (sq ft) :</div>
+                  <div className="new-value">{gFloorInfo.pharmacyArea}</div>
+                </div>
+                <div className="new-report-section">
+                  <div className="new-label">Reception area (sq ft) :</div>
+                  <div className="new-value">{gFloorInfo.receptionArea}</div>
+                </div>
+                <div className="new-report-section">
+                  <div className="new-label">Total ground floor area (sq ft) :</div>
+                  <div className="new-value">{gFloorInfo.totalGroundFloorArea}</div>
+                </div>
+                <div className="new-report-section">
+                  <div className="new-label">Casualty area (sq ft) :</div>
+                  <div className="new-value">{gFloorInfo.casualtyArea}</div>
+                </div>
+                </div>
               </div>
             </div>
+            <div>
+              <img
+              className="new-hospital-room-amico-icon"
+              alt=""
+              src="/hospital-roomamico@2x.png"
+            />
+              </div>
             <div className="new-other-floors-details-parent">
              
-              
+            
               {floorDetails.map((floor, index) => (
                 <div key={index} className="new-floor-detail">
                   <div className="new-floor-title">
                     Floor {floor.floorNumber}
                   </div>
                   <div className="inner-p">
-
-                  <div className="new-report-section">
-                    <div className="new-label">Total floor area (sq ft) : </div>
-                    <div className="new-value">{floor.floorArea}</div>
+                    <div className="new-report-section">
+                      <div className="new-label">Total floor area (sq ft) : </div>
+                      <div className="new-value">{floor.floorArea}</div>
+                    </div>
+                    <div className="new-report-section">
+                      <div className="new-label">Total area of private rooms (sq ft) : </div>
+                      <div className="new-value">{floor.totalAreaPrivateRooms}</div>
+                    </div>
+                    <div className="new-report-section">
+                      <div className="new-label">Number of beds in private rooms : </div>
+                      <div className="new-value">{floor.numBedsPrivate}</div>
+                    </div>
+                    <div className="new-report-section">
+                      <div className="new-label">Total area of semi-private rooms (sq ft) : </div>
+                      <div className="new-value">{floor.totalAreaSemiPrivateRooms}</div>
+                    </div>
+                    <div className="new-report-section">
+                      <div className="new-label">Number of beds in semi-private rooms : </div>
+                      <div className="new-value">{floor.numBedsSemiPrivate}</div>
+                    </div>
+                    <div className="new-report-section">
+                      <div className="new-label">Circulation area (sq ft) : </div>
+                      <div className="new-value">{floor.circulationArea}</div>
+                    </div>
                   </div>
-                  <div className="new-report-section">
-                    <div className="new-label">Total area of private rooms (sq ft) : </div>
-                    <div className="new-value">{floor.totalAreaPrivateRooms}</div>
-                  </div>
-                  <div className="new-report-section">
-                    <div className="new-label">Number of beds in private rooms : </div>
-                    <div className="new-value">{floor.numBedsPrivate}</div>
-                  </div>
-                  <div className="new-report-section">
-                    <div className="new-label">Total area of semi-private rooms (sq ft) : </div>
-                    <div className="new-value">{floor.totalAreaSemiPrivateRooms}</div>
-                  </div>
-                  <div className="new-report-section">
-                    <div className="new-label">Number of beds in semi-private rooms : </div>
-                    <div className="new-value">{floor.numBedsSemiPrivate}</div>
-                  </div>
-                  <div className="new-report-section">
-                    <div className="new-label">Circulation area (sq ft) : </div>
-                    <div className="new-value">{floor.circulationArea}</div>
-                  </div>
-                  </div>
+                  
                 </div>
               ))}
             </div>
@@ -263,50 +280,63 @@ const Report = () => {
                 Last Floor
               </div>
               <div className="inner-p">
-
-              <div className="new-report-section">
-                <div className="new-label">ICU total area (sq ft) : </div>
-                <div className="new-value">{additionalInfo.icu.totalArea}</div>
+                <div className="new-report-section">
+                  <div className="new-label">ICU total area (sq ft) : </div>
+                  <div className="new-value">{additionalInfo.icu.totalArea}</div>
+                </div>
+                <div className="new-report-section">
+                  <div className="new-label">ICU total beds : </div>
+                  <div className="new-value">{additionalInfo.icu.totalBeds}</div>
+                </div>
+                <div className="new-report-section">
+                  <div className="new-label">Isolation total area (sq ft) : </div>
+                  <div className="new-value">{additionalInfo.isolation.totalArea}</div>
+                </div>
+                <div className="new-report-section">
+                  <div className="new-label">Isolation total beds : </div>
+                  <div className="new-value">{additionalInfo.isolation.totalBeds}</div>
+                </div>
+                <div className="new-report-section">
+                  <div className="new-label">Nursing station area (sq ft) : </div>
+                  <div className="new-value">{additionalInfo.nursingStation}</div>
+                </div>
+                <div className="new-report-section">
+                  <div className="new-label">Circulation area (sq ft) :</div>
+                  <div className="new-value">{additionalInfo.circulation}</div>
+                </div>
+                <div className="new-report-section">
+                  <div className="new-label">Miscellaneous area (sq ft) :</div>
+                  <div className="new-value">{additionalInfo.miscellaneous}</div>
+                </div>
+                <div className="new-report-section">
+                  <div className="new-label">Semi-ICU total area (sq ft) :</div>
+                  <div className="new-value">{additionalInfo.semiIcu.totalArea}</div>
+                </div>
+                <div className="new-report-section">
+                  <div className="new-label">Semi-ICU total beds :</div>
+                  <div className="new-value">{additionalInfo.semiIcu.totalBeds}</div>
+                </div>
+                <div className="new-thank-you-for-container">
+                  <p className="new-thank-you-for">
+                    Thank you for entrusting CEVAH with your facility planning needs.
+                    Together, we'll shape a future where patient care is elevated,
+                    compassion is paramount,
+                  </p>
+                  <p className="new-thank-you-for">
+                    and healthcare standards are redefined. Your dedication to improving healthcare inspires us,
+                    and we are honored to be your partner in this important journey.
+                  </p>
+                  <p className="new-thank-you-for">
+                    With warmest regards, <br />
+                    The CEVAH Team
+                  </p>
+                </div>
+                <GroupComponent/>
               </div>
-              <div className="new-report-section">
-                <div className="new-label">ICU total beds : </div>
-                <div className="new-value">{additionalInfo.icu.totalBeds}</div>
-              </div>
-              <div className="new-report-section">
-                <div className="new-label">Isolation total area (sq ft) : </div>
-                <div className="new-value">{additionalInfo.isolation.totalArea}</div>
-              </div>
-              <div className="new-report-section">
-                <div className="new-label">Isolation total beds : </div>
-                <div className="new-value">{additionalInfo.isolation.totalBeds}</div>
-              </div>
-              <div className="new-report-section">
-                <div className="new-label">Nursing station area (sq ft) : </div>
-                <div className="new-value">{additionalInfo.nursingStation}</div>
-              </div>
-              <div className="new-report-section">
-                <div className="new-label">Circulation area (sq ft) :</div>
-                <div className="new-value">{additionalInfo.circulation}</div>
-              </div>
-              <div className="new-report-section">
-                <div className="new-label">Miscellaneous area (sq ft) :</div>
-                <div className="new-value">{additionalInfo.miscellaneous}</div>
-              </div>
-              <div className="new-report-section">
-                <div className="new-label">Semi-ICU total area (sq ft) :</div>
-                <div className="new-value">{additionalInfo.semiIcu.totalArea}</div>
-              </div>
-              <div className="new-report-section">
-                <div className="new-label">Semi-ICU total beds :</div>
-                <div className="new-value">{additionalInfo.semiIcu.totalBeds}</div>
-              </div>
-              </div>
-
             </div>
           </div>
-                
-      </div>
-      </div>
+        </div>
+      </div >
       <div className="footer5">
         <div className="cevah-parent3">
           <b className="cevah10">CEVAH</b>
@@ -331,7 +361,7 @@ const Report = () => {
         </div>
         <div className="faqs5">FAQs</div>
       </div>
-    </div>
+    </div >
   );
 };
 
