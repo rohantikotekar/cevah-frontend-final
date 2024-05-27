@@ -68,7 +68,7 @@ const Desktop17 = () => {
                 src="/icon--jamicons--outline--logos--plus.svg"
               />
               <div className="text-container4">
-                <b className="get-started3">Get Started</b>
+                <b className="get-started3">Get Started fdsfsffsdf</b>
               </div>
               <img
                 className="icon-jam-icons-outline-l8"
