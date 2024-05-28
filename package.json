@@ -8,7 +8,6 @@
     "@emotion/styled": "^11.11.0",
     "@jridgewell/sourcemap-codec": "^1.4.15",
     "@mui/material": "^5.13.4",
-    "@rollup/plugin-terser": "^0.4.4",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -20,19 +19,15 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.2.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^3.0.1",
     "web-vitals": "^2.1.4",
     "workbox-background-sync": "^6.6.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "node --max-old-space-size=4096 index.js",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build": "node --max-old-space-size=4096 index.js"
-
-
-
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "root": true
@@ -50,6 +45,10 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-transform-private-property-in-object": "^7.24.6"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-transform-private-property-in-object": "^7.24.6",
+    "@babel/preset-react": "^7.24.6",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-terser": "^0.4.4"
   }
 }
