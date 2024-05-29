@@ -90,8 +90,13 @@ const Desktop8 = () => {
   return (
     <div className="desktop-89">
       <div className="hero7">
+      <img
+          className="ad-placeholder-icon89"
+          alt=""
+          src="DesktopAwaer.png"
+        />
         <div className="hero-text1">
-          <div className="top1">
+          {/* <div className="top1">
             <b className="caption1">Caption</b>
             <div className="main-headline1">Hospital Planning?</div>
             <div className="secondary-headline1">Headline Two</div>
@@ -131,7 +136,7 @@ const Desktop8 = () => {
                 src="/icon--jamicons--outline--logos--arrowright1.svg"
               />
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="hero-child5" />
         <div className="content13">

@@ -482,6 +482,13 @@
   .login8{
     display: none;
   }
+  .screenshot-2024-03-19-at-12281 {
+    position: absolute;
+    top: -3rem;
+    left: -10rem;
+    width: 0;
+    height: 108%;
+  }
   .desktop-92 {
     font-size: 1rem; /* Adjust font size for smaller screens */
     padding: 0.5rem; /* Reduce padding */

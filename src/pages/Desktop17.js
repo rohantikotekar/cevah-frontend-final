@@ -50,17 +50,22 @@ const Desktop17 = () => {
   return (
     <div className="desktop-83">
       <div className="hero16">
+      <img
+          className="ad-placeholder-icon83"
+          alt=""
+          src="Desktopmedirailuvc2.png"
+        />
         <div className="hero-text2">
-          <div className="top3">
+          {/* <div className="top3">
             <b className="caption2">Caption</b>
             <div className="main-headline2">Hospital Planning?</div>
             <div className="secondary-headline2">Headline Two</div>
-          </div>
-          <div className="paragraph2">
+          </div> */}
+          {/* <div className="paragraph2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </div>
-          <div className="buttons-group2">
+          </div> */}
+          {/* <div className="buttons-group2">
             <div className="button3">
               <img
                 className="icon-jam-icons-outline-l8"
@@ -91,7 +96,7 @@ const Desktop17 = () => {
                 src="/icon--jamicons--outline--logos--arrowright1.svg"
               />
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="hero-child13" />
         <div className="content28">

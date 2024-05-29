@@ -7,6 +7,15 @@
   display: none;
   color: var(--blue-gray-600);
 }
+.ad-placeholder-icon89 {
+  position: absolute;
+  top: -1rem;
+  left: -10rem;
+  width: 120%;
+  height: 103%;
+  z-index: 0; /* Ensure the ad is on top */
+  opacity: 1;
+}
 .main-headline1,
 .secondary-headline1 {
   position: relative;
@@ -390,7 +399,7 @@
 .content13 {
   position: absolute;
   top: 2.5rem;
-  left: 22.438rem;
+  left: 5.438rem;
   width: 33.125rem;
   height: 38.188rem;
 }
@@ -813,6 +822,15 @@
     font-family: var(--font-inter);
     text-align: left;
     display: inline-block;
+  }
+  .ad-placeholder-icon89 {
+    position: absolute;
+    top: -1rem;
+    left: -10rem;
+    width: 0;
+    height: 103%;
+    z-index: 0; /* Ensure the ad is on top */
+    opacity: 1;
   }
   /* .group-child19 {
     position: absolute;

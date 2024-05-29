@@ -677,6 +677,13 @@
   left: 19vw;
   cursor: pointer;
 }
+.screenshot-2024-03-19-at-12282 {
+  position: absolute;
+  top: -2rem;
+  left: -10rem;
+  width: 0;
+  height: 106%;
+}
 
 
 }

@@ -7,6 +7,15 @@
   display: none;
   color: var(--blue-gray-600);
 }
+.ad-placeholder-icon83 {
+  position: absolute;
+  top: -3rem;
+  left: -10rem;
+  width: 120%;
+  height: 108%;
+  z-index: 0; /* Ensure the ad is on top */
+  opacity: 1;
+}
 .main-headline2,
 .secondary-headline2 {
   position: relative;
@@ -201,7 +210,7 @@
 .content28 {
   position: absolute;
   top: 2.5rem;
-  left: 22.438rem;
+  left: 4.438rem;
   width: 33.125rem;
   height: 38.188rem;
   font-size: var(--button-m-size);
@@ -778,6 +787,15 @@
       display: flex;
       align-items: flex-end;
       width: 20.875rem;
+    }
+    .ad-placeholder-icon83 {
+      position: absolute;
+      top: -3rem;
+      left: -10rem;
+      width: 0;
+      height: 108%;
+      z-index: 0; /* Ensure the ad is on top */
+      opacity: 1;
     }
     .error-message2 {
       position: absolute;
