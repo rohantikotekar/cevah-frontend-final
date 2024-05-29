@@ -32,7 +32,7 @@ const Desktop14 = () => {
         <img
           className="ad-place-holder3"
           alt=""
-          src="/ad-place-holder@2x.png"
+          src="Desktopmedirailpanels2.png"
         />
         <div className="content23">
           <div className="content-child16" />

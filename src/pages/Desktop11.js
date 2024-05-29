@@ -67,7 +67,7 @@ const Desktop11 = () => {
   return (
     <div className="desktop-108">
       <div className="hero10">
-        <img className="ad-place-holder" alt="" src="/ad-place-holder@2x.png" />
+        <img className="ad-place-holder" alt="" src="Desktopmedirailuvc2.png" />
         <div className="content17">
           <div className="content-child11" />
           <div className="tell-us-about9">Tell us about the Project</div>

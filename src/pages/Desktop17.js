@@ -68,7 +68,7 @@ const Desktop17 = () => {
                 src="/icon--jamicons--outline--logos--plus.svg"
               />
               <div className="text-container4">
-                <b className="get-started3">Get Started fdsfsffsdf</b>
+                <b className="get-started3">Get Started</b>
               </div>
               <img
                 className="icon-jam-icons-outline-l8"
@@ -179,9 +179,9 @@ const Desktop17 = () => {
           </div>
           <div className="navigation17" />
         </div>
-        <button className="login16">
+        {/* <button className="login16">
           <div className="sign-in3">Sign In</div>
-        </button>
+        </button> */}
       </div>
     </div>
   );

@@ -48,7 +48,7 @@ const Desktop6 = () => {
         <img
           className="ad-placeholder-icon3"
           alt=""
-          src="/screenshot-20240319-at-1228-2@2x.png"
+          src="Desktopmedirailpanels2.png"
         />
         <div className="content9">
           <div className="content-child2" />

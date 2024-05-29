@@ -170,9 +170,9 @@ const Desktop8 = () => {
             <div className="enter-ph-no1">
               <div className="enter-otp1">Enter OTP</div>
               <div className="error-message1">
-                <button onClick={sendResendRequest}>
-                  <span className="resend-otp-in">Resend OTP</span>
-                </button>
+              <button className="custom-button" onClick={sendResendRequest}>
+      <span className="resend-otp-in">Resend OTP</span>
+    </button>
               </div>
             </div>
             <div className="login-or-sign1">Login or Sign Up</div>

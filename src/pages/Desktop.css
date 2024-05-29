@@ -274,6 +274,7 @@
   letter-spacing: -0.01em;
   line-height: 120%;
   font-weight: 600 !important;
+  font-size: 3rem;
 }
 .group-child {
   position: absolute;
@@ -437,6 +438,23 @@
   top: 0;
   left: 0;
   font-weight: 800;
+  font-size: 3rem;
+} 
+.div2-final {
+  top: 0;
+  left: 0;
+  position: absolute;
+  font-weight: 800;
+  font-size: 3rem;
+
+} 
+.div3-final {
+  top: 0;
+  left: 0;
+  font-weight: 800;
+  position: absolute;
+  font-size: 3rem;
+
 } 
 .our-online-tools,
 .tailored-solutions {
@@ -642,7 +660,7 @@
 }
 .empowering-3-1-parent,
 .group-parent3,
-.light-bulb-3-1-parent {
+.light-bulb-3-1-parent,.our-platform-provides {
   position: absolute;
   top: 16.75rem;
   left: 0.188rem;
@@ -653,6 +671,7 @@
 .light-bulb-3-1-parent {
   left: 37.938rem;
 }
+
 .group-parent3 {
   top: 13.688rem;
   left: 6.5rem;
@@ -666,6 +685,11 @@
   letter-spacing: -0.01em;
   line-height: 120%;
   display: inline-block;
+}
+.our-platform-provides {
+  top: 0;
+  left: 0;
+  width: 28.063rem;
 }
 .medical-masterplanning-at {
   top: 3.563rem;
@@ -686,6 +710,7 @@
   width: 28.063rem;
   height: 4.125rem;
   text-align: center;
+  font-size: 1rem;
 }
 .group-parent2 {
   position: absolute;
@@ -797,7 +822,7 @@
   font-family: var(--font-inter);
 }
 
-.desktop-82 {
+/* .desktop-82 {
   max-width: 1600px; 
   width: 100%;
   position: relative;
@@ -810,11 +835,376 @@
   font-size: var(--font-size-13xl);
   color: var(--color-gray-100);
   font-family: var(--font-inter);
+} */
+.desktop-82 {
+  /* Limit the maximum width to 1440px */
+
+ width: 100%;
+ position: relative;
+ height: 66.625rem;
+ overflow: hidden;
+ text-align: left;
+ font-size: var(--font-size-21xl);
+ color: var(--color-black);
+ font-family: var(--font-inter);
 }
 @media only screen and (max-width: 758px) {
   .desktop-82 {
     font-size: 1rem; 
     padding: 0.5rem; 
     min-height: 100vh; 
+    width: 40rem;
+  } 
+ 
+  .docbusiness2-1-icon {
+    position: absolute;
+    top: -2rem;
+    left: 10rem;
+    width: 200vw;
+    height: 200vw;
+    object-fit: cover;
   }
+  .landing-page-full-scroll-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(60, 208, 206, 0.36);
+    width: 110rem;
+    height: 100.688rem;
+    
+  }
+    .blueprint-to-breakthrough {
+    position: absolute;
+    top: 60.125rem;
+    left: 0;
+    letter-spacing: -0.01em;
+    display: inline-block;
+    width: 80rem;
+    font-size: 7rem;
+}
+.turn-your-healthcare {
+  top: 70.625rem;
+  font-size: var(--font-size-5xl);
+  line-height: 120%;
+  color: var(--color-black);
+  width: 60.25rem;
+  font-size: 3rem;
+}
+ .rectangle-button {
+  position: absolute;
+  /* top: 60rem; */
+  left: 0;
+  cursor: pointer;
+  width: 20rem;
+  height: 7rem;
+} 
+.rectangle-container {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 85.125rem;
+  left: 0;
+  width: 30.75rem;
+  height: 12.5rem;
+  font-size: 2rem;
+  
+}
+.get-started {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-base);
+  line-height: 120%;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: left;
+}
+  .group-parent2 {
+    position: absolute;
+    top: 105.438rem;
+    left: 6.125rem;
+    width: 77.813rem;
+    height: 42.063rem;
+    font-size: var(--font-size-lg);
+  }
+  .what-does-cevah {
+    position: absolute;
+    top: 0;
+    left: 2.813rem;
+    letter-spacing: -0.01em;
+    line-height: 120%;
+    font-weight: 600;
+    display: inline-block;
+    width: 40.375rem;
+    font-size: 4rem;
+}
+.medical-masterplanning-at {
+  top: 8.563rem;
+  left: 0.188rem;
+  font-size: 5rem;
+  color: var(--color-darkslategray);
+  width: 90.625rem;
+}
+.floor-plan-3-parent {
+    position: absolute;
+    top: -60rem;
+    left: 15rem;
+    width: 28.813rem;
+    height: 11.313rem;
+    font-size: 3rem;
+    
+}
+.floor-plan-3-icon {
+  position: absolute;
+  top: -3rem;
+  left: 10.5rem;
+  width: 10.25rem;
+  height: 10.25rem;
+  object-fit: cover;
+}
+.empowering-3-1-parent {
+  position: absolute;
+  top: -10.75rem;
+  left: 15.188rem;
+  width: 28.813rem;
+  height: 11.625rem;
+  font-size: 3rem;
+
+}
+.our-platform-provides-personal-wrapper {
+  position: absolute;
+  top: 180rem;
+  left: 22.813rem;
+  width: 28.063rem;
+  height: 4.125rem;
+  text-align: center;
+}
+ .light-bulb-3-1-parent {
+  position: absolute;
+  top: 30.75rem;
+  left: 15rem;
+  width: 28.813rem;
+  height: 11.625rem;
+  font-size: 3rem;
+}
+.userfocus-icon {
+  position: absolute;
+  top: 278.125rem;
+  left: 38.875rem;
+  width: 6.25rem;
+  height: 6.25rem;
+  overflow: hidden;
+}
+
+.why-choose-cevah {
+  top: -20rem;
+  left: calc(50% - 579px);
+  font-size: var(--font-size-13xl);
+  letter-spacing: -0.01em;
+  line-height: 120%;
+  font-weight: 600;
+  font-size: 4rem;
+}
+.group-child4 {
+  position: absolute;
+  top: -19rem;
+  left: -1rem;
+  background-color: var(--color-mediumturquoise-100);
+  width: 3rem;
+  height: 3rem;
+}
+.break-through-barriers {
+  position: absolute;
+  top: -8rem;
+  left: calc(50% - 621px);
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  display: inline-block;
+  width: 77.563rem;
+  font-size: var(--font-size-29xl);
+  color: var(--color-darkslategray);
+  width: 77.625rem;
+  font-size: 5rem;
+}
+  .why-choose-cevah-parent {
+    position: absolute;
+    top: 350.938rem;
+    left: 6.125rem;
+    width: 78rem;
+    height: 48.313rem;
+    color: var(--color-darkslategray);
+  }
+  .personalized-assistance {
+    top: -70rem;
+    left: 5.7rem;
+    font-size: var(--font-size-13xl);
+    color: var(--color-gray-100);
+    width: 27.144rem;
+    height: 2.819rem;
+    font-size: 4rem;
+}
+.receive-personalized-guidance-final {
+  top: -60rem;
+  left: 5.688rem;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  width: 50.25rem;
+  height: 5.813rem;
+  font-size: 3rem;
+}
+.our-online-tools {
+  top: -40rem;
+  left: 5.688rem;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  width: 50.25rem;
+  height: 3.813rem;
+  font-size: 3rem;
+}
+.div2-final {
+  top: -50rem;
+  left: 0;
+  font-size: 3rem;
+}
+.div3-final {
+  top: -30rem;
+  left: 0;
+  font-size: 3rem;
+}
+.div1-final {
+  top: -70rem;
+  left: 0;
+  font-size: 3rem;
+}
+.group-div {
+  top: 80.813rem;
+  left: 1.125rem;
+  width: 76.875rem;
+}
+.docphone-icon {
+  top: -50rem;
+  left: 55.25rem;
+  width: 21.625rem;
+  object-fit: cover;
+}
+.tailored-solutions {
+  top: -50rem;
+  left: 5.7rem;
+  font-size: var(--font-size-13xl);
+  color: var(--color-gray-100);
+  width: 30.919rem;
+  height: 2.819rem;
+  font-size: 4rem;
+}
+.innovative-approach-final {
+  top: -30rem;
+  left: 5.7rem;
+  font-size: var(--font-size-13xl);
+  color: var(--color-gray-100);
+  width: 22.919rem;
+  height: 2.819rem;
+  font-size: 4rem;
+}
+.with-our-innovative {
+  top: -20rem;
+  left: 5.688rem;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  width: 50.25rem;
+  height: 5.813rem;
+  font-size: 3rem;
+}
+/* .group {
+  position: absolute;
+  top: 20.875rem;
+  left: 0;
+  width: 43.938rem;
+  height: 6.813rem;
+} */
+  .group-parent3 {
+    top: 100.688rem;
+    left: 6.5rem;
+    width: 66.75rem;
+    height: 28.375rem;
+    text-align: center;
+}
+  .group-parent {
+    top: 460.5rem;
+    left: 8.125rem;
+    width: 73.75rem;
+    height: 40.875rem;
+    font-weight: 0rem;
+    font-size: 600;
+  }
+  .group-child {
+    position: absolute;
+    top: 0.875rem;
+    left: -1rem;
+    background-color: var(--color-mediumturquoise-100);
+    width: 3rem;
+    height: 3rem;
+  }
+  .what-our-do-our-clients-say-parent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60.5rem;
+    height: 3.625rem;
+    font-size: 4rem;
+  }
+  .discover-simple-and {
+    top: 2.563rem;
+    font-size: var(--font-size-29xl);
+    font-family: var(--font-pragmatica);
+    color: #032651;
+    width: 78.375rem;
+    font-size: 4rem;
+  }
+  .landing-container {
+    position: absolute;
+    top: 19.563rem;
+    left: 0;
+    width: 43.938rem;
+    height: 8.806rem;
+    font-size: 4rem;
+}
+.slide img {
+  width: 100%;
+  height: auto;
+  left: 0rem;
+}
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: none;
+}
+.affordable-air-purifier-container {
+  position: absolute;
+  top: 10.125rem;
+  left: 4.125rem;
+  display: inline-block;
+  width: 67.313rem;
+  font-size: 3rem;
+}
+  .rectangle-parent {
+    top: 510.688rem;
+    left:0;
+    background-color: #b8dbf7;
+    width: 95rem;
+    height: 40.125rem;
+    font-size: var(--font-size-13xl);
+  }
+  .footer-final {
+    position: absolute;
+    top: 550.813rem;
+    left: 0;
+    background-color: var(--color-darkslategray-200);
+    width: 100rem;
+    height: 40.938rem;
+    font-size: var(--font-size-sm);
+    color: white;
+  }
+
 } 

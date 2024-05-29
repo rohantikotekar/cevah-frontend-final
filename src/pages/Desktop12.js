@@ -186,7 +186,7 @@ const Desktop12 = () => {
         <img
           className="ad-place-holder1"
           alt=""
-          src="/ad-place-holder@2x.png"
+          src="Desktopmedirailpanels2.png"
         />
         <div className="content19">
           <div className="content-child13" />

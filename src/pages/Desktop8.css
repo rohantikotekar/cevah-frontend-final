@@ -148,6 +148,7 @@
   right: 0;
   left: 0;
   cursor: pointer;
+  background-color: var(--color-darkturquoise);
 }
 
 .input6 {
@@ -335,6 +336,27 @@
   text-align: left;
   display: inline-block;
 }
+.custom-button {
+  background-color: transparent; /* Remove default background */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Add some padding */
+  cursor: pointer; /* Change cursor to pointer */
+  font-size: 16px; /* Increase font size */
+  color: black; /* Customize text color */
+}
+
+.custom-button:hover {
+  color: black; /* Change text color on hover */
+}
+
+.custom-button:focus {
+  outline: none; /* Remove focus outline */
+}
+
+/* .resend-otp-in {
+  text-decoration: underline; /* Add underline to the text */
+
+
 .enter-ph-no1 {
   position: absolute;
   top: 3.813rem;
@@ -714,7 +736,7 @@
   .hero-child5{
     position: absolute;
     top: -1.25rem;
-    left: 0rem;
+    left: -5rem;
     background-color: white;
     width: 100vw;
     height: 45.688rem;
@@ -723,9 +745,8 @@
     position: absolute;
     top: 0;
     left: -3rem;
-    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2),
-      -4px -4px 20px rgba(154, 154, 154, 0.2);
-    border-radius: var(--br-3xs);
+    /* box-shadow: none; */
+    /* border-radius: var(--br-3xs); */
     background-color: var(--white);
     width: 0%;
     height: 38.188rem;

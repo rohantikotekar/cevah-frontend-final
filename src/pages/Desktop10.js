@@ -45,7 +45,7 @@ const Desktop10 = () => {
         <img
           className="screenshot-2024-03-19-at-12282"
           alt=""
-          src="/screenshot-20240319-at-1228-2@2x.png"
+          src="Desktopmedirailpndnt2.png"
         />
         <div className="ad-placeholder2">
           <img

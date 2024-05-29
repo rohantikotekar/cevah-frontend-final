@@ -1,10 +1,9 @@
 .ad-place-holder2 {
   position: absolute;
-  top: 1.25rem;
-  left: 33.313rem;
-  width: 50.875rem;
-  height: 43.438rem;
-  object-fit: cover;
+  top: -1rem;
+  left: -10rem;
+  width: 120%;
+  height: 102%;
 }
 .content-child15 {
   position: absolute;

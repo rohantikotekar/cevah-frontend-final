@@ -108,11 +108,10 @@
 
 .ad-place-holder {
   position: absolute;
-  top: 1.25rem;
-  left: 33.313rem;
-  width: 50.875rem;
-  height: 43.438rem;
-  object-fit: cover;
+  top: -2rem;
+  left: -10rem;
+  width: 124%;
+  height: 106%;
 }
 .content-child11 {
   position: absolute;

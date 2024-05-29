@@ -1,10 +1,9 @@
 .ad-placeholder-icon1 {
   position: absolute;
-  top: 1.125rem;
-  left: 27.75rem;
-  width: 56.25rem;
-  height: 43.438rem;
-  object-fit: cover;
+  top: -3rem;
+  left: -10rem;
+  width: 120%;
+  height: 108%;
 }
 .content-child1 {
   position: absolute;

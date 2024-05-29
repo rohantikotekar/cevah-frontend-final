@@ -37,7 +37,7 @@ const Desktop5 = () => {
         <img
           className="new1-ad-placeholder-icon2"
           alt=""
-          src="https://aws-demo-s3-bucket-01.s3.amazonaws.com/img1.avif"
+          src="Desktopmedirailpndnt2.png"
         />
         <div className="new1-hero-item" />
         <div className="new1-tell-us-about4">Tell us about yourself</div>

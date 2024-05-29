@@ -3,6 +3,7 @@
 import { useCallback } from "react";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import ImageSlider1 from './ImageSlider1';
 import "./Desktop.css";
 
 const Desktop = () => {
@@ -91,7 +92,15 @@ const Desktop = () => {
           <div className="what-our-do-final">What our do our clients say?</div>
           <div className="group-child" />
         </div>
-        <div className="group-container">
+
+        <ImageSlider1 />
+
+       
+       
+       
+       
+       
+        {/* <div className="group-container">
           <div className="rectangle-group">
             <div className="group-item" />
             <div className="group-inner" />
@@ -100,11 +109,9 @@ const Desktop = () => {
             <div className="group-child2" />
             <div className="group-child3" />
           </div>
-          <div className="lorem-ipsum-dolor-sit-amet-lo-parent">
-            <div className="lorem-ipsum-dolor">{`Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, `}</div>
-            <div className="dr-xyz-abcd">Dr. XYZ ABCD</div>
-          </div>
-        </div>
+          
+        </div> */}
+     
       </div>
       <div className="why-choose-cevah-parent">
         <div className="why-choose-cevah">Why choose Cevah?</div>
@@ -117,7 +124,7 @@ const Desktop = () => {
           <div className="group-wrapper">
             <div className="group-parent1">
               <div className="group">
-                <div className="div1-final">02</div>
+                <div className="div2-final">02</div>
                 <div className="our-online-tools">
                   {" "}
                   Our online tools provide tailored solutions to meet your
@@ -126,7 +133,7 @@ const Desktop = () => {
                 <b className="tailored-solutions">Tailored Solutions</b>
               </div>
               <div className="landing-container">
-                <div className="div1-final">03</div>
+                <div className="div3-final">03</div>
                 <div className="with-our-innovative">
                   With our innovative online masterplanning tools, unlock the
                   full potential of your healthcare practice from anywhere and

@@ -59,7 +59,7 @@ const Desktop13 = () => {
   return (
     <div className="desktop-115">
       <div className="hero12">
-        <img className="ad-place-holder2" alt="" src="/ad-place-holder@2x.png" />
+        <img className="ad-place-holder2" alt="" src="DesktopAwaer.png" />
         <div className="content21">
           <div className="content-child15" />
           <div className="analysing-data">Analysing Data</div>
