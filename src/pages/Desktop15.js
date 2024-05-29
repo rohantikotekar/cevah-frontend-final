@@ -30,6 +30,10 @@ const Desktop15 = () => {
     navigate("/");
   }, [navigate]);
 
+  const onLogout = useCallback(() => {
+    navigate("/desktop-83");
+  }, [navigate]);
+
   return (
     <div className="desktop-91">
       <div className="hero14">
@@ -120,9 +124,9 @@ const Desktop15 = () => {
           </div>
           <div className="navigation15" />
         </div>
-        <div className="login14">
-          <div className="jd12">JD</div>
-        </div>
+        <button className="login7" onClick={onLogout}>
+          <div className="sign-in2">Sign Out</div>
+        </button> 
       </div>
     </div>
   );

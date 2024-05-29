@@ -8,7 +8,9 @@ import "./Desktop5.css";
 
 const Desktop5 = () => {
   const navigate = useNavigate();
-
+  const onLogout = useCallback(() => {
+    navigate("/desktop-83");
+  }, [navigate]);
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -129,8 +131,9 @@ const Desktop5 = () => {
           </div>
           <div className="new1-navigation5" />
         </div>
-        
-        <img className="new1-user-icon2" alt="" src="/user.svg" />
+        <button className="login7" onClick={onLogout}>
+          <div className="sign-in2">Sign Out</div>
+        </button> 
       </div>
     </div>
   );

@@ -15,7 +15,9 @@ const Desktop6 = () => {
   const navigate = useNavigate();
   const [college, setCollege] = useState('');
   const [degree, setDegree] = useState('');
-
+  const onLogout = useCallback(() => {
+    navigate("/desktop-83");
+  }, [navigate]);
   const handleChangeCollege = (event) => {
     setCollege(event.target.value);
   };
@@ -150,10 +152,9 @@ const Desktop6 = () => {
           </div>
           <div className="navigation6" />
         </div>
-        <div className="login5">
-          <div className="jd4"></div>
-        </div>
-        <img className="user-icon4" alt="" src="/user.svg" />
+        <button className="login7" onClick={onLogout}>
+          <div className="sign-in2">Sign Out</div>
+        </button> 
 
       </div>
     </div>

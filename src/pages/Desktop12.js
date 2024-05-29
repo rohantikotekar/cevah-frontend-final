@@ -7,6 +7,9 @@ import "./Desktop12.css";
 
 const Desktop12 = () => {
   const navigate = useNavigate();
+  const onLogout = useCallback(() => {
+    navigate("/desktop-83");
+  }, [navigate]);
 
 
   const [selected1, setSelected1] = useState(false);
@@ -418,10 +421,9 @@ const Desktop12 = () => {
           </div>
           <div className="navigation12" />
         </div>
-        <button className="login11">
-          {/* <div className="jd9">JD</div> */}
-        </button>
-        <img className="user-icon12" alt="" src="/user.svg" />
+        <button className="login7" onClick={onLogout}>
+          <div className="sign-in2">Sign Out</div>
+        </button> 
 
       </div>
     </div>

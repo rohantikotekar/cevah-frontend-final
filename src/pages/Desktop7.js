@@ -18,7 +18,9 @@ const Desktop7 = () => {
 
   const [degree1, setDegree1] = useState(""); // State to hold the selected degree
   const [college1, setCollege1] = useState("")// 
- 
+  const onLogout = useCallback(() => {
+    navigate("/desktop-83");
+  }, [navigate]);
   const onFrameButtonClick = useCallback(() => {
     localStorage.setItem('college1', college1);
     localStorage.setItem('degree1', degree1);
@@ -146,10 +148,9 @@ const Desktop7 = () => {
           </div>
           <div className="navigation7" />
         </div>
-        <div className="login6">
-          <div className="jd5"></div>
-        </div>
-                <img className="user-icon5" alt="" src="/user.svg" />
+        <button className="login7" onClick={onLogout}>
+          <div className="sign-in2">Sign Out</div>
+        </button> 
 
       </div>
     </div>

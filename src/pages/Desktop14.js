@@ -5,14 +5,16 @@ import "./Desktop14.css";
 const Desktop14 = () => {
   const navigate = useNavigate();
   const [apiResponse, setApiResponse] = useState(null);
-
+  const onLogout = useCallback(() => {
+    navigate("/desktop-83");
+  }, [navigate]);
   useEffect(() => {
     const storedResponse = localStorage.getItem('apiResponse');
     if (storedResponse) {
       setApiResponse(JSON.parse(storedResponse));
     }
   }, []);
-
+  
   const onFrameContainerClick = useCallback(() => {
     localStorage.setItem('apiResponse', JSON.stringify(apiResponse));
     navigate("/new-desktop-216");
@@ -84,10 +86,9 @@ const Desktop14 = () => {
           </div>
           <div className="navigation14" />
         </div>
-        <div className="login13">
-          <div className="jd11"></div>
-        </div>
-        <img className="user-icon5" alt="" src="/user.svg" />
+        <button className="login7" onClick={onLogout}>
+          <div className="sign-in2">Sign Out</div>
+        </button> 
       </div>
     </div>
   );

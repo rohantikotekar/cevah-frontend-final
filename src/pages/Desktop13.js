@@ -9,8 +9,14 @@ const Desktop13 = () => {
   const [percentage, setPercentage] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
   const [apiResponse, setApiResponse] = useState(null);
+  const onLogout = useCallback(() => {
+    navigate("/desktop-83");
+  }, [navigate]);
 
   useEffect(() => {
+
+   
+
     const intervalTime = 5000 / 100;
     const interval = setInterval(() => {
       setPercentage((prevPercentage) =>
@@ -120,10 +126,9 @@ const Desktop13 = () => {
           </div>
           <div className="navigation13" />
         </div>
-        <div className="login12">
-          <div className="jd10"></div>
-        </div>
-        <img className="user-icon4" alt="" src="/user.svg" />
+        <button className="login7" onClick={onLogout}>
+          <div className="sign-in2">Sign Out</div>
+        </button> 
       </div>
     </div>
   );

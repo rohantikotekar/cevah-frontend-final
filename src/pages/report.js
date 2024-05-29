@@ -12,6 +12,10 @@ const Report = () => {
     navigate("/");
   }, [navigate]);
 
+  const onLogout = useCallback(() => {
+    navigate("/desktop-83");
+  }, [navigate]);
+
   const [numberOfFloors, setNumberOfFloors] = useState('');
   const [floorDetails, setFloorDetails] = useState([]);
   const [siteInfo, setSiteInfo] = useState({
@@ -373,8 +377,10 @@ const Report = () => {
           <div className="navigation5" />
         </div>
         
-        <img className="user-icon2" alt="" src="/user.svg" />
-      </div>
+        <button className="login7" onClick={onLogout}>
+          <div className="sign-in2">Sign Out</div>
+        </button>      
+        </div>
     </div >
   );
 };

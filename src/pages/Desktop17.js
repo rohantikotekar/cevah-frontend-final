@@ -21,6 +21,7 @@ const Desktop17 = () => {
     navigate("/");
   }, [navigate]);
 
+
   async function sendOTPRequest(phoneNumber) {
     const url = 'https://clownfish-app-kymio.ondigitalocean.app/auth';
     const payload = { phone_number: phoneNumber };
@@ -184,9 +185,7 @@ const Desktop17 = () => {
           </div>
           <div className="navigation17" />
         </div>
-        {/* <button className="login16">
-          <div className="sign-in3">Sign In</div>
-        </button> */}
+   
       </div>
     </div>
   );

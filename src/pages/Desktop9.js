@@ -10,11 +10,15 @@ import { useNavigate } from "react-router-dom";
 import "./Desktop9.css";
 
 const Desktop9 = () => {
+  
   const college = localStorage.getItem("college");
   const degree = localStorage.getItem("degree");
   const college1 = localStorage.getItem("college1");
   const college3 = localStorage.getItem("college3");
   const navigate = useNavigate();
+  const onLogout = useCallback(() => {
+    navigate("/desktop-83");
+  }, [navigate]);
 
   const onFrameInputClick = useCallback(() => {
     // Please sync "Desktop - 97" to the project
@@ -149,10 +153,9 @@ const Desktop9 = () => {
           </div>
           <div className="navigation9" />
         </div>
-        <div className="login8">
-          <div className="jd6"></div>
-        </div>
-        <img className="user-icon6" alt="" src="/user.svg" />
+        <button className="login7" onClick={onLogout}>
+          <div className="sign-in2">Sign Out</div>
+        </button> 
 
       </div>
     </div>

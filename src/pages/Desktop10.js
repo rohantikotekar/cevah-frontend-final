@@ -8,6 +8,9 @@ import "./Desktop10.css";
 
 const Desktop10 = () => {
   const navigate = useNavigate();
+  const onLogout = useCallback(() => {
+    navigate("/desktop-83");
+  }, [navigate]);
   
   // State for form input values
   const [formValues, setFormValues] = useState({
@@ -169,10 +172,9 @@ const Desktop10 = () => {
           </button>
           <div className="navigation10" />
         </div>
-        <button className="login9">
-          {/* <div className="jd7">JD</div> */}
-        </button>
-        <img className="user-icon100" alt="" src="/user.svg" />
+        <button className="login7" onClick={onLogout}>
+          <div className="sign-in2">Sign Out</div>
+        </button> 
       </div>
     </div>
   );

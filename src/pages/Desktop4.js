@@ -5,6 +5,9 @@ import "./Desktop4.css";
 
 const Desktop4 = () => {
   const navigate = useNavigate();
+  const onLogout = useCallback(() => {
+    navigate("/desktop-83");
+  }, [navigate]);
 
   const onButtonPrimaryClick = useCallback(() => {
     navigate("/desktop-90");
@@ -81,10 +84,9 @@ const Desktop4 = () => {
           </div>
           <div className="navigation4" />
         </div>
-        <div className="login3">
-          <div className="jd2">JD</div>
-        </div>
-        <img className="user-icon1" alt="" src="/user.svg" />
+        <button className="login7" onClick={onLogout}>
+          <div className="sign-in2">Sign Out</div>
+        </button> 
       </div>
       <img className="doctor-amico-icon1" alt="" src="/doctoramico@2x.png" />
     </div>

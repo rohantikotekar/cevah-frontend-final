@@ -12,7 +12,9 @@ import "./Desktop16.css";
 
 const Desktop16 = () => {
   const navigate = useNavigate();
-
+  const onLogout = useCallback(() => {
+    navigate("/desktop-83");
+  }, [navigate]);
   const [college3, setCollege3] = useState('');
   const [degree, setDegree] = useState('');
 
@@ -146,10 +148,9 @@ const Desktop16 = () => {
           </div>
           <div className="navigation16" />
         </div>
-        <div className="login15">
-          <div className="jd13"></div>
-        </div>
-        <img className="user-icon3" alt="" src="/user.svg" />
+        <button className="login7" onClick={onLogout}>
+          <div className="sign-in2">Sign Out</div>
+        </button> 
       </div>
     </div>
   );

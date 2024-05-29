@@ -9,7 +9,9 @@ const Desktop11 = () => {
   const [height, setHeight] = useState("");
   const [apiResponse, setApiResponse] = useState(null);
   const navigate = useNavigate();
-
+  const onLogout = useCallback(() => {
+    navigate("/desktop-83");
+  }, [navigate]);
   const onFrameButtonClick = useCallback(() => {
     sendDetailsRequest(area, fsi, height);
   }, [area, fsi, height]);
@@ -218,10 +220,9 @@ const Desktop11 = () => {
           </div>
           <div className="navigation11" />
         </div>
-        <div className="login10">
-          {/* <div className="jd8">JD</div> */}
-        </div>
-        <img className="user-icon11" alt="" src="/user.svg" />
+        <button className="login7" onClick={onLogout}>
+          <div className="sign-in2">Sign Out</div>
+        </button> 
       </div>
     </div>
   );

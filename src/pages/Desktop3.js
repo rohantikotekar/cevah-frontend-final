@@ -14,6 +14,10 @@ const Desktop3 = () => {
     navigate("/desktop-120");
   }, [navigate]);
 
+  const onLogout = useCallback(() => {
+    navigate("/desktop-83");
+  }, [navigate]);
+
   return (
     <div className="desktop-119">
       <section className="footer3">
@@ -65,10 +69,7 @@ const Desktop3 = () => {
           </div>
           <div className="navigation3" />
         </div>
-        <div className="login2">
-          <h3 className="jd1">JD</h3>
-        </div>
-        <img className="user-icon" alt="" src="/user.svg" />
+        
       </header>
       <section className="hero2">
         <img
@@ -117,8 +118,9 @@ const Desktop3 = () => {
         alt=""
         src="/hospital-buildingamico-1@2x.png"
       />
-      <img className="doctor-amico-icon" alt="" src="/doctoramico@2x.png" />
-    </div>
+<button className="login7" onClick={onLogout}>
+          <div className="sign-in2">Sign Out</div>
+        </button>       </div>
   );
 };
 

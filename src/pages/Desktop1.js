@@ -139,9 +139,9 @@ const Desktop1 = () => {
           </div>
           <div className="navigation1" />
         </div>
-        <div className="login">
-          <div className="jd">JD</div>
-        </div>
+        <button className="login7">
+          <div className="sign-in2">Sign In</div>
+        </button>
       </div>
     </div>
   );
