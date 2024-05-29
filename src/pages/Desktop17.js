@@ -185,7 +185,13 @@ const Desktop17 = () => {
           </div>
           <div className="navigation17" />
         </div>
+<<<<<<< HEAD
    
+=======
+        {/* <button className="login16">
+          <div className="sign-in3">Sign In</div>
+        </button> */}
+>>>>>>> c065ed2 (last Tanmay changes)
       </div>
     </div>
   );
