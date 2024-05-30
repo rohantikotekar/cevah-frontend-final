@@ -10,11 +10,11 @@ const Desktop = () => {
   const navigate = useNavigate();
 
   const onGroupButtonClick = useCallback(() => {
-    navigate("/desktop-83");
+    navigate("/login");
   }, [navigate]);
 
   const onRectangleButtonClick = useCallback(() => {
-    navigate("/desktop-83");
+    navigate("/login");
   }, [navigate]);
 
   return (

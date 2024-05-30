@@ -9,7 +9,7 @@ import "./Desktop5.css";
 const Desktop5 = () => {
   const navigate = useNavigate();
   const onLogout = useCallback(() => {
-    navigate("/desktop-83");
+    navigate("/login");
   }, [navigate]);
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -22,11 +22,11 @@ const Desktop5 = () => {
     localStorage.setItem("phoneNumber", phoneNumber);
     
 
-    navigate("/desktop-93");
+    navigate("/Education1");
   }, [navigate, firstName, lastName, phoneNumber]);
 
   const onBackTextClick = useCallback(() => {
-    navigate("/desktop-120");
+    navigate("/About-Yourself");
   }, [navigate]);
 
   const onLogoContainerClick = useCallback(() => {

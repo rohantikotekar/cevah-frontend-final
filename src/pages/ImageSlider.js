@@ -7,16 +7,16 @@ const ImageSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setSlideIndex(prevIndex => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-    }, 3000); // Change slide every 3 seconds
+    }, 2000); // Change slide every 3 seconds
 
     return () => clearInterval(interval);
   }, []);
 
   const images = [
-    "images.jpeg",
-    "images1.jpeg",
-    "images2.jpeg",
-    "images3.jpeg",
+    "AD1.png",
+    "AD2.png",
+    "AD3.png",
+    "AD4.png",
         // Add more image paths as needed
   ];
 

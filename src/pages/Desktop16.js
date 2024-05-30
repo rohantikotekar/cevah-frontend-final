@@ -13,7 +13,7 @@ import "./Desktop16.css";
 const Desktop16 = () => {
   const navigate = useNavigate();
   const onLogout = useCallback(() => {
-    navigate("/desktop-83");
+    navigate("/login");
   }, [navigate]);
   const [college3, setCollege3] = useState('');
   const [degree, setDegree] = useState('');
@@ -29,12 +29,12 @@ const Desktop16 = () => {
 
   const onFrameButtonClick = useCallback(() => {
     localStorage.setItem('college3', college3);
-    navigate("/desktop-94");
+    navigate("/Education2");
   }, [navigate, college3]);
 
 
   const onBackTextClick = useCallback(() => {
-    navigate("/desktop-90");
+    navigate("/Add-Name");
   }, [navigate]);
 
   const onLogoContainerClick = useCallback(() => {

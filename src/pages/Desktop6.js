@@ -16,7 +16,7 @@ const Desktop6 = () => {
   const [college, setCollege] = useState('');
   const [degree, setDegree] = useState('');
   const onLogout = useCallback(() => {
-    navigate("/desktop-83");
+    navigate("/login");
   }, [navigate]);
   const handleChangeCollege = (event) => {
     setCollege(event.target.value);
@@ -28,16 +28,16 @@ const Desktop6 = () => {
 
   const onFrameButtonClick = useCallback(() => {
     localStorage.setItem('college', college);
-    navigate("/desktop-95");
+    navigate("/Education3");
   }, [navigate, college, degree]);
 
 
   const onBackTextClick = useCallback(() => {
-    navigate("/desktop-93");
+    navigate("/Education1");
   }, [navigate]);
 
   const onSkipTextClick = useCallback(() => {
-    navigate("/desktop-95");
+    navigate("/Education-Details");
   }, [navigate]);
 
   const onLogoContainerClick = useCallback(() => {

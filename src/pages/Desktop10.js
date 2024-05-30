@@ -9,7 +9,7 @@ import "./Desktop10.css";
 const Desktop10 = () => {
   const navigate = useNavigate();
   const onLogout = useCallback(() => {
-    navigate("/desktop-83");
+    navigate("/login");
   }, [navigate]);
   
   // State for form input values
@@ -31,11 +31,11 @@ const Desktop10 = () => {
   const onFrameButtonClick = useCallback(() => {
     // Save form data to local storage
     localStorage.setItem("projectAddress", JSON.stringify(formValues));
-    navigate("/desktop-114");
+    navigate("/Speciality");
   }, [navigate, formValues]);
 
   const onBackClick = useCallback(() => {
-    navigate("/desktop-92");
+    navigate("/Education-Details");
   }, [navigate]);
 
   const onLogoClick = useCallback(() => {

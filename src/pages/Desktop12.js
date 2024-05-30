@@ -8,7 +8,7 @@ import "./Desktop12.css";
 const Desktop12 = () => {
   const navigate = useNavigate();
   const onLogout = useCallback(() => {
-    navigate("/desktop-83");
+    navigate("/login");
   }, [navigate]);
 
 
@@ -166,7 +166,7 @@ const Desktop12 = () => {
       const data = await response.json();
       if (response.ok) {
         console.log('Success:', data);
-        navigate("/desktop-108");
+        navigate("/Calculation-Details");
       } else {
         console.error('Error:', data);
       }
@@ -176,7 +176,7 @@ const Desktop12 = () => {
   }, [navigate]);
 
   const onBackButtonTextClick = useCallback(() => {
-    navigate("/desktop-107");
+    navigate("/Address");
   }, [navigate]);
 
   const onLogoContainerClick = useCallback(() => {

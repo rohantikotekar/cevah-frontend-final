@@ -10,14 +10,14 @@ const Desktop13 = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [apiResponse, setApiResponse] = useState(null);
   const onLogout = useCallback(() => {
-    navigate("/desktop-83");
+    navigate("/login");
   }, [navigate]);
 
   useEffect(() => {
 
    
 
-    const intervalTime = 5000 / 100;
+    const intervalTime = 8000 / 100;
     const interval = setInterval(() => {
       setPercentage((prevPercentage) =>
         prevPercentage < 100 ? prevPercentage + 1 : prevPercentage
@@ -27,8 +27,8 @@ const Desktop13 = () => {
     setTimeout(() => {
       setLoading(false);
       clearInterval(interval);
-      navigate("/desktop-109");  // Navigate to Desktop14
-    }, 5000);
+      navigate("/View-Report");  // Navigate to Desktop14
+    }, 8000);
 
     return () => clearInterval(interval);
   }, [navigate]);
@@ -55,7 +55,7 @@ const Desktop13 = () => {
   }, []);
 
   const onBackTextClick = useCallback(() => {
-    navigate("/desktop-114");
+    navigate("/Calculation-Details");
   }, [navigate]);
 
   const onLogoContainerClick = useCallback(() => {

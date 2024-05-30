@@ -2,7 +2,7 @@
     position: absolute; /* Position the slider absolutely within its container */
     display: flex;
     transition: transform 0.5s ease-in-out;
-    top: 15rem; /* Position the slider at the top of its container */
+    top: 42vh; /* Position the slider at the top of its container */
     left: 0; /* Position the slider at the left of its container */
     width: 100%;
     border-radius: 10px; /* Make the slider fill the container width */

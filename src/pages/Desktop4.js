@@ -6,11 +6,11 @@ import "./Desktop4.css";
 const Desktop4 = () => {
   const navigate = useNavigate();
   const onLogout = useCallback(() => {
-    navigate("/desktop-83");
+    navigate("login");
   }, [navigate]);
 
   const onButtonPrimaryClick = useCallback(() => {
-    navigate("/desktop-90");
+    navigate("/Add-Name");
   }, [navigate]);
 
   const onLogoContainerClick = useCallback(() => {

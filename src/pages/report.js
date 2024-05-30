@@ -13,7 +13,7 @@ const Report = () => {
   }, [navigate]);
 
   const onLogout = useCallback(() => {
-    navigate("/desktop-83");
+    navigate("/login");
   }, [navigate]);
 
   const [numberOfFloors, setNumberOfFloors] = useState('');

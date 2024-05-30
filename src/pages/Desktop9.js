@@ -17,7 +17,7 @@ const Desktop9 = () => {
   const college3 = localStorage.getItem("college3");
   const navigate = useNavigate();
   const onLogout = useCallback(() => {
-    navigate("/desktop-83");
+    navigate("/login");
   }, [navigate]);
 
   const onFrameInputClick = useCallback(() => {
@@ -29,11 +29,11 @@ const Desktop9 = () => {
   }, []);
 
   const onFrameButtonClick = useCallback(() => {
-    navigate("/desktop-107");
+    navigate("/Address");
   }, [navigate]);
 
   const onBackTextClick = useCallback(() => {
-    navigate("/desktop-95");
+    navigate("/Education3");
   }, [navigate]);
 
   const onLogoContainerClick = useCallback(() => {

@@ -386,7 +386,7 @@
 
   .hero-child7 {
     position: absolute;
-    top: -5.938rem;
+    top: -3rem;
     left: 5.563rem;
     width: 10.438rem;
     height: 13.5rem;
@@ -482,7 +482,7 @@
   .view-report-wrapper {
     position: absolute;
     width: 80%; /* Adjust width to fit mobile screens */
-    top: 12.875rem; /* Keep top position */
+    top: 20rem; /* Keep top position */
     left: 15%; /* Adjust left position for centering */
     border-radius: var(--br-3xs);
     background-color: var(--color-darkturquoise);
@@ -505,12 +505,24 @@
   font-size:5vw;
 }
 .your-report-is {
-  top: 4.875rem;
+  top: 7.875rem;
   font-weight: 600;
 }
 .click-the-button {
-  top: 7.75rem;
+  top: 9.75rem;
   font-size: var(--button-m-size);
+}
+.content24 {
+  position: absolute;
+  top: 1rem;
+  left: 5.988rem;
+  width: 77.988rem;
+  height: 2.313rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-941xl);
 }
 }
 

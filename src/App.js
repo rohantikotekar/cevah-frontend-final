@@ -53,51 +53,51 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/desktop-119":
+      case "/Getting-started":
         title = "";
         metaDescription = "";
         break;
-      case "/desktop-120":
+      case "/About-Yourself":
         title = "";
         metaDescription = "";
         break;
-      case "/desktop-90":
+      case "/Add-Name":
         title = "";
         metaDescription = "";
         break;
-      case "/desktop-94":
+      case "/Education2":
         title = "";
         metaDescription = "";
         break;
-      case "/desktop-95":
+      case "/Education3":
         title = "";
         metaDescription = "";
         break;
-      case "/desktop-89":
+      case "/otp-verification":
         title = "";
         metaDescription = "";
         break;
-      case "/desktop-92":
+      case "/Education-Details":
         title = "";
         metaDescription = "";
         break;
-      case "/desktop-107":
+      case "/Address":
         title = "";
         metaDescription = "";
         break;
-      case "/desktop-108":
+      case "/Calculation-Details":
         title = "";
         metaDescription = "";
         break;
-      case "/desktop-114":
+      case "/Speciality":
         title = "";
         metaDescription = "";
         break;
-      case "/desktop-115":
+      case "/Loading":
         title = "";
         metaDescription = "";
         break;
-      case "/desktop-109":
+      case "/View-Report":
         title = "";
         metaDescription = "";
         break;
@@ -105,15 +105,15 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/desktop-93":
+      case "/Education1":
         title = "";
         metaDescription = "";
         break;
-      case "/desktop-83":
+      case "/login":
         title = "";
         metaDescription = "";
         break;
-      case "/desktop-216":
+      case "/Report":
           title = "";
           metaDescription = "";
           break;
@@ -138,22 +138,22 @@ function App() {
       <Route path="/" element={<Desktop />} />
       <Route path="/desktop-197" element={<Desktop1 />} />
       <Route path="/desktop-87" element={<Desktop2 />} />
-      <Route path="/desktop-119" element={<Desktop3 />} />
-      <Route path="/desktop-120" element={<Desktop4 />} />
-      <Route path="/desktop-90" element={<Desktop5 />} />
-      <Route path="/desktop-94" element={<Desktop6 />} />
-      <Route path="/desktop-95" element={<Desktop7 />} />
-      <Route path="/desktop-89" element={<Desktop8 />} />
-      <Route path="/desktop-92" element={<Desktop9 />} />
-      <Route path="/desktop-107" element={<Desktop10 />} />
-      <Route path="/desktop-108" element={<Desktop11 />} />
-      <Route path="/desktop-114" element={<Desktop12 />} />
-      <Route path="/desktop-115" element={<Desktop13 />} />
-      <Route path="/desktop-109" element={<Desktop14 />} />
+      <Route path="/Getting-started" element={<Desktop3 />} />
+      <Route path="/About-Yourself" element={<Desktop4 />} />
+      <Route path="/Add-Name" element={<Desktop5 />} />
+      <Route path="/Education2" element={<Desktop6 />} />
+      <Route path="/Education3" element={<Desktop7 />} />
+      <Route path="/otp-verification" element={<Desktop8 />} />
+      <Route path="/Education-Details" element={<Desktop9 />} />
+      <Route path="/Address" element={<Desktop10 />} />
+      <Route path="/Calculation-Details" element={<Desktop11 />} />
+      <Route path="/Speciality" element={<Desktop12 />} />
+      <Route path="/Loading" element={<Desktop13 />} />
+      <Route path="/View-Report" element={<Desktop14 />} />
       <Route path="/desktop-91" element={<Desktop15 />} />
-      <Route path="/desktop-93" element={<Desktop16 />} />
-      <Route path="/desktop-83" element={<Desktop17 />} />
-      <Route path="/new-desktop-216" element={<Report />} />
+      <Route path="/Education1" element={<Desktop16 />} />
+      <Route path="/login" element={<Desktop17 />} />
+      <Route path="/Report" element={<Report />} />
 
       
     </Routes>

@@ -11,11 +11,11 @@ const Desktop3 = () => {
   }, [navigate]);
 
   const onButtonPrimaryClick = useCallback(() => {
-    navigate("/desktop-120");
+    navigate("/About-Yourself");
   }, [navigate]);
 
   const onLogout = useCallback(() => {
-    navigate("/desktop-83");
+    navigate("/login");
   }, [navigate]);
 
   return (

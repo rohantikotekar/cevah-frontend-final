@@ -17,7 +17,7 @@ const Desktop8 = () => {
   }, []);
 
   const onFrameButtonClick = useCallback(() => {
-    navigate("/desktop-119");
+    navigate("/Getting-started");
   }, [navigate]);
 
   const onLogoClick = useCallback(() => {

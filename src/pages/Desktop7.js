@@ -19,23 +19,23 @@ const Desktop7 = () => {
   const [degree1, setDegree1] = useState(""); // State to hold the selected degree
   const [college1, setCollege1] = useState("")// 
   const onLogout = useCallback(() => {
-    navigate("/desktop-83");
+    navigate("/login");
   }, [navigate]);
   const onFrameButtonClick = useCallback(() => {
     localStorage.setItem('college1', college1);
     localStorage.setItem('degree1', degree1);
-    navigate("/desktop-92");
+    navigate("/Education-Details");
   }, [navigate, college1, degree1]);
  
   const onFrameInput1Click = useCallback(() => {
     // Please sync "Desktop - 97" to the project
   }, []);
   const onBackTextClick = useCallback(() => {
-    navigate("/desktop-94");
+    navigate("/Education2");
   }, [navigate]);
 
   const onSkipTextClick = useCallback(() => {
-    navigate("/desktop-92");
+    navigate("/Education-Details");
   }, [navigate]);
 
   const onLogoContainerClick = useCallback(() => {

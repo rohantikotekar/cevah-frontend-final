@@ -6,7 +6,7 @@ const Desktop14 = () => {
   const navigate = useNavigate();
   const [apiResponse, setApiResponse] = useState(null);
   const onLogout = useCallback(() => {
-    navigate("/desktop-83");
+    navigate("/login");
   }, [navigate]);
   useEffect(() => {
     const storedResponse = localStorage.getItem('apiResponse');
@@ -17,11 +17,11 @@ const Desktop14 = () => {
   
   const onFrameContainerClick = useCallback(() => {
     localStorage.setItem('apiResponse', JSON.stringify(apiResponse));
-    navigate("/new-desktop-216");
+    navigate("/Report");
   }, [apiResponse, navigate]);
 
   const onBackTextClick = useCallback(() => {
-    navigate("/desktop-115");
+    navigate("/Calculation-Details");
   }, [navigate]);
 
   const onLogoContainerClick = useCallback(() => {

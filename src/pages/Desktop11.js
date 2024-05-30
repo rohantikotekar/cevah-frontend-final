@@ -10,14 +10,14 @@ const Desktop11 = () => {
   const [apiResponse, setApiResponse] = useState(null);
   const navigate = useNavigate();
   const onLogout = useCallback(() => {
-    navigate("/desktop-83");
+    navigate("/login");
   }, [navigate]);
   const onFrameButtonClick = useCallback(() => {
     sendDetailsRequest(area, fsi, height);
   }, [area, fsi, height]);
 
   const onBackTextClick = useCallback(() => {
-    navigate("/desktop-114");
+    navigate("/Speciality");
   }, [navigate]);
 
   const onGroupInputClick = useCallback(() => {}, []);
@@ -60,7 +60,7 @@ const Desktop11 = () => {
       setApiResponse(data);
       console.log('Details submitted successfully:', data);
       localStorage.setItem('apiResponse', JSON.stringify(data));
-      navigate("/desktop-115"); // Navigate after storing data
+      navigate("/Loading"); // Navigate after storing data
     } catch (error) {
       console.error('Error submitting details:', error);
     }
