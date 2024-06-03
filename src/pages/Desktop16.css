@@ -562,3 +562,13 @@
     display: none;
   }
 }
+@media screen and (min-width: 1441px) {
+  /* Your CSS rules here */
+  .ad-placeholder-icon6 {
+    position: absolute;
+    top: -3rem;
+    left: -15rem;
+    width: 110vw;
+    height: 108%;
+  }
+}

@@ -626,3 +626,13 @@
     display: none;
   }
 }
+@media screen and (min-width: 1441px) {
+  /* Your CSS rules here */
+  .screenshot-2024-03-19-at-12281 {
+    position: absolute;
+    top: -3rem;
+    left: -15rem;
+    width: 110vw;
+    height: 108%;
+  }
+}

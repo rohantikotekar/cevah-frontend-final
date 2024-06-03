@@ -1,7 +1,7 @@
 .new1-ad-placeholder-icon2 {
   position: absolute;
   top: -3rem;
-  left: -10rem;
+  left: -15rem;
   width: 120%;
   height: 108%;
 }
@@ -580,4 +580,19 @@
   color: #fff;
   font-family: Inter
 }
+}
+@media screen and (min-height: 740px) and (max-width: 758px) {
+  .new1-footer5{
+    display: none;
+  }
+}
+@media screen and (min-width: 1441px) {
+  /* Your CSS rules here */
+  .new1-ad-placeholder-icon2 {
+    position: absolute;
+    top: -3rem;
+    left: -15rem;
+    width: 110vw;
+    height: 108%;
+  }
 }

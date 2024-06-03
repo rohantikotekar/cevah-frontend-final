@@ -518,15 +518,15 @@
 .header16 {
   position: absolute;
   top: 0;
-  left: calc(50% - 720px);
+  left: -1vw;
   box-shadow: 0 4px 20px rgba(249, 249, 249, 0.25);
   width: 90rem;
   height: 4.063rem;
+  font-size: var(--font-size-5xl);
   color: var(--color-black);
   font-family: var(--font-ibm-plex-sans);
 }
 .desktop-83 {
- max-width: 1600px; /* Limit the maximum width to 1440px */
   width: 100%;
   position: relative;
   height: auto;
@@ -849,5 +849,23 @@
 @media screen and (min-height: 740px) and (max-width: 758px) {
   .footer17{
     display: none;
+  }
+}
+@media screen and (min-width: 1441px) {
+  /* Your CSS rules here */
+  .ad-placeholder-icon83 {
+    position: absolute;
+    top: -3rem;
+    left: -15rem;
+    width: 110vw;
+    height: 108%;
+  }
+  .hero-child13 {
+    position: absolute;
+    top: -1.25rem;
+    left: -6rem;
+    background-color: var(--color-gray-400);
+    width: 110vw;
+    height: 45.688rem;
   }
 }
