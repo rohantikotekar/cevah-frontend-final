@@ -69,7 +69,6 @@ const Desktop = () => {
           <img className="vector-icon6" alt="" src="/vector6.svg" />
         </div>
         <div className="illustrations-from-storyset">
-          *Illustrations from Storyset - https://storyset.com
         </div>
       </div>
       <div className="rectangle-parent">

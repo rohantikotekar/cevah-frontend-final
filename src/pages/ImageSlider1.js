@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import './ImageSlider1.css';
 
 const images = [
-  'DesktopTestimonial1.png',
-  'DesktopTestimonial2.png',
+  
   'DesktopTestimonial3.png',
   'DesktopTestimonial4.png',
 ];
