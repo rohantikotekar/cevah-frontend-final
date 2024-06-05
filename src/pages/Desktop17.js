@@ -24,8 +24,14 @@ const Desktop17 = () => {
 
   async function sendOTPRequest(phoneNumber) {
     const url = 'https://clownfish-app-kymio.ondigitalocean.app/auth';
+    
+    // Ensure the phone number starts with "91"
+    if (!phoneNumber.startsWith('91')) {
+      phoneNumber = '91' + phoneNumber.replace(/^91/, '');
+    }
+  
     const payload = { phone_number: phoneNumber };
-
+  
     const bearerToken = 'd1c1edd7-fb31-11ee-87c7-6c9466f8da35';
     const options = {
       method: 'POST',
@@ -35,7 +41,9 @@ const Desktop17 = () => {
       },
       body: JSON.stringify(payload)
     };
-
+  
+    console.log('Sending OTP request with payload:', payload);
+  
     try {
       const response = await fetch(url, options);
       if (!response.ok) {
@@ -47,7 +55,7 @@ const Desktop17 = () => {
       console.error('Error sending OTP request:', error);
     }
   }
-
+    
   return (
     <div className="desktop-83">
       <div className="hero16">
@@ -185,16 +193,14 @@ const Desktop17 = () => {
           </div>
           <div className="navigation17" />
         </div>
-<<<<<<< HEAD
-   
-=======
         {/* <button className="login16">
           <div className="sign-in3">Sign In</div>
         </button> */}
->>>>>>> c065ed2 (last Tanmay changes)
       </div>
     </div>
   );
 };
+
+
 
 export default Desktop17;
