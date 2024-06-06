@@ -9,9 +9,11 @@ const Desktop11 = () => {
   const [height, setHeight] = useState("");
   const [apiResponse, setApiResponse] = useState(null);
   const navigate = useNavigate();
+
   const onLogout = useCallback(() => {
     navigate("/login");
   }, [navigate]);
+
   const onFrameButtonClick = useCallback(() => {
     sendDetailsRequest(area, fsi, height);
   }, [area, fsi, height]);
@@ -29,26 +31,26 @@ const Desktop11 = () => {
   async function sendDetailsRequest(land_area, fsi, height_restriction) {
     const storedPhoneNumber = localStorage.getItem("phoneNumber");
     if (!storedPhoneNumber) {
-      console.error('Phone number not found in local storage.');
+      console.error("Phone number not found in local storage.");
       return;
     }
 
-    const url = 'https://clownfish-app-kymio.ondigitalocean.app/calculate';
+    const url = "https://clownfish-app-kymio.ondigitalocean.app/calculate";
     const payload = {
       land_area,
       fsi,
       height_restriction,
-      phone_number: storedPhoneNumber
+      phone_number: storedPhoneNumber,
     };
 
-    const bearerToken = 'd1c1edd7-fb31-11ee-87c7-6c9466f8da35';
+    const bearerToken = "d1c1edd7-fb31-11ee-87c7-6c9466f8da35";
     const options = {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${bearerToken}`
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${bearerToken}`,
       },
-      body: JSON.stringify(payload)
+      body: JSON.stringify(payload),
     };
 
     try {
@@ -58,11 +60,11 @@ const Desktop11 = () => {
       }
       const data = await response.json();
       setApiResponse(data);
-      console.log('Details submitted successfully:', data);
-      localStorage.setItem('apiResponse', JSON.stringify(data));
+      console.log("Details submitted successfully:", data);
+      localStorage.setItem("apiResponse", JSON.stringify(data));
       navigate("/Loading"); // Navigate after storing data
     } catch (error) {
-      console.error('Error submitting details:', error);
+      console.error("Error submitting details:", error);
     }
   }
 
@@ -146,7 +148,9 @@ const Desktop11 = () => {
                 <p>Total Area: {area.total_area}</p>
                 <p>Casualty: {area.casualty[0]}, {area.casualty[1]}</p>
                 <p>Reception: {area.reception}</p>
-                <p>OPD: {area.opd[0]}, {area.opd[1]}</p>
+                <p>OPD: {area.opd.map((opdRoom, i) => (
+                  <span key={i}>{opdRoom[0]}, {opdRoom[1]}{i !== area.opd.length - 1 ? '; ' : ''}</span>
+                ))}</p>
                 <p>Pharmacy: {area.pharmacy}</p>
                 <p>Diagnostic: {area.diagnostic}</p>
                 <p>Circulation: {area.circulation}</p>
@@ -222,7 +226,7 @@ const Desktop11 = () => {
         </div>
         <button className="login7" onClick={onLogout}>
           <div className="sign-in2">Sign Out</div>
-        </button> 
+        </button>
       </div>
     </div>
   );
