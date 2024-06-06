@@ -34,7 +34,8 @@ const Report = () => {
     pharmacyArea: '',
     receptionArea: '',
     totalGroundFloorArea: '',
-    casualtyArea: ''
+    casualtyArea: '',
+    opdRooms: []
   });
 
   const [additionalInfo, setAdditionalInfo] = useState({
@@ -67,7 +68,8 @@ const Report = () => {
         pharmacyArea: data.ground_floor_area[0].pharmacy,
         receptionArea: data.ground_floor_area[0].reception,
         totalGroundFloorArea: data.ground_floor_area[0].total_area,
-        casualtyArea: data.ground_floor_area[0].casualty[0]
+        casualtyArea: data.ground_floor_area[0].casualty[0],
+        opdRooms: data.ground_floor_area[0].opd.slice(1) // Assuming the first item is the total area
       });
 
       const numFloors = data.no_of_floors;
@@ -129,7 +131,7 @@ const Report = () => {
       <Header />
       <div className="new-desktop-216-inner">
         <div className="new-thank-you-for-entrusting-cevah-parent">
-        <div className="new-cevah-masterplanning-report-parent">
+          <div className="new-cevah-masterplanning-report-parent">
             <b className="new-cevah-masterplanning-report">
               Cevah Masterplanning Report
             </b>
@@ -154,83 +156,90 @@ const Report = () => {
               alt=""
               src="/hospital-buildingamico-2-1@2x.png"
             />
-
-          <div className="new-frame-parent">
-            <div className="new-feasibility-study-details-parent">
-              <div className="new-feasibility-study">
-              <b>Site Information</b>
-              </div>
-              <div className="inner-p">
-                <div className="new-report-section">
-                  <div className="new-label">Total site area (sq ft) :</div>
-                  <div className="new-value">{siteInfo.sqFt}</div>
+            <div className="new-frame-parent">
+              <div className="new-feasibility-study-details-parent">
+                <div className="new-feasibility-study">
+                  <b>Site Information</b>
                 </div>
-                <div className="new-report-section">
-                  <div className="new-label">Total carpet area (sq ft) :</div>
-                  <div className="new-value">{siteInfo.carpetArea}</div>
-                </div>
-                <div className="new-report-section">
-                  <div className="new-label">Height restriction (ft) :</div>
-                  <div className="new-value">{siteInfo.heightRestriction}</div>
-                </div>
-                <div className="new-report-section">
-                  <div className="new-label">Total built up area (sq ft) :</div>
-                  <div className="new-value">{siteInfo.totalBuiltUpArea}</div>
-                </div>
-                <div className="new-report-section">
-                  <div className="new-label">FSI (Floor Space Index) :</div>
-                  <div className="new-value">{siteInfo.fsi}</div>
-                </div>
-                <div className="new-report-section">
-                  <div className="new-label">FSI Height (ft) :</div>
-                  <div className="new-value">{siteInfo.fsiHeight}</div>
-                </div>
-                <div className="new-report-section">
-                  <div className="new-label">Number of floors :</div>
-                  <label className="new-value" onChange={handleNumberOfFloorsChange}>{numberOfFloors}</label>
-                </div>
+                <div className="inner-p">
+                  <div className="new-report-section">
+                    <div className="new-label">Total site area (sq ft) :</div>
+                    <div className="new-value">{siteInfo.sqFt}</div>
+                  </div>
+                  <div className="new-report-section">
+                    <div className="new-label">Total carpet area (sq ft) :</div>
+                    <div className="new-value">{siteInfo.carpetArea}</div>
+                  </div>
+                  <div className="new-report-section">
+                    <div className="new-label">Height restriction (ft) :</div>
+                    <div className="new-value">{siteInfo.heightRestriction}</div>
+                  </div>
+                  <div className="new-report-section">
+                    <div className="new-label">Total built up area (sq ft) :</div>
+                    <div className="new-value">{siteInfo.totalBuiltUpArea}</div>
+                  </div>
+                  <div className="new-report-section">
+                    <div className="new-label">FSI (Floor Space Index) :</div>
+                    <div className="new-value">{siteInfo.fsi}</div>
+                  </div>
+                  <div className="new-report-section">
+                    <div className="new-label">FSI Height (ft) :</div>
+                    <div className="new-value">{siteInfo.fsiHeight}</div>
+                  </div>
+                  <div className="new-report-section">
+                    <div className="new-label">Number of floors :</div>
+                    <label className="new-value" onChange={handleNumberOfFloorsChange}>{numberOfFloors}</label>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="new-researching-amico-4-parent">
-            <img
-              className="new-researching-amico-4-icon"
-              alt=""
-              src="/researchingamico-4@2x.png"
-            />
-            <div className="new-ground-floor-details-parent">
-              <div className="new-ground-floor">
-               <b>G Floor</b> 
-              </div>
-              <div className="inner-p">
-                <div className="new-report-section">
-                  <div className="new-label">OPD area (sq ft) :</div>
-                  <div className="new-value">{gFloorInfo.opdArea}</div>
+              <img
+                className="new-researching-amico-4-icon"
+                alt=""
+                src="/researchingamico-4@2x.png"
+              />
+              <div className="new-ground-floor-details-parent">
+                <div className="new-ground-floor">
+                  <b>G Floor</b>
                 </div>
-                <div className="new-report-section">
-                  <div className="new-label">Diagnostic area (sq ft) :</div>
-                  <div className="new-value">{gFloorInfo.diagnosticArea}</div>
-                </div>
-                <div className="new-report-section">
-                  <div className="new-label">Circulation area (sq ft) :</div>
-                  <div className="new-value">{gFloorInfo.circulationArea}</div>
-                </div>
-                <div className="new-report-section">
-                  <div className="new-label">Pharmacy area (sq ft) :</div>
-                  <div className="new-value">{gFloorInfo.pharmacyArea}</div>
-                </div>
-                <div className="new-report-section">
-                  <div className="new-label">Reception area (sq ft) :</div>
-                  <div className="new-value">{gFloorInfo.receptionArea}</div>
-                </div>
-                <div className="new-report-section">
-                  <div className="new-label">Total ground floor area (sq ft) :</div>
-                  <div className="new-value">{gFloorInfo.totalGroundFloorArea}</div>
-                </div>
-                <div className="new-report-section">
-                  <div className="new-label">Casualty area (sq ft) :</div>
-                  <div className="new-value">{gFloorInfo.casualtyArea}</div>
-                </div>
+                <div className="inner-p">
+                  <div className="new-report-section">
+                    <div className="new-label">OPD area (sq ft) :</div>
+                    <div className="new-value">{gFloorInfo.opdArea}</div>
+                  </div>
+                  <div className="new-opd-rooms">
+                    {gFloorInfo.opdRooms.map((room, index) => (
+                      <div key={index} className="new-report-section">
+                        <div className="new-label">OPD Rooms :</div>
+                        <div className="new-value">{room}</div>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="new-report-section">
+                    <div className="new-label">Diagnostic area (sq ft) :</div>
+                    <div className="new-value">{gFloorInfo.diagnosticArea}</div>
+                  </div>
+                  <div className="new-report-section">
+                    <div className="new-label">Circulation area (sq ft) :</div>
+                    <div className="new-value">{gFloorInfo.circulationArea}</div>
+                  </div>
+                  <div className="new-report-section">
+                    <div className="new-label">Pharmacy area (sq ft) :</div>
+                    <div className="new-value">{gFloorInfo.pharmacyArea}</div>
+                  </div>
+                  <div className="new-report-section">
+                    <div className="new-label">Reception area (sq ft) :</div>
+                    <div className="new-value">{gFloorInfo.receptionArea}</div>
+                  </div>
+                  <div className="new-report-section">
+                    <div className="new-label">Total ground floor area (sq ft) :</div>
+                    <div className="new-value">{gFloorInfo.totalGroundFloorArea}</div>
+                  </div>
+                  <div className="new-report-section">
+                    <div className="new-label">Casualty area (sq ft) :</div>
+                    <div className="new-value">{gFloorInfo.casualtyArea}</div>
+                  </div>
                 </div>
               </div>
             </div>
