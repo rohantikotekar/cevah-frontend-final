@@ -53,7 +53,13 @@ const Desktop8 = () => {
   // Function to verify OTP
   const verifyOTP = async () => {
     const url = "https://clownfish-app-kymio.ondigitalocean.app/verify";
-    const payload = { phone_number: phoneNumber, otp };
+    let modifiedPhoneNumber = phoneNumber;  // Change const to let
+  
+    if (!phoneNumber.startsWith('91')) {
+      modifiedPhoneNumber = '91' + phoneNumber;
+    }
+  
+    const payload = { phone_number: modifiedPhoneNumber, otp };
     const bearerToken = "d1c1edd7-fb31-11ee-87c7-6c9466f8da35";
     const options = {
       method: "POST",
@@ -63,7 +69,7 @@ const Desktop8 = () => {
       },
       body: JSON.stringify(payload),
     };
-
+  
     try {
       const response = await fetch(url, options);
       if (!response.ok) {
@@ -71,11 +77,16 @@ const Desktop8 = () => {
       }
       const data = await response.json();
       console.log("OTP verified successfully:", data);
-      onFrameButtonClick();
+      if (data.isOTPVerified) {
+        onFrameButtonClick();
+      } else {
+        console.error("OTP verification failed");
+      }
     } catch (error) {
       console.error("Error verifying OTP:", error);
     }
   };
+
 
   // Handler for OTP input change
   const handleOtpChange = (e, index) => {
