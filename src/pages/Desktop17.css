@@ -22,6 +22,11 @@
   line-height: 110%;
   font-weight: 800;
 }
+.country-code{
+  left: 10rem;
+  top: 10rem;
+}
+
 .main-headline2 {
   width: 42.063rem;
   font-size: var(--font-size-53xl);

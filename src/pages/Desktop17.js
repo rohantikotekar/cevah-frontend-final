@@ -8,8 +8,9 @@ const Desktop17 = () => {
   const navigate = useNavigate();
 
   const onFrameButtonClick = useCallback(() => {
-    localStorage.setItem("phoneNumber", phoneNumber); // Store phone number in local storage
-    sendOTPRequest(phoneNumber);
+    const formattedPhoneNumber = `91${phoneNumber}`; // Prefix the phone number with +91
+    localStorage.setItem("phoneNumber", formattedPhoneNumber); // Store phone number in local storage
+    sendOTPRequest(formattedPhoneNumber);
     navigate("/otp-verification");
   }, [phoneNumber, navigate]);
 
@@ -20,7 +21,6 @@ const Desktop17 = () => {
   const onLogoContainerClick = useCallback(() => {
     navigate("/");
   }, [navigate]);
-
 
   async function sendOTPRequest(phoneNumber) {
     const url = 'https://clownfish-app-kymio.ondigitalocean.app/auth';
@@ -65,47 +65,6 @@ const Desktop17 = () => {
           src="Desktopmedirailuvc2.png"
         />
         <div className="hero-text2">
-          {/* <div className="top3">
-            <b className="caption2">Caption</b>
-            <div className="main-headline2">Hospital Planning?</div>
-            <div className="secondary-headline2">Headline Two</div>
-          </div> */}
-          {/* <div className="paragraph2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </div> */}
-          {/* <div className="buttons-group2">
-            <div className="button3">
-              <img
-                className="icon-jam-icons-outline-l8"
-                alt=""
-                src="/icon--jamicons--outline--logos--plus.svg"
-              />
-              <div className="text-container4">
-                <b className="get-started3">Get Started</b>
-              </div>
-              <img
-                className="icon-jam-icons-outline-l8"
-                alt=""
-                src="/icon--jamicons--outline--logos--arrowright.svg"
-              />
-            </div>
-            <div className="button-22">
-              <img
-                className="icon-jam-icons-outline-l8"
-                alt=""
-                src="/icon--jamicons--outline--logos--plus1.svg"
-              />
-              <div className="text-container5">
-                <div className="button-text2">Button Text</div>
-              </div>
-              <img
-                className="icon-jam-icons-outline-l11"
-                alt=""
-                src="/icon--jamicons--outline--logos--arrowright1.svg"
-              />
-            </div>
-          </div> */}
         </div>
         <div className="hero-child13" />
         <div className="content28">

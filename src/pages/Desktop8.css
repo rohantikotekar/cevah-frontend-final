@@ -220,6 +220,34 @@
   text-align: left;
 }
 
+/* .otp-field1 {
+
+} */
+.otp-field1 {
+  position: absolute;
+  top: 1.625rem;
+  left: 0;
+  width: 24.813rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adjust gap as needed */
+}
+
+.otp-field1 input {
+  width: 35px; /* Set a fixed width */
+  height: 35px; /* Set a fixed height */
+  text-align: left; /* Center align the text */
+  font-size: 25px; /* Adjust font size as needed */
+  /* border: 1px solid #ccc;  */
+  border-radius: 4px; /* Optional: add border-radius for rounded corners */
+
+}
+
+/* .otp-field1 input:focus {
+  border-color: #007bff; 
+  outline: none; 
+} */
 
 
 .otp-field-child4,
@@ -308,13 +336,7 @@
   color: var(--color-black);
   text-align: left;
 }
-.otp-field1 {
-  position: absolute;
-  top: 1.625rem;
-  left: 0;
-  width: 24.813rem;
-  height: 4rem;
-}
+
 .enter-otp1 {
   position: absolute;
   top: -4rem;
@@ -708,12 +730,14 @@
 
 @media only screen and (max-width: 758px){
 
-  /* .desktop-89 {
+   .desktop-89 {
     font-size: 1rem; 
     padding: 0.5rem; 
     min-height: 100vh; 
     background-color: white;
-  } */
+
+    
+  } 
 
   .header7 {
     position: absolute;
@@ -839,7 +863,7 @@
     left: 0;
     cursor: pointer;
   } */
-
+  
   .group-child19  {
     cursor: pointer;
     border: 0;
