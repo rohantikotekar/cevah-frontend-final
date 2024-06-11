@@ -906,4 +906,22 @@
     width: 110vw;
     height: 45.688rem;
   }
+  .login7 {
+    cursor: pointer;
+    border: 1px solid var(--color-darkturquoise);
+    padding: var(--padding-3xs) var(--padding-13xl);
+    background-color: var(--color-darkturquoise);
+    position: absolute;
+    top: 0.688rem;
+    left: 90vw;
+    border-radius: var(--br-5xs);
+    box-sizing: border-box;
+    width: 8.375rem;
+    height: 2.688rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }

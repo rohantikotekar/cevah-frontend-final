@@ -492,7 +492,7 @@
   top: 49.688rem;
   left: 0;
   background-color: var(--color-darkslategray-200);
-  width: 100rem;
+  width: 100%;
   height: 16.938rem;
   font-size: var(--font-size-smi);
   color: var(--white);
@@ -590,7 +590,7 @@
   top: 0;
   left: -1vw;
   box-shadow: 0 4px 20px rgba(249, 249, 249, 0.25);
-  width: 90rem;
+  width:100%;
   height: 4.063rem;
   font-size: var(--font-size-5xl);
   color: var(--color-black);

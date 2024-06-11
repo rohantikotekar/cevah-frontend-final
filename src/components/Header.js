@@ -13,9 +13,7 @@ const Header = () => {
         </div>
         <div className="navigation" />
       </div>
-      <div className="login">
-        <img className="user-icon1" alt="" src="/user.svg" />
-      </div>
+      
     </div>
   );
 };
