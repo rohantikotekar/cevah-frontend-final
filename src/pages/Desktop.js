@@ -1,4 +1,5 @@
 
+import React, { useEffect } from 'react';
 
 import { useCallback } from "react";
 import { Button } from "@mui/material";
@@ -8,6 +9,28 @@ import "./Desktop.css";
 
 const Desktop = () => {
   const navigate = useNavigate();
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 758px)');
+    
+    const handleMediaQueryChange = (e) => {
+      if (e.matches) {
+        document.body.style.zoom = '27%';
+      } else {
+        document.body.style.zoom = '';
+      }
+    };
+
+    // Initial check
+    handleMediaQueryChange(mediaQuery);
+
+    // Add listener
+    mediaQuery.addListener(handleMediaQueryChange);
+
+    // Cleanup listener on component unmount
+    return () => {
+      mediaQuery.removeListener(handleMediaQueryChange);
+    };
+  }, []);
 
   const onGroupButtonClick = useCallback(() => {
     navigate("/login");
