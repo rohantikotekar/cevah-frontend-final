@@ -890,13 +890,22 @@
   }
 } 
 @media screen and (min-width: 1441px) {
+  .desktop-89 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Ensures no overflow */
+
+    
+  } 
   /* Your CSS rules here */
   .ad-placeholder-icon89 {
     position: absolute;
-    top: -3rem;
+    top: -1rem;
     left: -15rem;
-    width: 110vw;
-    height: 108%;
+    width: 110vw; /* Full viewport width */
+    height: 110vh; /* Full viewport height */
+    object-fit: cover; /* Ensures the image covers the area */
   }
   .hero-child5 {
     position: absolute;

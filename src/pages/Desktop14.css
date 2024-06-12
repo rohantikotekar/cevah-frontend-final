@@ -535,9 +535,10 @@
   /* Your CSS rules here */
   .ad-place-holder3{
     position: absolute;
-    top: -3rem;
+    top: -1rem;
     left: -15rem;
-    width: 110vw;
-    height: 108%;
+    width: 110vw; /* Full viewport width */
+    height: 120vh; /* Full viewport height */
+    object-fit: cover;
   }
 }

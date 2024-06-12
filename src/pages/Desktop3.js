@@ -118,9 +118,16 @@ const Desktop3 = () => {
         alt=""
         src="/hospital-buildingamico-1@2x.png"
       />
-<button className="login7" onClick={onLogout}>
+       <img
+        className="doctor-amico-icon"
+        alt=""
+        src="/doctoramico@2x.png"
+      />
+      
+<button className="signout" onClick={onLogout}>
           <div className="sign-in2">Sign Out</div>
-        </button>       </div>
+        </button>      
+         </div>
   );
 };
 

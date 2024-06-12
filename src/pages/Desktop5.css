@@ -590,9 +590,17 @@
   /* Your CSS rules here */
   .new1-ad-placeholder-icon2 {
     position: absolute;
-    top: -3rem;
+    top: -1rem;
     left: -15rem;
-    width: 110vw;
-    height: 108%;
+    width: 110vw; /* Full viewport width */
+    height: 120vh; /* Full viewport height */
+    object-fit: cover;
   }
+  .new1-desktop-90 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Remove min-height constraint */
+  }
+
 }
