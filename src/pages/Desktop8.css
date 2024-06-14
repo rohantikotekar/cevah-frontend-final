@@ -10,8 +10,8 @@
 .ad-placeholder-icon89 {
   position: absolute;
   top: -1rem;
-  left: -10rem;
-  width: 120%;
+  left: -5rem;
+  width: 110%;
   height: 103%;
   z-index: 0; /* Ensure the ad is on top */
   opacity: 1;
@@ -871,7 +871,7 @@
     background-color: var(--color-darkturquoise);
     position: absolute;
     width: 80vw;
-    top: 70.75vw;
+    top: 75.75vw;
     right: 0;
     left: 0;
     border-radius: var(--br-3xs);

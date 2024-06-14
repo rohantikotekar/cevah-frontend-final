@@ -472,16 +472,28 @@
     padding: 100rem; 
   }
   .new1-hero-child3 {
-    width: calc(90% - 50vw); /* Adjust width to fit the screen with some padding */
-    top: 24rem; /* Keep top position */
-    right: auto; /* Reset right position */
-    left: 75%; /* Position at the center horizontally */
-    transform: translateX(-50%); /* Adjust position to center horizontally */
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-base) var(--padding-13xl);
+    background-color: var(--color-darkturquoise);
+    position: absolute;
+    width: 50vw;
+    top: 125.75vw;
+    right: 0;
+    left: 43vw;
+    border-radius: var(--br-3xs);
+    height: 3.75rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 1.2rem;
   }
   .new1-back1 {
-    top: 25rem;
+    top: 130vw;
     left: 2.5rem;
-    font-size: 1.25rem;
+    font-size: 1.7rem;
     text-decoration: underline;
     letter-spacing: 0.02em;
     line-height: 120%;

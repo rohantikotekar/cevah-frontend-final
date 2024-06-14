@@ -414,12 +414,22 @@
   }
   
     .button-primary1 {
-      position: absolute;
-      width: 39vw;
-      top: 23.313rem;
-      right: 1.75rem;
-     left:32vw;
       cursor: pointer;
+    border: 0;
+    padding: var(--padding-base) var(--padding-13xl);
+    background-color: var(--color-darkturquoise);
+    position: absolute;
+    width: 80vw;
+    top: 120.75vw;
+    right: 0;
+    left: 8vw;
+    border-radius: var(--br-3xs);
+    height: 3.75rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
     }
 
 

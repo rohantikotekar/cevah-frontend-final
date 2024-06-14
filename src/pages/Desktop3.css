@@ -601,12 +601,22 @@
   }
   
     .button-primary {
-      position: absolute;
-      width: calc(100% - 184px);
-      top: 29.063rem;
-      right: 5.75rem;
-      left: 7.75rem;
       cursor: pointer;
+    border: 0;
+    padding: var(--padding-base) var(--padding-13xl);
+    background-color: var(--color-darkturquoise);
+    position: absolute;
+    width: 80vw;
+    top: 128.75vw;
+    right: 0;
+    left: 25vw;
+    border-radius: var(--br-3xs);
+    height: 3.75rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
     }
 
 

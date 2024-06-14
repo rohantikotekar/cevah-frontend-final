@@ -528,11 +528,23 @@
     padding: 100rem; 
   }
   .group-child26 {
-    width: calc(90% - 50vw); /* Adjust width to fit the screen with some padding */
-    top: 28.375rem; /* Keep top position */
-    right: auto; /* Reset right position */
-    left: 75%; /* Position at the center horizontally */
-    transform: translateX(-50%); /* Adjust position to center horizontally */
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-base) var(--padding-13xl);
+    background-color: var(--color-darkturquoise);
+    position: absolute;
+    width: 50vw;
+    top: 32.25rem;
+    right: 0;
+    left: 43vw;
+    border-radius: var(--br-3xs);
+    height: 3.75rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 1.2rem;
   }
   .login1,
 .user-icon1 {
@@ -602,11 +614,12 @@
 .add-your-educational3 {
   top: 7.375rem;
   font-size: 4vmin;
+  width: 17rem;
 }
 .back4 {
-  top: 29.25rem;
-  left: 3rem;
-  font-size: 1.1rem;
+  top: 33.25rem;
+  left: 2rem;
+  font-size: 1.7rem;
   text-decoration: underline;
   letter-spacing: 0.02em;
   line-height: 120%;

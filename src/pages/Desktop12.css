@@ -1182,10 +1182,12 @@
   height: 0.313rem;
 }
 .continue-button {
-  width: 50vw;
+  width: 45vw;
   top: -1.938rem;
   right: 1.438rem;
-  left: 17vw;
+  left: 25vw;
+  background-color: #17c6c4;
+  font-size: 1.1rem;
 }
 .back-button {
   top: -1.313rem;
@@ -1193,6 +1195,7 @@
   text-decoration: underline;
   letter-spacing: 0.02em;
   line-height: 120%;
+  font-size: 1.7rem;
 }
 
 }

@@ -829,12 +829,22 @@
 
     
     .group-child37 {
-      position: absolute;
-      top: 20rem;
-      left: 40vw;
       cursor: pointer;
-      width: 60vw;
-      background-color: var(--color-darkturquoise);
+    border: 0;
+    padding: var(--padding-base) var(--padding-13xl);
+    background-color: var(--color-darkturquoise);
+    position: absolute;
+    width: 80vw;
+    top: 75.75vw;
+    right: 0;
+    left: 25vw;
+    border-radius: var(--br-3xs);
+    height: 3.75rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
 
     }
    
