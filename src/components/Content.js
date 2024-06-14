@@ -37,7 +37,7 @@ const Content = ({ className = "", onClose }) => {
       <button className="pop-button-primary">
         <div className="pop-button">Send Message</div>
       </button>
-      <button className="pop-button-primary1">
+      <button className="pop-button-primary1" onClick={onClose}>
         <div className="pop-button1">Cancel</div>
       </button>
     </div>
@@ -46,7 +46,7 @@ const Content = ({ className = "", onClose }) => {
 
 Content.propTypes = {
   className: PropTypes.string,
-  onClose: PropTypes.func,
+  onClose: PropTypes.func.isRequired,
 };
 
 export default Content;
