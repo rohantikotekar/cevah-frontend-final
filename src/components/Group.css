@@ -1,0 +1,25 @@
+.pop-rectangle-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  background-color: var(--color-darkturquoise);
+  width: 212px;
+  height: 60px;
+}
+.pop-contact-us {
+  position: absolute;
+  top: 18px;
+  left: 53px;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+}
+.pop-rectangle-parent {
+  width: 212px;
+  height: 60px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 20px;
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
