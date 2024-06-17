@@ -422,7 +422,7 @@
 .new1-desktop-90 {
   width: 100%;
   position: relative;
-  height: auto;
+  height: 100rem;
   min-height: 66.625rem;
   overflow: hidden;
   text-align: left;
@@ -611,11 +611,12 @@
   .new1-desktop-90 {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full viewport height */
-    overflow: hidden; /* Remove min-height constraint */
+    height: 100%; /* Full viewport height */
+    /* Remove min-h
+    eight constraint */
   }
   .new1-footer5 {
-  margin-top: 55rem; /* Reset top position */
+  margin-top: 65rem; /* Reset top position */
     background-color: #004051;
     width: auto; /* Allow width to adjust based on screen size */
     height:  16.938rem; /* Allow height to adjust based on content */
