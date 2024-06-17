@@ -301,7 +301,7 @@
   left: 39.125rem;
 }
 .new1-footer5 {
-  top: 49.688rem; /* Reset top position */
+  margin-top: 55rem; /* Reset top position */
     background-color: #004051;
     width: auto; /* Allow width to adjust based on screen size */
     height:  16.938rem; /* Allow height to adjust based on content */
@@ -601,8 +601,8 @@
 @media screen and (min-width: 1441px) {
   /* Your CSS rules here */
   .new1-ad-placeholder-icon2 {
-    position: absolute;
-    top: -1rem;
+    position: relative;
+    margin-top: 0rem;
     left: -15rem;
     width: 110vw; /* Full viewport width */
     height: 120vh; /* Full viewport height */
@@ -614,5 +614,15 @@
     height: 100vh; /* Full viewport height */
     overflow: hidden; /* Remove min-height constraint */
   }
+  .new1-footer5 {
+  margin-top: 55rem; /* Reset top position */
+    background-color: #004051;
+    width: auto; /* Allow width to adjust based on screen size */
+    height:  16.938rem; /* Allow height to adjust based on content */
+    font-size: 0.813rem; /* Keep font size */
+    color: #fff; /* Keep text color */
+    padding: 100rem; 
+    left:0rem;
+}
 
 }

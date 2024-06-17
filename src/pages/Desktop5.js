@@ -39,7 +39,7 @@ const Desktop5 = () => {
         <img
           className="new1-ad-placeholder-icon2"
           alt=""
-          src="Desktopmedirailpndnt2.png"
+          src="Desktopmedirailpndnt2 copy.png"
         />
         <div className="new1-hero-item" />
         <div className="new1-tell-us-about4">Tell us about yourself</div>
