@@ -1,9 +1,11 @@
 .new1-ad-placeholder-icon2 {
   position: absolute;
-  top: -3rem;
-  left: -15rem;
-  width: 120%;
-  height: 108%;
+  top: -1rem;
+  left: -10rem;
+  width: 110vw; /* Full viewport width */
+  height: 130vh;
+  max-height: 110%; /* Full viewport height */
+  object-fit: cover;
 }
 .new1-hero-item {
   position: absolute;
@@ -301,7 +303,7 @@
   left: 39.125rem;
 }
 .new1-footer5 {
-  margin-top: 55rem; /* Reset top position */
+  top: 49.688rem; /* Reset top position */
     background-color: #004051;
     width: auto; /* Allow width to adjust based on screen size */
     height:  16.938rem; /* Allow height to adjust based on content */
@@ -422,7 +424,7 @@
 .new1-desktop-90 {
   width: 100%;
   position: relative;
-  height: 100rem;
+  height: auto;
   min-height: 66.625rem;
   overflow: hidden;
   text-align: left;
@@ -601,29 +603,18 @@
 @media screen and (min-width: 1441px) {
   /* Your CSS rules here */
   .new1-ad-placeholder-icon2 {
-    position: relative;
-    margin-top: 0rem;
-    left: -15rem;
+    position: absolute;
+    top: -1rem;
+    left: -10rem;
     width: 110vw; /* Full viewport width */
-    height: 120vh; /* Full viewport height */
+    height: 130vw; /* Full viewport height */
     object-fit: cover;
   }
   .new1-desktop-90 {
     position: relative;
     width: 100%;
-    height: 100%; /* Full viewport height */
-    /* Remove min-h
-    eight constraint */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Remove min-height constraint */
   }
-  .new1-footer5 {
-  margin-top: 65rem; /* Reset top position */
-    background-color: #004051;
-    width: auto; /* Allow width to adjust based on screen size */
-    height:  16.938rem; /* Allow height to adjust based on content */
-    font-size: 0.813rem; /* Keep font size */
-    color: #fff; /* Keep text color */
-    padding: 100rem; 
-    left:0rem;
-}
 
 }

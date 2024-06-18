@@ -186,7 +186,7 @@ const Desktop8 = () => {
         <div className="terms-of-use8">Terms of Use</div>
         <div className="privacy-policy8">Privacy Policy</div>
         <div className="parent10">
-          <div className="div14">+91 9922883377</div>
+          <div className="div14">+919922883377</div>
           <img className="vector-icon17" alt="" src="/vector5.svg" />
         </div>
         <div className="faqs8">FAQs</div>

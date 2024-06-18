@@ -48,7 +48,7 @@ const Desktop7 = () => {
         <img
           className="ad-placeholder-icon4"
           alt=""
-          src="DesktopAwaer.png"
+          src="Design4.png"
         />
         <div className="content11">
           <div className="content-child6" />
@@ -132,7 +132,7 @@ const Desktop7 = () => {
         <div className="terms-of-use7">Terms of Use</div>
         <div className="privacy-policy7">Privacy Policy</div>
         <div className="parent9">
-          <div className="div13">+91 9922883377</div>
+          <div className="div13">+919922883377</div>
           <img className="vector-icon16" alt="" src="/vector5.svg" />
         </div>
         <div className="faqs7">FAQs</div>

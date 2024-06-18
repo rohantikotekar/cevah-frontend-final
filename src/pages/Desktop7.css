@@ -391,6 +391,15 @@
   color: var(--color-black);
   font-family: var(--font-ibm-plex-sans);
 }
+.ad-placeholder-icon4 {
+  position: absolute;
+  top: -1rem;
+  left: -10rem;
+  width: 110vw; /* Full viewport width */
+  height: 120vh;
+  max-height: 110%; /* Full viewport height */
+  object-fit: cover;
+}
 .desktop-95 {
   width: 100%;
   position: relative;
@@ -577,7 +586,8 @@
     top: -1rem;
     left: -15rem;
     width: 110vw; /* Full viewport width */
-    height: 120vh; /* Full viewport height */
+    height: 120vh;
+    max-height: 110%; /* Full viewport height */
     object-fit: cover;
   }
   .desktop-95{

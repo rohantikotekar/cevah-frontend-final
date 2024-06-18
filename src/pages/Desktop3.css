@@ -346,8 +346,10 @@
   position: absolute;
   top: 0rem;
   left: -10rem;
-  width: 120%;
-  height: 107%;
+  width: 110vw; /* Full viewport width */
+  height: 130vh;
+  max-height: 110%; /* Full viewport height */
+  object-fit: cover;
 }
 .hero2 {
   position: absolute;
@@ -695,7 +697,7 @@
     top: 0rem;
     left: -15rem;
     width: 110vw; /* Full viewport width */
-    height: 100vh;
+    height: 130vh;
     max-height: 110%; /* Full viewport height */
     object-fit: cover; /* Ensures the image covers the area */
   }

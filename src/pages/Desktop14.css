@@ -1,9 +1,11 @@
 .ad-place-holder3 {
   position: absolute;
-  top: -3rem;
+  top: -1rem;
   left: -10rem;
-  width: 120%;
-  height: 108%;
+  width: 110vw; /* Full viewport width */
+  height: 130vh;
+  max-height: 110%; /* Full viewport height */
+  object-fit: cover;
 }
 .content-child16 {
   position: absolute;
@@ -538,7 +540,8 @@
     top: -1rem;
     left: -15rem;
     width: 110vw; /* Full viewport width */
-    height: 120vh; /* Full viewport height */
+    height: 110vh;
+    max-height: 110%; /* Full viewport height */
     object-fit: cover;
   }
 }

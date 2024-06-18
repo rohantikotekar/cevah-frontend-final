@@ -1,9 +1,11 @@
 .ad-placeholder-icon3 {
   position: absolute;
-  top: -3rem;
+  top: -1rem;
   left: -10rem;
-  width: 120%;
-  height: 108%;
+  width: 110vw; /* Full viewport width */
+  height: 130vh;
+  max-height: 110%; /* Full viewport height */
+  object-fit: cover;
 }
 .content-child2 {
   position: absolute;
@@ -577,9 +579,10 @@
   .ad-placeholder-icon3 {
     position: absolute;
     top: -1rem;
-    left: -16rem;
+    left: -15rem;
     width: 110vw; /* Full viewport width */
-    height: 120vh; /* Full viewport height */
+    height: 120vh;
+    max-height: 110%; /* Full viewport height */
     object-fit: cover;
   }
   .desktop-185{

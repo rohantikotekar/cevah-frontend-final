@@ -1,9 +1,10 @@
 .screenshot-2024-03-19-at-12282 {
   position: absolute;
-  top: -2rem;
+  margin-top: -1vh;
   left: -10rem;
-  width: 120%;
-  height: 106%;
+  width: 110vw; /* Full viewport width */
+  height: 130vh; /* Full viewport height */
+  object-fit: cover;
 }
 
 .placeholder-graphics-big2 {
@@ -695,14 +696,14 @@
     display: none;
   }
 }
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1441px) and (max-width: 1600px) {
   /* Your CSS rules here */
   .screenshot-2024-03-19-at-12282 {
     position: absolute;
     top: -1rem;
-    left: -15rem;
+    left: -10rem;
     width: 110vw; /* Full viewport width */
-    height: 120vh; /* Full viewport height */
+    height: 130vh; /* Full viewport height */
     object-fit: cover; /* Ensures the image covers the area */
   }
   .desktop-107 {
@@ -710,5 +711,16 @@
     width: 100%;
     height: 100vh; /* Full viewport height */
     overflow: hidden; /* Ensures no overflow */
+  }
+}
+@media screen and (min-width: 1601px) {
+  /* Your CSS rules here */
+  .screenshot-2024-03-19-at-12282 {
+    position: absolute;
+    top: -10rem;
+    left: -10rem;
+    width: 110vw; /* Full viewport width */
+    height: 130vh; /* Full viewport height */
+    object-fit: cover; /* Ensures the image covers the area */
   }
 }

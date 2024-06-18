@@ -1,9 +1,11 @@
 .ad-placeholder-icon1 {
   position: absolute;
-  top: -3rem;
-  left: -10rem;
-  width: 120%;
-  height: 108%;
+  top: 0rem;
+  left: -7%;
+  width: 110vw; /* Full viewport width */
+  height: 130vh;
+  max-height: 110%; /* Full viewport height */
+  object-fit: cover;
 }
 .content-child1 {
   position: absolute;
@@ -516,7 +518,8 @@
     top: -1rem;
     left: -15rem;
     width: 110vw; /* Full viewport width */
-    height: 120vh; /* Full viewport height */
+    height: 130vh;
+    max-height: 110%; /* Full viewport height */
     object-fit: cover; /* Ensures the image covers the area */
   }
 

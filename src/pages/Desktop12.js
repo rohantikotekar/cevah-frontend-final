@@ -189,7 +189,7 @@ const Desktop12 = () => {
         <img
           className="ad-place-holder1"
           alt=""
-          src="Desktopmedirailpanels2.png"
+          src="Design2.png"
         />
         <div className="content19">
           <div className="content-child13" />
@@ -405,7 +405,7 @@ const Desktop12 = () => {
         <div className="terms-of-use12">Terms of Use</div>
         <div className="privacy-policy12">Privacy Policy</div>
         <div className="parent14">
-          <div className="div18">+91 9922883377</div>
+          <div className="div18">+919922883377</div>
           <img className="vector-icon21" alt="" src="/vector5.svg" />
         </div>
         <div className="faqs12">FAQs</div>

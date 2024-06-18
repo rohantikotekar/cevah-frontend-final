@@ -69,7 +69,7 @@ const Desktop11 = () => {
   return (
     <div className="desktop-108">
       <div className="hero10">
-        <img className="ad-place-holder" alt="" src="Desktopmedirailuvc2.png" />
+        <img className="ad-place-holder" alt="" src="Design3.png" />
         <div className="content17">
           <div className="content-child11" />
           <div className="tell-us-about9">Tell us about the Project</div>
@@ -204,7 +204,7 @@ const Desktop11 = () => {
         <div className="terms-of-use11">Terms of Use</div>
         <div className="privacy-policy11">Privacy Policy</div>
         <div className="parent13">
-          <div className="div17">+91 9922883377</div>
+          <div className="div17">+919922883377</div>
           <img className="vector-icon20" alt="" src="/vector5.svg" />
         </div>
         <div className="faqs11">FAQs</div>

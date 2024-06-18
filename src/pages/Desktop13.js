@@ -65,7 +65,7 @@ const Desktop13 = () => {
   return (
     <div className="desktop-115">
       <div className="hero12">
-        <img className="ad-place-holder2" alt="" src="DesktopAwaer.png" />
+        <img className="ad-place-holder2" alt="" src="Design4.png" />
         <div className="content21">
           <div className="content-child15" />
           <div className="analysing-data">Analysing Data</div>
@@ -107,7 +107,7 @@ const Desktop13 = () => {
         <div className="terms-of-use13">Terms of Use</div>
         <div className="privacy-policy13">Privacy Policy</div>
         <div className="parent15">
-          <div className="div20">+91 9922883377</div>
+          <div className="div20">+919922883377</div>
           <img className="vector-icon22" alt="" src="/vector5.svg" />
         </div>
         <div className="faqs13">FAQs</div>
