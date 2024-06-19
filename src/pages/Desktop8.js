@@ -202,9 +202,9 @@ const Desktop8 = () => {
           </button>
           <div className="navigation8" />
         </div>
-        <button className="login7">
+        {/* <button className="login7">
           <div className="sign-in2">Sign In</div>
-        </button>
+        </button> */}
       </div>
     </div>
   );

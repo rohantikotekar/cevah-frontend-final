@@ -28,6 +28,8 @@ const Desktop = () => {
 
     // Cleanup listener on component unmount
     return () => {
+      document.body.style.zoom = ''; // Reset zoom
+
       mediaQuery.removeListener(handleMediaQueryChange);
     };
   }, []);
@@ -41,7 +43,6 @@ const Desktop = () => {
   }, [navigate]);
 
   return (
-   
     <div className="landing-page-full-scroll">
       <div className="footer-final">
         <div className="cevah-parent">
@@ -268,6 +269,7 @@ const Desktop = () => {
       </div>
       <img className="userfocus-icon" alt="" src="/userfocus.svg" />
     </div>
+    
   );
 };
 

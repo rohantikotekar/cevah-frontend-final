@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback,useEffect } from "react";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import "./Desktop17.css";
@@ -6,6 +6,15 @@ import "./Desktop17.css";
 const Desktop17 = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!sessionStorage.getItem("reloaded")) {
+      sessionStorage.setItem("reloaded", "true");
+      window.location.reload();
+    } else {
+      sessionStorage.removeItem("reloaded");
+    }
+  }, []);
 
   const onFrameButtonClick = useCallback(() => {
     const formattedPhoneNumber = `91${phoneNumber}`; // Prefix the phone number with +91

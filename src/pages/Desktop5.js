@@ -16,11 +16,11 @@ const Desktop5 = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
 
   const onFrameButtonClick = useCallback(() => {
-    // Save the values to local storage
+    // Prepend +91 to the phone number before saving to local storage
+    const formattedPhoneNumber = `91${phoneNumber}`;
     localStorage.setItem("firstName", firstName);
     localStorage.setItem("lastName", lastName);
-    localStorage.setItem("phoneNumber", phoneNumber);
-    
+    localStorage.setItem("phoneNumber", formattedPhoneNumber);
 
     navigate("/Education1");
   }, [navigate, firstName, lastName, phoneNumber]);
@@ -133,7 +133,7 @@ const Desktop5 = () => {
         </div>
         <button className="login7" onClick={onLogout}>
           <div className="sign-in2">Sign Out</div>
-        </button> 
+        </button>
       </div>
     </div>
   );
