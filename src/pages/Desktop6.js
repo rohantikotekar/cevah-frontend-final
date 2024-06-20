@@ -99,7 +99,7 @@ const Desktop6 = () => {
             <div className="group-child16" />
           </div>
           <Button
-            className="content-child5"
+            className="continue2"
             disableElevation={true}
             color="primary"
             variant="contained"

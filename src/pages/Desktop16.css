@@ -516,30 +516,7 @@
     font-size: 0.875rem;
     color: #2b2b2b;
   }
-  /* .group-child8 {
-    position: absolute;
-    width: 40vw;
-    top: 0;
-    right: 0;
-    left: 5vw;
-    background-color: #004051;
-    height: 0.313rem;
-  }
- 
-  .rectangle-container {
-    right: 16.813rem;
-    left: 0;
-    height: 0.313rem;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
-  .group-child9 {
-    right: 0;
-    width: 40vw;
-    left: 50vw;
-    background-color: #e3e3e3;
-    height: 0.306rem;
-  } */
+  
   .group-child35 {
     position: absolute;
     width: 100%;

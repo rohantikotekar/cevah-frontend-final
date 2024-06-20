@@ -482,7 +482,7 @@
     background-color: var(--color-darkturquoise);
     position: absolute;
     width: 50vw;
-    top: 31.25rem;
+    top: 29.25rem;
     right: 0;
     left: 52vw;
     border-radius: var(--br-3xs);
@@ -516,8 +516,8 @@
     font-family: Inter
   }
   .back3 {
-    top: 32.25rem;
-    left: 3.5rem;
+    top: 30.25rem;
+    left: 4rem;
     font-size: 1.7rem;
     text-decoration: underline;
     letter-spacing: 0.02em;

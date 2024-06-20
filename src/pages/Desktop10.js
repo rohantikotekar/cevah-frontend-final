@@ -103,7 +103,7 @@ const Desktop10 = () => {
           <div className="status-bar-item" />
         </div>
         <Button
-          className="group-child29"
+          className="continue"
           disableElevation={true}
           color="primary"
           variant="contained"
@@ -112,7 +112,7 @@ const Desktop10 = () => {
         >
           Continue
         </Button>
-        <button className="back5" onClick={onBackClick}>
+        <button className="back-btn" onClick={onBackClick}>
           Back
         </button>
       </div>

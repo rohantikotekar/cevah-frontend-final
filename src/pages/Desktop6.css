@@ -87,11 +87,11 @@
   height: 0.313rem;
 }
 .back2,
-.content-child5 {
+.continue2 {
   position: absolute;
   cursor: pointer;
 }
-.content-child5 {
+.continue2 {
   width: calc(100% - 334px);
   top: 34.375rem;
   right: 1.438rem;
@@ -460,14 +460,14 @@
     color: #fff; 
     padding: 100rem; 
   }
-  .content-child5 {
+  .continue2 {
     cursor: pointer;
     border: 0;
     padding: var(--padding-base) var(--padding-13xl);
     background-color: var(--color-darkturquoise);
     position: absolute;
     width: 50vw;
-    top: 100.25vw;
+    top: 29.25rem;
     right: 0;
     left: 53vw;
     border-radius: var(--br-3xs);
@@ -501,8 +501,8 @@
     font-family: Inter
   }
   .back2 {
-    top: 25.25rem;
-    left: 3.5rem;
+    top: 30.25rem;
+    left: 4rem;
     font-size: 1.7rem;
     text-decoration: underline;
     letter-spacing: 0.02em;

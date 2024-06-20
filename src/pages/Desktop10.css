@@ -310,7 +310,7 @@
   right: 0;
   left: 0;
 }
-.group-child29 {
+.continue {
   position: absolute;
   width: calc(100% - 334px);
   top: 34.75rem;
@@ -318,12 +318,12 @@
   left: 19.438rem;
   cursor: pointer;
 }
-.back5,
+.back-btn,
 .rectangle-parent4 {
   position: absolute;
   color: var(--color-gray-100);
 }
-.back5 {
+.back-btn {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -505,7 +505,11 @@
   height: 1.813rem;
   color: black;
 }
-
+.back-btn,
+.continue {
+  position: absolute;
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 758px){
 
@@ -652,33 +656,33 @@
   background-color: var(--color-darkslategray-200);
   height: 0.313rem;
 }
-.back5 {
-  cursor: pointer;
-  position: absolute;
-
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  top: 35.625rem;
-  left: 40vw;
-  margin-left: 10vw;
+.back-btn {
+  top: 33.25rem;
+  left: 4rem;
   font-size: 1.7rem;
   text-decoration: underline;
   letter-spacing: 0.02em;
   line-height: 120%;
-  font-family: var(--font-inter);
-  text-align: left;
-  display: inline-block;
 }
 
-.group-child29 {
-  position: absolute;
-  width: calc(100% - 334px);
-  top: 34.75rem;
-  right: 1.438rem;
-  left: 19vw;
+.continue {
   cursor: pointer;
-  background-color: #17c6c4;
+  border: 0;
+  padding: var(--padding-base) var(--padding-13xl);
+  background-color: var(--color-darkturquoise);
+  position: absolute;
+  width: 50vw;
+  top: 32.25rem;
+  right: 0;
+  left: 50vw;
+  border-radius: var(--br-3xs);
+  height: 3.75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-size: 1.2rem;
 }
 .screenshot-2024-03-19-at-12282 {
   position: absolute;
