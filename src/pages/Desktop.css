@@ -194,7 +194,7 @@
 }
 .footer-final {
   position: absolute;
-  top: 219.813rem;
+  top: 250.813rem;
   left: 0;
   background-color: var(--color-darkslategray-200);
   width: 100rem;
@@ -260,7 +260,7 @@
   max-height: 100%;
 }
 .rectangle-parent {
-  top: 193.688rem;
+  top: 219.688rem;
   left:0;
   background-color: #b8dbf7;
   width: 100rem;
@@ -841,7 +841,7 @@
 
  width: 105%;
  position: relative;
- height: 236.625rem;
+ height: 249.625rem;
  overflow: hidden;
  text-align: left;
 
@@ -1287,7 +1287,7 @@
     font-size: 4rem;
     color: #2b2b2b;
   }
-  /* .userfocus-icon {
+  .userfocus-icon {
     position: absolute;
     top: 74rem;
     margin-left: 18rem;
@@ -1295,7 +1295,7 @@
     height: 6.25rem;
     overflow: hidden;
     left: 65em;
-} */
+}
   .group-parent2 {
     position: absolute;
     margin-top: 12rem;
@@ -1320,7 +1320,7 @@
   font-weight: 0rem;
   font-size: 600;
 }.rectangle-parent {
-  top: 193.688rem;
+  top: 206.688rem;
   left: 0;
   background-color: #b8dbf7;
   width: 100%;
@@ -1329,7 +1329,7 @@
 }
 .footer-final {
   position: absolute;
-  top: 219.813rem;
+  top: 232.813rem;
   left: 0;
   background-color: var(--color-darkslategray-200);
   width: 100%;
