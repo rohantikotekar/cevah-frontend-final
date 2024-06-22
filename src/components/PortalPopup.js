@@ -1,5 +1,4 @@
 import { useMemo, useCallback, useState, useRef, useEffect } from "react";
-
 import { createPortal } from "react-dom";
 import "./PortalPopup.css";
 import PropTypes from "prop-types";

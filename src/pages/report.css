@@ -1154,9 +1154,24 @@
 
 }
 @media only screen and (max-width: 758px) {
+  .new-cevah-masterplanning-report {
+    top: 0;
+    left: 0;
+    font-size: 1.25rem;
+    width: 64.125rem;
+    height: 5.5rem;
+}
   .new-desktop-216{
     font-size: 1rem; /* Adjust font size for smaller screens */
     padding: 0.5rem; /* Reduce padding */
+  }
+  .new-desktop-216-inner {
+    position: absolute;
+    top: 4.125rem;
+    left: 0;
+    height: 50rem;
+    overflow-y: auto;
+    width: 90rem;
   }
   .new-thank-you-for-entrusting-cevah-parent {
     position: absolute;
@@ -1164,6 +1179,12 @@
     left: 10vw;
     width: 90rem;
     height: auto; /* Increased height to accommodate content */
+    
+  }
+  .new-welcome-to-your-container {
+    top: 3.5rem;
+    height: 1.875rem;
+    font-size: 1.25rem;
   }
   .new-we-are-delighted,
 .new-welcome-to-your-container {
@@ -1172,7 +1193,9 @@
   letter-spacing: -0.02em;
   line-height: 120%;
   display: inline-block;
-  width: 90vw;
+  width: 80vw;
+  font-size: 1.25rem;
+  text-align: justify;
 }
   .new-cevah-masterplanning-report-parent {
     position: absolute;

@@ -1,0 +1,115 @@
+.f-pop2-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2),
+    -4px -4px 20px rgba(154, 154, 154, 0.2);
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  width: 530px;
+  height: 624px;
+}
+.f-message-sent,
+.f-thank-you-for {
+  position: absolute;
+  left: 51px;
+  line-height: 120%;
+}
+.f-message-sent {
+  top: 56px;
+  font-size: var(--font-size-13xl);
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+.f-thank-you-for {
+  width: calc(100% - 115px);
+  top: 103px;
+  display: inline-block;
+}
+.f-button2 {
+  position: relative;
+  line-height: 125%;
+  font-weight: 600;
+}
+.f-button-primary2 {
+  position: absolute;
+  top: 520px;
+  left: 51px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-darkturquoise);
+  width: 430px;
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-mid) var(--padding-133xl);
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+  color: var(--color-white);
+}
+.f-active-support-amico-1 {
+  position: absolute;
+  top: 171px;
+  left: calc(50% - 166px);
+  width: 319px;
+  height: 319px;
+  object-fit: cover;
+}
+.f-pop2 {
+  width: 530px;
+  position: relative;
+  height: 624px;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-gray);
+  font-family: var(--font-inter);
+}
+@media only screen and (max-width: 758px) {
+  .f-pop2 {
+    width: 90vw;
+    position: relative;
+    height: 624px;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    text-align: left;
+    font-size: var(--font-size-base);
+    color: var(--color-gray);
+    font-family: var(--font-inter);
+}
+.f-pop2-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2), -4px -4px 20px rgba(154, 154, 154, 0.2);
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  width: 90vw;
+  height: 624px;
+}
+.f-button-primary2 {
+  position: absolute;
+  top: 520px;
+  left: 51px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-darkturquoise);
+  width: 15rem;
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-mid) var(--padding-133xl);
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+  color: var(--color-white);
+}
+
+
+}
