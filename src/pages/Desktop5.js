@@ -1,8 +1,5 @@
 import { useCallback, useState } from "react";
-import {
-  TextField,
-  Button,
-} from "@mui/material";
+import { TextField, Button, Alert } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import "./Desktop5.css";
 
@@ -11,11 +8,18 @@ const Desktop5 = () => {
   const onLogout = useCallback(() => {
     navigate("/login");
   }, [navigate]);
+
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [error, setError] = useState("");
 
   const onFrameButtonClick = useCallback(() => {
+    if (!firstName || !lastName || !phoneNumber) {
+      setError("Please fill in all fields.");
+      return;
+    }
+
     // Prepend +91 to the phone number before saving to local storage
     const formattedPhoneNumber = `91${phoneNumber}`;
     localStorage.setItem("firstName", firstName);
@@ -73,6 +77,15 @@ const Desktop5 = () => {
           value={phoneNumber}
           onChange={(e) => setPhoneNumber(e.target.value)}
         />
+        {error && (
+          <Alert
+            severity="error"
+            className="alert-message"
+            classes={{ icon: "custom-alert-icon" }}
+          >
+            {error}
+          </Alert>
+        )}
         <div className="new1-group-parent6">
           <div className="new1-rectangle-parent2">
             <div className="new1-group-child12" />
@@ -90,7 +103,6 @@ const Desktop5 = () => {
         >
           Continue
         </Button>
-
         <div className="new1-back1" onClick={onBackTextClick}>
           Back
         </div>

@@ -510,8 +510,21 @@
   position: absolute;
   cursor: pointer;
 }
+.alert-message3 {
+  margin-top:35.5rem; /* Add some margin above the alert */
+  width: 405px; /* Set the width of the alert */
+  position: relative;
+  left:8rem;
+}
 
 @media only screen and (max-width: 758px){
+  .alert-message3 {
+    margin-top:32.5rem; /* Add some margin above the alert */
+    width: 260px;
+    height: 40px; /* Set the width of the alert */
+    position: relative;
+    left:1rem;
+  }
 
   .user-icon100 {
     top: 1.25rem;
@@ -672,11 +685,11 @@
   background-color: var(--color-darkturquoise);
   position: absolute;
   width: 50vw;
-  top: 32.25rem;
+  top: 32.55rem;
   right: 0;
   left: 50vw;
   border-radius: var(--br-3xs);
-  height: 3.75rem;
+  height: 3.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;

@@ -2,6 +2,7 @@ import { useCallback, useState } from "react";
 import {
   Button,
   TextField,
+  Alert
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import "./Desktop10.css";
@@ -11,7 +12,7 @@ const Desktop10 = () => {
   const onLogout = useCallback(() => {
     navigate("/login");
   }, [navigate]);
-  
+
   // State for form input values
   const [formValues, setFormValues] = useState({
     houseNumber: "",
@@ -19,6 +20,9 @@ const Desktop10 = () => {
     cityName: "",
     pinCode: ""
   });
+
+  // State for error message
+  const [error, setError] = useState("");
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -29,6 +33,13 @@ const Desktop10 = () => {
   };
 
   const onFrameButtonClick = useCallback(() => {
+    const { houseNumber, societyName, cityName, pinCode } = formValues;
+
+    if (!houseNumber || !societyName || !cityName || !pinCode) {
+      setError("Please fill in all the fields.");
+      return;
+    }
+
     // Save form data to local storage
     localStorage.setItem("projectAddress", JSON.stringify(formValues));
     navigate("/Speciality");
@@ -161,6 +172,14 @@ const Desktop10 = () => {
         onChange={handleInputChange}
         sx={{ "& .MuiInputBase-root": { height: "57px" }, width: "405px" }}
       />
+
+      {/* Display Alert if there is an error */}
+      {error && (
+        <Alert severity="error" className="alert-message3">
+          {error}
+        </Alert>
+      )}
+
       <div className="header9">
         <div className="content16">
           <button className="logo10" onClick={onLogoClick}>
@@ -174,7 +193,7 @@ const Desktop10 = () => {
         </div>
         <button className="login7" onClick={onLogout}>
           <div className="sign-in2">Sign Out</div>
-        </button> 
+        </button>
       </div>
     </div>
   );

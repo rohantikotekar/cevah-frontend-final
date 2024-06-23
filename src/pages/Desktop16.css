@@ -394,12 +394,32 @@
   color: var(--color-gray-100);
   font-family: var(--font-inter);
 }
+.alert-message2 {
+  margin-top:29rem; /* Add some margin above the alert */
+  width: 405px; /* Set the width of the alert */
+  position: relative;
+  left:3.2rem;
+}
+.custom-alert-icon2 {
+  position: relative;
+  display: flex;
+  align-items: center; /* Center the icon vertically */
+  justify-content: flex-start; /* Align the icon to the start (left) */
+  top:rem; 
+  left: 0rem;/* Add some space between the icon and the text */
+}
 
 @media only screen and (max-width: 758px) {
   .desktop-93 {
     font-size: 1rem; 
     padding: 0.5rem; 
     min-height: 100vh; 
+  }
+  .alert-message2 {
+    margin-top:25rem; /* Add some margin above the alert */
+    width: 405px; /* Set the width of the alert */
+    position: relative;
+    left:3.2rem;
   }
   .hero15 {
     position: absolute;

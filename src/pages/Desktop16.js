@@ -1,11 +1,12 @@
-import { useCallback,useState } from "react";
+import { useCallback, useState } from "react";
 import {
   TextField,
   Button,
   FormControl,
   InputLabel,
   Select,
-  MenuItem
+  MenuItem,
+  Alert,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import "./Desktop16.css";
@@ -15,9 +16,10 @@ const Desktop16 = () => {
   const onLogout = useCallback(() => {
     navigate("/login");
   }, [navigate]);
+
   const [college3, setCollege3] = useState('');
   const [degree, setDegree] = useState('');
-
+  const [error, setError] = useState('');
 
   const handleChangeCollege = (event) => {
     setCollege3(event.target.value);
@@ -28,10 +30,15 @@ const Desktop16 = () => {
   };
 
   const onFrameButtonClick = useCallback(() => {
-    localStorage.setItem('college3', college3);
-    navigate("/Education2");
-  }, [navigate, college3]);
+    if (!college3 || !degree) {
+      setError("Please fill in all fields.");
+      return;
+    }
 
+    localStorage.setItem('college3', college3);
+    localStorage.setItem('degree', degree);
+    navigate("/Education2");
+  }, [navigate, college3, degree]);
 
   const onBackTextClick = useCallback(() => {
     navigate("/Add-Name");
@@ -64,7 +71,7 @@ const Desktop16 = () => {
             value={college3}
             onChange={handleChangeCollege}
           />
-         
+
           <FormControl
             variant="outlined"
             sx={{ m: 1, width: 405 }}
@@ -74,15 +81,13 @@ const Desktop16 = () => {
             <Select
               labelId="select-degree-label"
               id="select-degree"
-              
               onChange={handleChangeDegree}
               label="Enter Degree Name"
               sx={{ height: 57 }}
               value={degree}
-
             >
               <MenuItem value=""><em>None</em></MenuItem>
-              <MenuItem value="BDS ">Bachelor of Dental Surgery</MenuItem>
+              <MenuItem value="BDS">Bachelor of Dental Surgery</MenuItem>
               <MenuItem value="BAMS">Bachelor of Ayurvedic Medicine and Surgery</MenuItem>
               <MenuItem value="BUMS">Bachelor of Unani Medicine and Surgery</MenuItem>
               <MenuItem value="BHMS">Bachelor of Homeopathy Medicine and Surgery</MenuItem>
@@ -91,6 +96,13 @@ const Desktop16 = () => {
               {/* Additional degrees */}
             </Select>
           </FormControl>
+          
+          {error && (
+            <Alert severity="error" className="alert-message2">
+              {error}
+            </Alert>
+          )}
+
           <div className="group-parent11">
             <div className="rectangle-wrapper3">
               <div className="group-child35" />
@@ -150,7 +162,7 @@ const Desktop16 = () => {
         </div>
         <button className="login7" onClick={onLogout}>
           <div className="sign-in2">Sign Out</div>
-        </button> 
+        </button>
       </div>
     </div>
   );

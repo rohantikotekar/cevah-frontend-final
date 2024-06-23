@@ -434,11 +434,41 @@
   padding: 1rem;
   margin: 0 auto;
 }
+
+.alert-message {
+  margin-top:31rem; /* Add some margin above the alert */
+  width: 405px; /* Set the width of the alert */
+  position: relative;
+  left:3.2rem;
+}
+.custom-alert-icon {
+  position: relative;
+  display: flex;
+  align-items: center; /* Center the icon vertically */
+  justify-content: flex-start; /* Align the icon to the start (left) */
+  top:rem; 
+  left: 0rem;/* Add some space between the icon and the text */
+}
+
 @media only screen and (max-width: 758px) {
   .new1-desktop-90 {
     font-size: 1rem; /* Adjust font size for smaller screens */
     padding: 0.5rem; /* Reduce padding */
     min-height: 100vh; /* Remove min-height constraint */
+  }
+  .alert-message {
+    margin-top:22rem; /* Add some margin above the alert */
+    width: 280px; /* Set the width of the alert */
+    position: relative;
+    left:3.2rem;
+  }
+  .custom-alert-icon {
+    position: relative;
+    display: flex;
+    align-items: center; /* Center the icon vertically */
+    justify-content: flex-start; /* Align the icon to the start (left) */
+    top:rem; 
+    left: 0rem;/* Add some space between the icon and the text */
   }
   .new1-hero4 {
     position: absolute;
@@ -593,6 +623,9 @@
   font-size: 1.125rem;
   color: #fff;
   font-family: Inter
+}
+.new1-ad-placeholder-icon2 {
+  display: none;
 }
 }
 @media screen and (min-height: 740px) and (max-width: 758px) {
