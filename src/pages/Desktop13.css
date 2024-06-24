@@ -369,6 +369,16 @@
 }
 
 @media only screen and (max-width: 758px) {
+  .back7 {
+    position: absolute;
+    top: 20.813rem;
+    left: 8.625rem;
+    font-size: var(--caption-m-size);
+    text-decoration: underline;
+    letter-spacing: 0.02em;
+    line-height: 120%;
+    cursor: pointer;
+  }
   .desktop-115 {
     font-size: 1rem; 
     padding: 0.5rem; 

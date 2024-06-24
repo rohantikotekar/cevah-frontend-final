@@ -2,10 +2,10 @@
     position: absolute; /* Position the slider absolutely within its container */
     display: flex;
     transition: transform 0.5s ease-in-out;
-    top: 42vh; /* Position the slider at the top of its container */
+    top: 37vh; /* Position the slider at the top of its container */
     left: 0; /* Position the slider at the left of its container */
     width: 100%;
-    border-radius: 10px; /* Make the slider fill the container width */
+    border-radius: 15px; /* Make the slider fill the container width */
   }
   
   .image-slider {
@@ -14,14 +14,13 @@
     transition: transform 0.5s ease-in-out;
     top: 0; /* Position the slider at the top of its container */
     left: 0; /* Position the slider at the left of its container */
-    width: 75%; /* Make the slider fill the container width */
   }
   
   
   .image-slider img {
     width: 100%;
     height: auto;
-    border-radius: 10px; /* Make the slider fill the container width */
+    border-radius: 20px; /* Make the slider fill the container width */
 
   }
   

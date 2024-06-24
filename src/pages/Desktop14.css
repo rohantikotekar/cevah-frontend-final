@@ -359,6 +359,14 @@
   left: 1px;
 }
 @media only screen and (max-width: 758px) {
+  .back8 {
+    top: 27rem;
+    left: 10.25rem;
+    text-decoration: underline;
+    letter-spacing: 0.02em;
+    line-height: 120%;
+    cursor: pointer;
+}
   .desktop-109 {
     font-size: 1rem; 
     padding: 0.5rem; 
@@ -389,7 +397,7 @@
   .hero-child7 {
     position: absolute;
     top: -3rem;
-    left: 5.563rem;
+    left: 30%;
     width: 10.438rem;
     height: 13.5rem;
   }
