@@ -40,7 +40,7 @@ body {
 }
 
 .navigation button {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #3cd0ce;
   border: none;
   color: white;
   padding: 10px;
@@ -48,7 +48,7 @@ body {
 }
 
 .navigation button:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color:#3cd0ce;
 }
 
 @media only screen and (max-width: 758px){

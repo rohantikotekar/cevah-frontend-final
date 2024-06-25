@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './report.css';
-import Footer from '../components/Footer';
+//import Footer from '../components/Footer';
 import Header from '../components/Header';
 import GroupComponent from '../components/GroupComponent';
 

@@ -92,9 +92,9 @@ const Desktop = () => {
           <div className="cevah9gmailcom">+91 9595833718</div>
           <img className="vector-icon6" alt="" src="/vector6.svg" />
         </div>
-        <div className="illustrations-from-storyset">
+        {/* <div className="illustrations-from-storyset">
           *Illustrations from Storyset - https://storyset.com
-        </div>
+        </div> */}
       </div>
       <div className="rectangle-parent">
         <img className="rectangle-icon" alt="" src="/rectangle@2x.png" />

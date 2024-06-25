@@ -194,7 +194,7 @@
 }
 .footer-final {
   position: absolute;
-  top: 250.813rem;
+  top: 232.813rem;
   left: 0;
   background-color: var(--color-darkslategray-200);
   width: 100rem;
@@ -260,7 +260,7 @@
   max-height: 100%;
 }
 .rectangle-parent {
-  top: 219.688rem;
+  top: 207.688rem;
   left:0;
   background-color: #b8dbf7;
   width: 100rem;
@@ -903,7 +903,7 @@
     letter-spacing: -0.01em;
     display: inline-block;
     width: 80rem;
-    font-size: 7rem;
+    font-size: 6.5rem;
 }
 .turn-your-healthcare {
   top: 70.625rem;
@@ -1256,10 +1256,50 @@
     height: 40.938rem;
     font-size: var(--font-size-sm);
     color: white;
+   
   }
+  /* .cevah-parent {
+    position: absolute;
+    top: 3.25rem;
+    left: 6rem;
+    font-size: 4rem;
+    width: 7.25rem;
+    height: 2.063rem;
+    font-size: var(--font-size-5xl);
+    font-family: var(--font-ibm-plex-sans);
+} */
+
+  /* .cevah {
+    position: absolute;
+    top: 0;
+    left: 2.063rem;
+    display: inline-block;
+    width: 5.188rem;
+    height: 2.063rem;
+    font-size: 4rem;
+} */
+
+/* .frame-child, .frame-item {
+  position: absolute;
+  border-radius: var(--br-12xs);
+  width: 0.525rem;
+  height: 1.844rem;
+}
+.at-cevah-our {
+  position: absolute;
+  top: 7.813rem;
+  left: 6rem;
+  font-size: 1rem;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  width: 30.25rem;
+  height: 24.188rem;
+} */
+
 
 }
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1600px) {
   .desktop-82 {
    width: 100%;
    position: relative;
