@@ -1256,8 +1256,90 @@
     height: 40.938rem;
     font-size: var(--font-size-sm);
     color: white;
-   
   }
+  .support {
+    left: 39.125rem;
+    display: none;
+}
+.privacy-policy, .terms-of-use {
+  position: absolute;
+  top: 5.813rem;
+  left: 39.125rem;
+  display: none;
+}
+.contact-us {
+  position: absolute;
+  top: 3.313rem;
+  left: 55.875rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.cevah9gmailcom {
+  position: absolute;
+  top: 8rem;
+  width: 15rem;
+  left: 30.125rem;
+  font-size: 2rem;
+}
+.vector-icon5 {
+  position: absolute;
+  height: 99.94%;
+  width: 50.52%;
+  top: 300.41%;
+  right: 90.48%;
+  bottom: 7.65%;
+  left: 25rem;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  font-size: 2rem;
+}
+.parent {
+  position: absolute;
+  top: 1.813rem;
+  left: 25.875rem;
+  width: 15.188rem;
+  height: 1.063rem;
+  font-size: 2rem;
+}
+    .vector-icon {
+      height: 100%;
+      width: 100%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      max-width: 100%;
+      max-height: 100%;
+      display: none;
+    }
+    .vector-icon4 {
+      height: 99.57%;
+      display: none;
+      width: 100%;
+      top: 0;
+      right: 0;
+      bottom: 0.43%;
+      left: 0;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .vector-icon2
+    {
+      position: absolute;
+      height: 51.3%;
+      display: none;
+      width: 51.3%;
+      top: 24.35%;
+      right: 24.35%;
+      bottom: 24.35%;
+      left: 24.35%;
+      max-width: 100%;
+      overflow: hidden;
+      max-height: 100%;
+    }
+   
+  
   /* .cevah-parent {
     position: absolute;
     top: 3.25rem;
@@ -1269,33 +1351,40 @@
     font-family: var(--font-ibm-plex-sans);
 } */
 
-  /* .cevah {
+   .cevah {
     position: absolute;
     top: 0;
-    left: 2.063rem;
+    left: 4.063rem;
     display: inline-block;
     width: 5.188rem;
     height: 2.063rem;
-    font-size: 4rem;
-} */
+    font-size: 3rem;
+} 
 
-/* .frame-child, .frame-item {
+ .frame-child, .frame-item {
   position: absolute;
   border-radius: var(--br-12xs);
   width: 0.525rem;
-  height: 1.844rem;
+  height: 2.844rem;
+  top: 2rem;
+
+}
+.frame-item {
+  top: 0.331rem;
+  left: 1.26rem;
+  background: linear-gradient(90deg, #3cd0ce, #6eeae9 65.39%, #75eeed);
 }
 .at-cevah-our {
   position: absolute;
-  top: 7.813rem;
+  top: 3.813rem;
   left: 6rem;
-  font-size: 1rem;
+  font-size: 2rem;
   line-height: 150%;
   display: flex;
   align-items: center;
-  width: 30.25rem;
+  width: 40.25rem;
   height: 24.188rem;
-} */
+} 
 
 
 }
